@@ -6,14 +6,43 @@
 	<style>
 		@import 'https://fonts.googleapis.com/css?family=Palanquin+Dark';
 
-		body  {
-			font-family: 'Palanquin Dark', verdana, sans-serif;
+		body {
+			font-family: serif;
 			font-size: 24px;
+			line-height: 1.420;
+		}
+		main {
+			max-width: 666px;
+			margin: auto;
+		}
+		h1, p {
+			color: rgb(24, 24, 24);
+		}
+		.unimportant {
+			opacity: 0.4321;
+		}
+		#tomat {
+			position: absolute;
+			bottom: 24px;
+			right: 24px;
+			border: 3px solid #242424;
+			box-shadow: 6px 6px 0 #242424;
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
 		}
 	</style>
 </head>
 <body>
-	<img src="fin-tomat.png" />
-	<h1>JF&amp;G</h1>
+	<img id="tomat" src="fin-tomat.png" />
+	<main>
+		<h1>JF&amp;G</h1>
+		<p>et profesjonelt designstudio som spesialiserer seg på å lage kule nettsider for enkeltpersoner, arrangementer og små bedrifter. nettsiden er under arbeid, i mellomtiden kan du <a href="mailto:hei@elisejakob.no?subject=ring ring">ringe elise</a>.</p>
+		<p class="unimportant">vi kan også tilby tjenester innen illustrasjon, merkevare og identitet, design av trykksaker, kombucha-startere og unøyaktige tarotlesninger.</p>
+	</main>
+	<footer>
+		<span id="copyright">(c) jakobsen frukt &amp; grønt</span>
+	</footer>
 </body>
 </html>
