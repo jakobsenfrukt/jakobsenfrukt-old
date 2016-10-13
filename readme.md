@@ -1,8 +1,8 @@
 # JF&G
 
-website for professional design studio jakobsen frukt & grønt
+website for award-winning design studio jakobsen frukt & grønt
 
-using all kinds of professional front end technology
+using all kinds of professional front-end technology
 
 very cool
 
