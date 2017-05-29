@@ -3,73 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>JF&amp;G</title>
-	<script src="https://use.typekit.net/pqr5pli.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<style>
-		@import 'https://fonts.googleapis.com/css?family=Palanquin+Dark';
-
-		html {
-			font-size: 20px;
-		}
-		body {
-			font-family: 'soleil', verdana, sans-serif;
-			letter-spacing: 0.024em;
-			line-height: 1.420;
-			color: rgb(24, 24, 24);
-			background: #eee;
-		}
-		#tomat {
-			display: block;
-			width: 160px;
-			margin: 2rem auto;
-			border-radius: 100%;
-			-webkit-animation: fargemagi 13s alternate infinite;
-			animation: fargemagi 13s alternate infinite;
-		}
-		@-webkit-keyframes fargemagi {
-		   0% { -webkit-filter: hue-rotate(0deg); }
-		   50% { -webkit-filter: hue-rotate(180deg); }
-		   100% { -webkit-filter: hue-rotate(360deg); }   
-		}
-		@keyframes fargemagi {
-		   0% { filter: hue-rotate(0deg); }
-		   50% { filter: hue-rotate(180deg); }
-		   100% { filter: hue-rotate(360deg); }   
-		}
-		h1 {
-			font-family: 'soleil', verdana, sans-serif;
-			font-size: 2rem;
-			text-align: center;
-			margin: 2rem auto 0;
-		}
-		h2 {
-			font-family: 'soleil', verdana, sans-serif;
-			font-size: 1.2rem;
-			text-align: center;
-			margin: 0 auto 4rem;
-		}
-		main {
-			max-width: 666px;
-			margin: auto;
-			padding: 0 2rem 4rem;
-		}
-		p {
-			font-size: 1rem;
-			font-family: 'times', serif;
-			font-style: italic;
-			letter-spacing: normal;
-		}
-		#prosjekter {
-			padding: 1rem;
-			margin: 4rem auto 0;
-			border: 2px solid rgb(24, 24, 24);
-			background: white;
-		}
-		footer {
-			text-align: center;
-			padding-bottom: 4rem;
-		}
-	</style>
+	<link href="spice.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<header>
@@ -78,8 +12,13 @@
 		<h2>Jakobsen Frukt &amp; Grønt</h2>
 	</header>
 	<main>
-		<p>er et svært profesjonelt og prisvinnende designstudio som spesialiserer seg på å lage kule nettsider for enkeltpersoner, arrangementer og små bedrifter. Nettsiden er under arbeid, i mellomtiden kan du <a href="mailto:hei@elisejakob.no?subject=ring ring">ringe elise</a>.</p>
-		<p>Vi kan også tilby tjenester innen illustrasjon, merkevare og identitet, design av trykksaker, kombucha-startere og unøyaktige tarotlesninger.</p>
+		<p class="right-align">
+			(prisvinnende designstudio)
+		</p>
+		<span id="contact"><a href="mailto:hei@elisejakob.no?subject=🍅" target="_blank">kontakt oss!</a></span>
+		<p>
+			vi tilbyr tjenester innen webdesign, illustrasjon, merkevare og identitet, design av trykksaker, kombucha-startere og unøyaktige tarotlesninger.
+		</p>
 		<!--<section id="prosjekter">
 			<h2>Prosjekter</h2>
 			<img src="#" /><img src="#" /><img src="#" /><img src="#" /><img src="#" />
@@ -87,8 +26,12 @@
 		</section>-->
 	</main>
 	<footer>
-		<span id="copyright">Sist oppdatert 13. oktober 2016</span><br/>
-		Takk for besøket!
+		takk for besøket!
 	</footer>
+	<div id="fruit">
+		<marquee>
+		🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 🍉 &nbsp; 🍑 &nbsp; 🍅 &nbsp; 🍆 &nbsp; 🌶 &nbsp; 🍓 &nbsp; 
+		</marquee>
+	</div>
 </body>
 </html>

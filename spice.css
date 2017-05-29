@@ -1,0 +1,91 @@
+@import 'https://fonts.googleapis.com/css?family=Palanquin+Dark';
+
+html {
+	font-size: 16px;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Menlo', monospace;
+	letter-spacing: 0.024em;
+	line-height: 1.420;
+	color: rgb(24, 24, 24);
+	background: #fefefe;
+}
+#tomat {
+	display: block;
+	width: 120px;
+	margin: 2rem auto;
+	border: 1px solid black;
+	border-radius: 100%;
+	-webkit-animation: fargemagi 13s alternate infinite;
+	animation: fargemagi 13s alternate infinite;
+}
+@-webkit-keyframes fargemagi {
+   0% { -webkit-filter: hue-rotate(0deg); }
+   50% { -webkit-filter: hue-rotate(180deg); }
+   100% { -webkit-filter: hue-rotate(360deg); }   
+}
+@keyframes fargemagi {
+   0% { filter: hue-rotate(0deg); }
+   50% { filter: hue-rotate(180deg); }
+   100% { filter: hue-rotate(360deg); }   
+}
+h1 {
+	font-family: sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	margin: 2rem auto 0;
+	color: lime;
+	text-shadow: -1px -1px black, -1px 1px black, 1px -1px black,
+		1px 1px black, 2px 2px black,
+		3px 3px black, 4px 4px black,
+		5px 5px black, 6px 6px black;
+	transform: translate(-4px, -4px);
+}
+h2 {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+	text-align: center;
+	margin: 0 auto 4rem;
+}
+main {
+	max-width: 666px;
+	margin: auto;
+	padding: 0 2rem 4rem;
+	transform: rotate(-6deg);
+}
+p {
+	font-size: 1rem;
+	letter-spacing: normal;
+}
+p.right-align {
+	text-align: right;
+	font-size: 0.8rem;
+}
+#contact a {
+	font-weight: bold;
+	font-size: 2rem;
+	color: gold;
+	text-shadow: -1px -1px black, -1px 1px black, 1px -1px black,
+		1px 1px black, 2px 2px black,
+		3px 3px black, 4px 4px black,
+		5px 5px black, 6px 6px black;
+}
+#prosjekter {
+	padding: 1rem;
+	margin: 4rem auto 0;
+	border: 2px solid rgb(24, 24, 24);
+	background: white;
+}
+footer {
+	text-align: center;
+	padding-bottom: 4rem;
+	font-family: cursive;
+}
+#fruit {
+	position: fixed;
+	bottom: 0;
+}
