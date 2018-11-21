@@ -1,4 +1,24 @@
-@import 'https://fonts.googleapis.com/css?family=Palanquin+Dark';
+@font-face {
+    font-family: 'karmilla';
+    src: url('fonts/karmilla-bold-016-webfont.eot');
+    src: url('fonts/karmilla-bold-016-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/karmilla-bold-016-webfont.woff2') format('woff2'),
+         url('fonts/karmilla-bold-016-webfont.woff') format('woff'),
+         url('fonts/karmilla-bold-016-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karmilla';
+    src: url('fonts/karmilla-regular-016-webfont.eot');
+    src: url('fonts/karmilla-regular-016-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/karmilla-regular-016-webfont.woff2') format('woff2'),
+         url('fonts/karmilla-regular-016-webfont.woff') format('woff'),
+         url('fonts/karmilla-regular-016-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
 	font-size: 16px;
@@ -7,11 +27,11 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Menlo', monospace;
+	font-family: karmilla, sans-serif;
 	letter-spacing: 0.024em;
 	line-height: 1.420;
-	color: rgb(24, 24, 24);
-	background: #fefefe;
+	color: #fefefe;
+	background: rgb(24, 24, 24);
 }
 #tomat {
 	display: block;
@@ -19,6 +39,9 @@ body {
 	margin: 2rem auto;
 	border: 1px solid black;
 	border-radius: 100%;
+	box-shadow: 1px 1px black, 2px 2px black,
+	3px 3px black, 4px 4px black,
+	5px 5px black, 6px 6px black;
 	-webkit-animation: fargemagi 13s alternate infinite;
 	animation: fargemagi 13s alternate infinite;
 }
@@ -33,7 +56,6 @@ body {
    100% { filter: hue-rotate(360deg); }   
 }
 h1 {
-	font-family: sans-serif;
 	font-size: 3rem;
 	text-align: center;
 	margin: 2rem auto 0;
@@ -45,7 +67,6 @@ h1 {
 	transform: translate(-4px, -4px);
 }
 h2 {
-	font-family: sans-serif;
 	font-weight: normal;
 	font-size: 1rem;
 	text-align: center;
@@ -55,7 +76,7 @@ main {
 	max-width: 666px;
 	margin: auto;
 	padding: 0 2rem 4rem;
-	transform: rotate(-6deg);
+	transform: rotate(-2deg);
 }
 p {
 	font-size: 1rem;
@@ -71,14 +92,8 @@ p.right-align {
 	color: gold;
 	text-shadow: -1px -1px black, -1px 1px black, 1px -1px black,
 		1px 1px black, 2px 2px black,
-		3px 3px black, 4px 4px black,
-		5px 5px black, 6px 6px black;
-}
-#prosjekter {
-	padding: 1rem;
-	margin: 4rem auto 0;
-	border: 2px solid rgb(24, 24, 24);
-	background: white;
+		3px 3px black, 4px 4px black;
+	text-decoration: none;
 }
 footer {
 	text-align: center;
