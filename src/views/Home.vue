@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img class="logo" alt="Tomat" src="../assets/images/fin-tomat.png">
-    <HelloWorld msg="Jakobsen Frukt &amp; Grønt"/>
+    <main>
+      <p>
+        Hei! Hva bringer deg hit?
+      </p>
+      <button>Ikkeno spess</button><button>Jeg vil bare snakke litt</button>
+    </main>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'home',
-  components: {
-    HelloWorld
-  }
 }
 </script>
+
+<style lang="scss" scoped>
+p {
+	font-size: 1rem;
+}
+p.label {
+	text-align: right;
+  font-size: 0.8rem;
+  transform: rotate(-3deg);
+  margin: 1em 0;
+  color: yellow;
+  opacity: 0.6;
+}
+</style>

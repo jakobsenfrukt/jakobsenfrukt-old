@@ -1,30 +1,86 @@
-html {
-	font-size: 16px;
-	height: 100%;
-}
-body {
-	margin: 0;
-	padding: 0;
-	font-family: karmilla, sans-serif;
-	letter-spacing: 0.024em;
-	line-height: 1.420;
-	color: #fefefe;
-	background: rgb(24, 24, 24);
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:focus {
+    outline-color: #24e666;
+  }
 }
 
-#app {
-    font-family: karmilla, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+html {
+	font-size: 14px;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+  padding: 0 2rem;
+  color: #fefefe;
+  background: rgb(6, 6, 12);
+  background-image: radial-gradient(rgb(8, 6, 12), rgb(0, 0, 0));
+  
+  font-family: soleil, sans-serif;
+  font-weight: 300;
+	letter-spacing: 0.06em;
+	line-height: 1.42;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto 24rem;
+}
+
+section {
+  position: relative;
+}
+
+h1, p {
+  margin: 0 0 2rem;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+p.lead {
+  font-size: 1.8em;
+  line-height: 1.36;
+  margin-bottom: 3.24rem;
+}
+
+p img {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  margin: 0 0.24em;
+}
+
+a {
+  color: #24e666;
+  text-decoration: none;
+  transition: all 0.13s ease-in-out;
+  font-weight: 400;
+  &:hover {
+    color: #eee612;
   }
-  .site-nav {
-    padding: 30px;
-    a {
-      font-weight: bold;
-      color: #fefefe;
-      &.router-link-exact-active {
-        color: #42b983;
-      }
-    }
+}
+
+button {
+  display: block;
+  margin-bottom: 0.6em;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: #24e666;
+  background: transparent;
+  border: 1px solid #24e666;
+  border-radius: 3px;
+  transition: all 0.13s ease-in-out;
+
+  &:hover {
+    color: #eee612;
+    border-color: #eee612;
+    cursor: pointer;
+  }
 }
