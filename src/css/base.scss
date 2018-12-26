@@ -3,31 +3,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   &:focus {
-    outline-color: #24e666;
+    outline-color: $color-white;
   }
 }
 
 html {
-	font-size: 14px;
+	font-size: calc(14px + 6 * ((100vw - 480px) / 1200));
 	height: 100%;
 }
 
 body {
 	margin: 0;
   padding: 0 2rem;
-  color: #fefefe;
-  background: rgb(6, 6, 12);
-  background-image: radial-gradient(rgb(8, 6, 12), rgb(0, 0, 0));
+  color: $color-white;
+  background: rgb(0, 0, 0);
+  background-image: radial-gradient(rgb(12, 6, 24), rgb(0, 0, 0));
   
-  font-family: soleil, sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
 	letter-spacing: 0.06em;
 	line-height: 1.42;
 }
 
 main {
-  max-width: 480px;
-  margin: 0 auto 24rem;
+  max-width: 36rem;
+  margin: 6rem auto 24rem;
 }
 
 section {
@@ -40,10 +40,19 @@ h1, p {
 
 p {
   line-height: 1.6;
-  max-width: 600px;
+  max-width: 36rem;
+  position: relative;
 }
 
-p.lead {
+.lead:first-letter {
+  font-size: 2.8em;
+  float: left; 
+  margin: 0;
+  line-height: 1;
+}
+
+.lead {
+  font-family: 'karmina', georgia, serif;
   font-size: 1.8em;
   line-height: 1.36;
   margin-bottom: 3.24rem;
@@ -57,13 +66,17 @@ p img {
 }
 
 a {
-  color: #24e666;
+  color: $color-white;
   text-decoration: none;
   transition: all 0.13s ease-in-out;
   font-weight: 400;
   &:hover {
-    color: #eee612;
+    color: $color-green;
   }
+}
+
+p a {
+  text-decoration: underline;
 }
 
 button {
@@ -72,15 +85,16 @@ button {
   font-family: inherit;
   font-size: inherit;
   letter-spacing: inherit;
-  color: #24e666;
+  color: $color-white;
   background: transparent;
-  border: 1px solid #24e666;
+  border: 1px solid $color-white;
   border-radius: 3px;
   transition: all 0.13s ease-in-out;
+  padding: 0.6em 1em 0.7em;
 
   &:hover {
-    color: #eee612;
-    border-color: #eee612;
+    color: $color-green;
+    border-color: $color-green;
     cursor: pointer;
   }
 }

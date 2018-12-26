@@ -3,10 +3,11 @@
     <Header text="5 om dagen"/>
     <div class="site-nav">
       <router-link to="/">Hjem</router-link>
-      <router-link to="/about">Om oss</router-link>
+      <router-link to="/about">Om JF&amp;G</router-link>
     </div>
     <router-view/>
     <Footer />
+    <Stars v-if="night" />
   </div>
 </template>
 
@@ -14,11 +15,25 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import Stars from '@/components/play/Stars.vue'
 
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    Stars
+  },
+  data: function() {
+    return {
+      night: true
+    }
+  },
+  beforeMount: function() {
+    var now = new Date();
+    var time = now.getHours();
+    if (time > 6 && time < 18) {
+      this.night = false;
+    }
   }
 }
 </script>
@@ -27,16 +42,18 @@ export default {
 @import 'css/main.scss';
 
 .site-nav {
-  margin-bottom: 2rem;
+  position: fixed;
+  top: 8rem;
+  left: 2rem;
   max-width: 120px;
   a {
     display: block;
     position: relative;
-    color: #24e666;
+    color: $color-white;
     text-decoration: none;
 
     &:hover, &.router-link-exact-active {
-      color: #eee612;
+      color: $color-green;
     }
     &.router-link-exact-active:before {
       content: "↝ ";

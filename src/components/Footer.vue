@@ -16,10 +16,6 @@ export default {
 <style scoped lang="scss">
 .site-footer {
   padding: 0.6rem 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 h1 {
   text-align: center;
@@ -28,5 +24,15 @@ h1 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.18em;
+
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+a {
+  text-decoration: none;
 }
 </style>
