@@ -1,7 +1,7 @@
 <template>
   <header class="site-header">
     <Logo />
-    <div class="header-text">{{ text }}</div>
+    <div class="header-text">{{ tagline[Math.floor(Math.random() * tagline.length)] }}</div>
   </header>
 </template>
 
@@ -10,8 +10,10 @@ import Logo from '@/components/Logo.vue'
 
 export default {
   name: 'Header',
-  props: {
-    text: String
+  data: function() {
+    return {
+      tagline: ["5 om dagen", "100% vegansk", "Økologisk", "Biodynamisk", "Lokalprodusert", "Fair trade"]
+    }
   },
   components: {
     Logo
