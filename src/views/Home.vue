@@ -3,7 +3,7 @@
     <main>
       <section class="intro">
         <p class="lead"><span class="name">Jakobsen Frukt &amp; Grønt</span> er et hyggelig, lite designstudio i Oslo. Vi spesialiserer oss på digital design, og lager nettsider for små og mellomstore bedrifter, men gjør også trykksaker, identitet, illustrasjon, og andre kreative oppdrag.<img src="http://icons.iconarchive.com/icons/bingxueling/fruit-vegetables/256/lemon-icon.png" /></p>
-        <Dialogue />
+        <!--<Dialogue />-->
       </section>
       <section class="latest">
         <h2>I det siste har vi jobbet med:</h2>
