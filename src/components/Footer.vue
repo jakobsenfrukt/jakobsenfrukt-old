@@ -16,7 +16,7 @@ export default {
 
 <style scoped lang="scss">
 .site-footer {
-  padding: 0.6rem 0 1rem 4rem;
+  padding: 0.6rem 2rem 1rem;
   margin: 0 auto;
 }
 h1 {

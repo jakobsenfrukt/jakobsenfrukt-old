@@ -14,17 +14,21 @@ html {
 
 body {
 	margin: 0;
-  padding: 0 0 0 8rem;
+  padding: 0 0 0 12rem;
   color: #fff6e8;
   background: #181818;
 
   font-family: 'itc clearface', sans-serif;
   letter-spacing: 0.03em;
-	line-height: 1.42;
+  line-height: 1.42;
+
+  @media (max-width: 700px) {
+    padding: 0;
+  }
 }
 
 main {
-  margin: 7rem 0 8rem 4rem;
+  margin: 7rem 2rem 8rem;
 }
 
 section {

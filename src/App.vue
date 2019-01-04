@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header text="5 om dagen"/>
+    <Header />
     <div class="site-nav">
       <router-link to="/">Forside</router-link>
       <router-link to="/about">Info</router-link>
@@ -9,8 +9,7 @@
     <router-view/>
     <Footer />
     <Stars v-if="night" />
-    <Soup v-if="soup" />
-    <div class="soup-button" @click="soup = !soup">🥦</div>
+    <Soup />
   </div>
 </template>
 
@@ -32,8 +31,7 @@ export default {
   },
   data: function() {
     return {
-      night: true,
-      soup: false
+      night: true
     }
   },
   beforeMount: function() {
@@ -74,15 +72,6 @@ export default {
         left: -1.24rem;
       }
     }
-  }
-}
-
-.soup-button {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  &:hover {
-    cursor: pointer;
   }
 }
 </style>

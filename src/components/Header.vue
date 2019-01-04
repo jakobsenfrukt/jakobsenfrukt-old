@@ -28,7 +28,7 @@ export default {
 
 .header-text {
   position: fixed;
-  top: 1.6rem;
+  top: 1.4rem;
   right: 0.6rem;
   display: block;
   transform: rotate(24deg);
