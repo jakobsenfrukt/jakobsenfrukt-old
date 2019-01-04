@@ -2,12 +2,15 @@
   <div id="app">
     <Header text="5 om dagen"/>
     <div class="site-nav">
-      <router-link to="/">Hjem</router-link>
-      <router-link to="/about">Om JF&amp;G</router-link>
+      <router-link to="/">Forside</router-link>
+      <router-link to="/about">Info</router-link>
+      <Contact />
     </div>
     <router-view/>
     <Footer />
     <Stars v-if="night" />
+    <Soup v-if="soup" />
+    <div class="soup-button" @click="soup = !soup">🥦</div>
   </div>
 </template>
 
@@ -15,23 +18,28 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import Contact from '@/components/Contact.vue'
 import Stars from '@/components/play/Stars.vue'
+import Soup from '@/components/play/Soup.vue'
 
 export default {
   components: {
     Header,
     Footer,
-    Stars
+    Contact,
+    Stars,
+    Soup
   },
   data: function() {
     return {
-      night: true
+      night: true,
+      soup: false
     }
   },
   beforeMount: function() {
     var now = new Date();
     var time = now.getHours();
-    if (time > 6 && time < 18) {
+    if (time > 6 && time < 22) {
       this.night = false;
     }
   }
@@ -43,23 +51,38 @@ export default {
 
 .site-nav {
   position: fixed;
-  top: 8rem;
+  top: 7rem;
   left: 2rem;
-  max-width: 120px;
+  max-width: 8rem;
+  padding-right: 1rem;
+
   a {
     display: block;
     position: relative;
-    color: $color-white;
+    color: #24e666;
     text-decoration: none;
 
-    &:hover, &.router-link-exact-active {
-      color: $color-green;
+    &:hover {
+      color: #fff6e8;
     }
-    &.router-link-exact-active:before {
-      content: "↝ ";
-      position: absolute;
-      left: -1.24rem;
+    &.router-link-exact-active {
+      color: #12684b;
+
+      &:before {
+        content: "↝ ";
+        position: absolute;
+        left: -1.24rem;
+      }
     }
+  }
+}
+
+.soup-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  &:hover {
+    cursor: pointer;
   }
 }
 </style>

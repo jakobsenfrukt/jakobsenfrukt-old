@@ -2,16 +2,18 @@
   <div class="about">
     <main>
       <section>
-        <div class="suphead">Kort fortalt</div>
-        <p class="lead">Jakobsen Frukt &amp; Grønt er et hyggelig, lite designstudio i Oslo. Vårt hovedfokus er på digital design, men vi lager også trykksaker, logoer og alt imellom!</p>
+        <div class="suphead">Om JF&G</div>
+        <p>JF&amp;G spesialiserer seg på å lage nettsider for små og mellomstore bedrifter, men gjør også trykksaker, visuell identitet, illustrasjon, og andre kreative oppdrag. Vi er opptatt av å se helheten på tvers av plattformer.</p>
+        <p>JF&amp;G leverer fullstendige nettsider, og gjør vanligvis all frontendutvikling selv. Å jobbe direkte med kode som et håndverk er en viktig del av designprosessen. Du finner kodeprosjekter på <a href="https://github.com/jakobsenfrukt">GitHub-kontoen vår</a>.</p>
+        <p>JF&amp;G er et enkvinnes designstudio som ble startet og drives av poteten <a href="https://elisejakob.no">Elise</a>, men samarbeider med en rekke andre flinke folk i <a href="https://bransjen.no">Bransjen</a>, <a href="https://jonasbraathen.no">Braathens Nettveveri</a>, etc.</p>
       </section>
-
       <section>
-        <div class="suphead">Langt fortalt</div>
-        <p>JF&amp;G er et enkvinnes designstudio som ble startet og drives av poteten <a href="https://elisejakob.no">Elise</a>. Hun jobbet tidligere i digitalbyrået <a href="https://netlife.com">Netlife</a>, men høsten 2018 bestemte hun seg for å satse fullt og helt på å drive eget studio.</p>
-        <p>JF&amp;G spesialiserer seg på å lage nettsider for små og mellomstore bedrifter, men gjør også trykksaker, visuell identitet, illustrasjon, og andre kreative oppdrag. Vi ser helheten på tvers av plattformer.</p>
-        <p>JF&amp;G leverer fullstendige nettsider, og gjør all frontendutvikling selv. Å jobbe direkte med kode som et håndverk er en viktig del av designprosessen. Du finner kodeprosjekter på <a href="https://github.com/jakobsenfrukt">GitHub-kontoen vår</a>.</p>
-        <p>JF&amp;G samarbeider med en rekke andre flinke folk i <a href="https://bransjen.no">Bransjen</a>, <a href="https://jonasbraathen.no">Braathens Nettveveri</a>, etc. Vi jobber ofte sammen i team på større prosjekter.</p>
+        <div class="suphead">Om denne siden</div>
+        <p>Denne nettsiden er bygget med Javascript-rammeverket <a href="https://elisejakob.no">Vue</a>. Den bruker fontene ITC Clearface Bold og Roboto Mono Regular. Nettsiden er kontinuerlig under utvikling, for på internett trenger ingenting å sies helt ferdig.</p>
+      </section>
+      <section>
+        <div class="suphead">Om Elise</div>
+        <p>Poteten Elise jobbet tidligere i digitalbyrået <a href="https://netlife.com">Netlife</a>, der hun jobbet med kunder som Telenor, Kreftforeningen, Skogbrand, Fredskorpset, og DiBK. Høsten 2018 bestemte hun seg for å satse fullt og helt på egen praksis, og JF&amp;G tok form. Elise har også undervist i webdesign på KHiO, sittet i juryen i Gulltaggen, og vunnet pris i Visuelt.</p>
       </section>
     </main>
   </div>
@@ -27,14 +29,9 @@ export default {
 <style scoped lang="scss">
 section {
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 1.68rem;
 }
 .suphead {
-  font-family: 'cooper-black-std', sans-serif;
-  font-style: italic;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  margin: 0 0 1rem;
+  color: #fab800;
 }
 </style>

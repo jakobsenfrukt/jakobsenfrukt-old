@@ -5,11 +5,6 @@
 <script>
 export default {
   name: 'Stars',
-  data: function() {
-    return {
-      exampleContent: 'This is TEXT'
-    }
-  },
   methods: {
     resizeCanvas: function() {
       var sky = document.getElementById("sky");
@@ -25,11 +20,11 @@ export default {
           yMax = event.clientY + 120,
           x = Math.random() * (xMax - xMin) + xMin,
           y = Math.random() * (yMax - yMin) + yMin,
-          r = Math.random() * (1 - 0.02) + 0.02,
-          c = Math.random() * (255 - 200) + 200;
+          radius = Math.random() * (1 - 0.02) + 0.02,
+          alpha = Math.random() * (1 - 0.02) + 0.2;
       ctx.beginPath();
-      ctx.arc(x, y, r, 0, 2*Math.PI, false);
-      ctx.fillStyle = 'rgb(' + c + ', ' + c + ', ' + c + ')';
+      ctx.arc(x, y, radius, 0, 2*Math.PI, false);
+      ctx.fillStyle = 'rgba(255, 246, 232, ' + alpha + ')';
       ctx.fill();
     }
   },

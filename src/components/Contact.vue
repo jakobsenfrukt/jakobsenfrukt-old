@@ -1,14 +1,15 @@
 <template>
   <div class="contact">
     <ul>
+      <li>&nbsp;</li>
       <li>
-        <a href="mailto:hei@elisejakob.no?subject=🍅" target="_blank">mail@jakobsenfrukt.no</a>
+        <a href="mailto:hei@elisejakob.no?subject=🍅" target="_blank">E-post</a>
       </li>
       <li>
-        <a href="https://instagram.com/jakobsenfrukt">Instagram</a>
+        <a href="https://instagram.com/jakobsenfrukt" target="_blank">Instagram</a>
       </li>
       <li>
-        <a href="https://facebook.com/jakobsenfrukt">Facebook</a>
+        <a href="https://facebook.com/jakobsenfrukt" target="_blank">Facebook</a>
       </li>
     </ul>
   </div>
@@ -24,6 +25,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.contact {
+  width: 100%;
+
+  a {
+    color: #fed246;
+  }
+}
 ul {
   list-style: none;
   margin: 0;

@@ -21,20 +21,15 @@ export default {
 
 <style scoped lang="scss">
 .site-header {
-  padding: 0.6rem 0;
+  padding: 0;
 }
 
 .header-text {
-  letter-spacing: 0.1em;
   position: fixed;
-  top: 1rem;
+  top: 1.6rem;
   right: 0.6rem;
   display: block;
-  transform: rotate(12deg);
-	font-size: 0.6rem;
-	text-shadow: -1px -1px black, -1px 1px black, 1px -1px black,
-		1px 1px black, 2px 2px black,
-		3px 3px black, 4px 4px 8px black;
-  text-decoration: none;
+  transform: rotate(24deg);
+  color: #12684b;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <footer class="site-footer">
     <h1><a href="/">ヤーコブセン</a></h1>
+    <p class="cookies">Vi har ingen cookies. Her er det kun frukt &amp; grønt!</p>
   </footer>
 </template>
 
@@ -15,7 +16,8 @@ export default {
 
 <style scoped lang="scss">
 .site-footer {
-  padding: 0.6rem 0;
+  padding: 0.6rem 0 1rem 4rem;
+  margin: 0 auto;
 }
 h1 {
   text-align: center;
@@ -26,13 +28,19 @@ h1 {
   letter-spacing: 0.18em;
 
   position: fixed;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 1rem;
+  left: 1rem;
 
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
 a {
   text-decoration: none;
+}
+.cookies {
+  font-family: 'roboto mono', monospace;
+  font-size: 0.6rem;
+  font-style: italic;
+  margin: 1rem 0 0;
 }
 </style>

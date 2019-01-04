@@ -3,31 +3,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   &:focus {
-    outline-color: $color-white;
+    outline-color: $color-text-night;
   }
 }
 
 html {
-	font-size: calc(14px + 6 * ((100vw - 480px) / 1200));
+	font-size: calc(16px + 6 * ((100vw - 480px) / 1900));
 	height: 100%;
 }
 
 body {
 	margin: 0;
-  padding: 0 2rem;
-  color: $color-white;
-  background: rgb(0, 0, 0);
-  background-image: radial-gradient(rgb(12, 6, 24), rgb(0, 0, 0));
-  
-  font-family: sans-serif;
-  font-weight: 300;
-	letter-spacing: 0.06em;
+  padding: 0 0 0 8rem;
+  color: #fff6e8;
+  background: #181818;
+
+  font-family: 'itc clearface', sans-serif;
+  letter-spacing: 0.03em;
 	line-height: 1.42;
 }
 
 main {
-  max-width: 36rem;
-  margin: 6rem auto 24rem;
+  margin: 7rem 0 8rem 4rem;
 }
 
 section {
@@ -35,27 +32,29 @@ section {
 }
 
 h1, p {
-  margin: 0 0 2rem;
+  margin: 0 0 1.24rem;
 }
 
 p {
   line-height: 1.6;
-  max-width: 36rem;
+  max-width: 30rem;
   position: relative;
 }
 
-.lead:first-letter {
-  font-size: 2.8em;
+.drop:first-letter {
+  font-family: georgia, serif;
+  font-size: 3.2em;
   float: left; 
   margin: 0;
-  line-height: 1;
+  margin-top: 0.6rem;
+  line-height: 0.6;
 }
 
 .lead {
-  font-family: 'karmina', georgia, serif;
-  font-size: 1.8em;
+  font-size: 1.46rem;
   line-height: 1.36;
   margin-bottom: 3.24rem;
+  max-width: 36rem;
 }
 
 p img {
@@ -66,7 +65,7 @@ p img {
 }
 
 a {
-  color: $color-white;
+  color: inherit;
   text-decoration: none;
   transition: all 0.13s ease-in-out;
   font-weight: 400;
@@ -85,16 +84,18 @@ button {
   font-family: inherit;
   font-size: inherit;
   letter-spacing: inherit;
-  color: $color-white;
-  background: transparent;
-  border: 1px solid $color-white;
-  border-radius: 3px;
+  border: none;
   transition: all 0.13s ease-in-out;
-  padding: 0.6em 1em 0.7em;
+  padding: 0;
+  margin: 0 0.6em 1em 0;
+
+  background: transparent;
+  color: #24e666;
+  border-bottom: 0.03em solid #24e666;
 
   &:hover {
-    color: $color-green;
-    border-color: $color-green;
+    color: #fff6e8;
+    border-color: #fff6e8;
     cursor: pointer;
   }
 }
