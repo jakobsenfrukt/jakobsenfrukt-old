@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <Header />
-    <div class="site-nav">
-      <router-link to="/">Forside</router-link>
-      <router-link to="/about">Info</router-link>
+    <nav class="main-nav">
+      <ul class="site-nav">
+        <li><router-link to="/">Forside</router-link></li>
+        <li><router-link to="/about">Info</router-link></li>
+      </ul>
       <Contact />
-    </div>
+    </nav>
     <router-view/>
     <Footer />
     <Stars v-if="night" />
@@ -47,16 +49,25 @@ export default {
 <style lang="scss">
 @import 'css/main.scss';
 
-.site-nav {
+.main-nav {
   position: fixed;
   top: 7rem;
   left: 2rem;
   max-width: 8rem;
   padding-right: 1rem;
 
-  a {
-    display: block;
+  @media (max-width: 700px) {
     position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .site-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
     color: #24e666;
     text-decoration: none;
 
@@ -65,6 +76,10 @@ export default {
     }
     &.router-link-exact-active {
       color: #12684b;
+
+      &:focus {
+        border-color: #12684b;
+      }
 
       &:before {
         content: "↝ ";

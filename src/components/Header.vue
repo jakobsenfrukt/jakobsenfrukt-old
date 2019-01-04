@@ -28,9 +28,10 @@ export default {
 
 .header-text {
   position: fixed;
-  top: 1.4rem;
+  top: 0.6rem;
   right: 0.6rem;
   display: block;
+  transform-origin: 0 50%;
   transform: rotate(24deg);
   color: #12684b;
 }

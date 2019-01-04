@@ -3,7 +3,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   &:focus {
-    outline-color: $color-text-night;
+    outline: none;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.1rem;
+    border-bottom: 1px solid #24e666;
   }
 }
 
@@ -74,12 +77,12 @@ a {
   transition: all 0.13s ease-in-out;
   font-weight: 400;
   &:hover {
-    color: $color-green;
+    color: #fff6e8;
   }
 }
 
 p a {
-  text-decoration: underline;
+  color: #24e666;
 }
 
 button {
@@ -91,15 +94,13 @@ button {
   border: none;
   transition: all 0.13s ease-in-out;
   padding: 0;
-  margin: 0 0.6em 1em 0;
+  margin: 0 0 0.3rem;
 
   background: transparent;
   color: #24e666;
-  border-bottom: 0.03em solid #24e666;
 
   &:hover {
     color: #fff6e8;
-    border-color: #fff6e8;
     cursor: pointer;
   }
 }
