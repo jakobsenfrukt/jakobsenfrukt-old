@@ -8,12 +8,12 @@
         <p>JF&amp;G er et enkvinnes designstudio som ble startet og drives av poteten <a href="https://elisejakob.no">Elise</a>, men samarbeider med en rekke andre flinke folk i <a href="https://bransjen.no">Bransjen</a>, <a href="https://jonasbraathen.no">Braathens Nettveveri</a>, etc.</p>
       </section>
       <section>
-        <div class="suphead">Om denne siden</div>
-        <p>Denne nettsiden er bygget med Javascript-rammeverket <a href="https://vuejs.org/">Vue</a>. Den bruker fontene <a href="https://www.myfonts.com/fonts/itc/clearface/bold/">ITC Clearface Bold</a> og <a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono Regular</a>. Nettsiden er kontinuerlig under utvikling, for på internett trenger ingenting å sies helt ferdig.</p>
-      </section>
-      <section>
         <div class="suphead">Om Elise</div>
         <p>Poteten Elise jobbet tidligere i digitalbyrået <a href="https://netlife.com">Netlife</a>, der hun jobbet med kunder som Telenor, Kreftforeningen, Skogbrand, og DiBK. Høsten 2018 bestemte hun seg for å satse fullt og helt på egen praksis, og JF&amp;G tok form. Elise har også undervist i webdesign på <a href="http://khio.no/">KHiO</a>, sittet i juryen i <a href="https://www.gulltaggen.no/">Gulltaggen</a>, og vunnet pris i <a href="https://www.grafill.no/visuelt/vinnere/2015/digital-design/studentarbeid/">Visuelt</a>.</p>
+      </section>
+      <section>
+        <div class="suphead">Om denne siden</div>
+        <p>Denne nettsiden er bygget med Javascript-rammeverket <a href="https://vuejs.org/">Vue</a>. Den bruker fontene <a href="https://www.myfonts.com/fonts/itc/clearface/bold/">ITC Clearface Bold</a> og <a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono Regular</a>. Nettsiden er kontinuerlig under utvikling, for på internett trenger ingenting å sies helt ferdig.</p>
       </section>
     </main>
   </div>

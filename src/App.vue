@@ -39,7 +39,7 @@ export default {
   beforeMount: function() {
     var now = new Date();
     var time = now.getHours();
-    if (time > 6 && time < 22) {
+    if (time > 6 && time < 18) {
       this.night = false;
     }
   }

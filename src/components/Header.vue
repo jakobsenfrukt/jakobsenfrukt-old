@@ -1,12 +1,12 @@
 <template>
   <header class="site-header">
-    <Logo />
+    <Leaf />
     <div class="header-text">{{ tagline[Math.floor(Math.random() * tagline.length)] }}</div>
   </header>
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+import Leaf from '@/components/Leaf.vue'
 
 export default {
   name: 'Header',
@@ -16,7 +16,7 @@ export default {
     }
   },
   components: {
-    Logo
+    Leaf
   }
 }
 </script>
