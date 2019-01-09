@@ -1,8 +1,10 @@
 <template>
   <footer class="site-footer">
     <h1 @click="toTop()">ヤーコブセン</h1>
-    <p class="themes"><span class="toggle-time" @click="toggleTime()">&#9790; / &#9737;</span></p>
-    <p class="cookies">Vi har ingen cookies. Her er det kun frukt &amp; grønt!</p>
+    <section>
+      <p class="themes"><span class="toggle-time" @click="toggleTime()">&#9790; / &#9737;</span></p>
+      <p class="cookies">Vi har ingen cookies. Her er det kun frukt &amp; grønt!</p>
+    </section>
   </footer>
 </template>
 
@@ -28,6 +30,10 @@ export default {
 .site-footer {
   padding: 1rem 0;
   margin: 0 0 0 12rem;
+
+  section {
+    margin-bottom: 0;
+  }
 }
 h1 {
   margin: 1rem 0;
@@ -38,6 +44,9 @@ h1 {
 
   writing-mode: vertical-rl;
   text-orientation: upright;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
 }
 .toggle-time {
   &:hover {
