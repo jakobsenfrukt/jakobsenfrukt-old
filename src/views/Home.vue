@@ -3,7 +3,6 @@
     <main>
       <section class="intro">
         <p class="lead"><span class="name">Jakobsen Frukt &amp; Grønt</span> er et hyggelig, lite designstudio i Oslo, som spesialiserer seg på digital design.</p>
-        <Dialogue />
       </section>
       <Projects heading="I det siste har vi jobbet med:" />
     </main>
@@ -24,7 +23,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .name {
-    color: #24e666;
-  }
+@import '../css/variables.scss';
+.name {
+  color: $color-green;
+}
+.day .name {
+  color: $color-black;
+}
 </style>

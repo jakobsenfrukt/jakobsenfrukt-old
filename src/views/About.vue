@@ -46,6 +46,7 @@ section {
 .day .suphead {
   color: inherit;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.084em;
+  margin: 2.4rem 0 0.68rem;
 }
 </style>

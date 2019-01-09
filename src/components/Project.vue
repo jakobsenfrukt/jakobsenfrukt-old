@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .project {
   margin: 0 1rem 1rem 0;
-  width: 13em;
+  height: 16rem;
   display: inline-block;
   vertical-align: top;
 
@@ -28,7 +28,7 @@ export default {
   }
 
   img {
-    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }

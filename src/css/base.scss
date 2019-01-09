@@ -6,7 +6,7 @@
     outline: none;
     padding-bottom: 0.1rem;
     margin-bottom: 0.1rem;
-    border-bottom: 1px solid #fed246;
+    border-bottom: 1px solid $color-link-day;
   }
   border-radius: 2px;
 }
@@ -31,7 +31,7 @@ body {
     background: $color-background-day;
   }
 
-  transition: color 0.24s ease-in-out, background 0.24s ease-in-out;
+  transition: color 0.6s ease-in-out, background 0.6s ease-in-out;
 
   @media (max-width: 700px) {
     padding: 0;
@@ -110,7 +110,7 @@ p a {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.1s linear;
+  transition: opacity 0.24s ease-in-out;
 }
 
 .fade-enter, .fade-leave-to {
