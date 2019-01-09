@@ -1,5 +1,5 @@
 <template>
-  <div id="dialogue">
+  <div id="dialogue" class="dialogue">
     <button @click="write(story.chapter1, 13)">Hvem er "vi"?</button>
     <button @click="write(story.chapter2, 60)">Blablabla</button>
   </div>
@@ -40,5 +40,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .dialogue {
+    font-size: 1.46rem;
+  }
+  button {
+    display: block;
+    margin-bottom: 0.6em;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    border: none;
+    transition: all 0.13s ease-in-out;
+    padding: 0;
+    margin: 0 0 0.3rem 1em;
 
+    background: transparent;
+    color: #24e666;
+
+    position: relative;
+
+    &:before {
+      content: "~ ";
+      position: absolute;
+      left: -1em;
+    }
+
+    &:hover {
+      color: #fff6e8;
+      cursor: pointer;
+
+      &:before {
+        content: "↝ ";
+        top: -0.2em;
+      }
+    }
+  }
 </style>

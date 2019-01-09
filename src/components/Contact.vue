@@ -29,7 +29,7 @@ export default {
   width: 100%;
 
   a {
-    color: #fed246;
+    color: #fe2436;
   }
 }
 ul {

@@ -1,7 +1,7 @@
 <template>
   <div class="soup">
     <div class="video" v-if="soup">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YCjsPyIvdsM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rc43o6q-TqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="soup-button" @click="soup = !soup">🥦</div>
   </div>

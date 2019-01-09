@@ -9,24 +9,33 @@
 </template>
 
 <style lang="scss" scoped>
+@import '../css/variables.scss';
+svg {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 1.666rem;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 36% 36%;
+}
+.fill {
+  fill: $color-text-night;
+  transition: fill 0.24s ease-in-out;
+}
+a:hover {
   svg {
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    width: 1.666rem;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: 36% 36%;
+    transform: rotate(-24deg);
   }
   .fill {
-    fill: #24e666;
-    transition: fill 0.24s ease-in-out;
+    fill: $color-green;
   }
-  a:hover {
-    svg {
-      transform: rotate(-24deg);
-    }
-    .fill {
-      fill: #fff6e8;
-    }
+}
+.day .fill {
+  fill: $color-text-day;
+}
+.day a:hover {
+  .fill {
+    fill: $color-red;
   }
+}
 </style>

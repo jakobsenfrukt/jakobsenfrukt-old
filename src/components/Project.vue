@@ -16,20 +16,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .project {
-    margin: 0 1rem 3rem 0;
-    width: 20em;
-    display: inline-block;
-    vertical-align: top;
+.project {
+  margin: 0 1rem 1rem 0;
+  width: 13em;
+  display: inline-block;
+  vertical-align: top;
 
-    p {
-      font-family: 'roboto mono', monospace;
-      font-size: 0.7rem;
-    }
-
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
+  p {
+    font-family: 'roboto mono', monospace;
+    font-size: 0.7rem;
   }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
 </style>

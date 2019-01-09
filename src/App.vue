@@ -4,11 +4,13 @@
     <nav class="main-nav">
       <ul class="site-nav">
         <li><router-link to="/">Forside</router-link></li>
+        <li><a href="#">Prosjekter</a></li>
+        <li><a href="#">Skriverier</a></li>
         <li><router-link to="/about">Info</router-link></li>
       </ul>
       <Contact />
     </nav>
-    <router-view/>
+    <transition name="fade"><router-view/></transition>
     <Footer />
     <Stars v-if="night" />
     <Soup />
@@ -39,8 +41,9 @@ export default {
   beforeMount: function() {
     var now = new Date();
     var time = now.getHours();
-    if (time > 6 && time < 18) {
+    if (time > 6 && time < 23) {
       this.night = false;
+      document.body.classList.add('day');
     }
   }
 }
@@ -51,15 +54,10 @@ export default {
 
 .main-nav {
   position: fixed;
-  top: 7rem;
+  top: 8rem;
   left: 2rem;
-  max-width: 8rem;
-  padding-right: 1rem;
-
-  @media (max-width: 700px) {
-    position: relative;
-    padding-bottom: 2rem;
-  }
+  max-width: 10rem;
+  z-index: 100;
 
   .site-nav {
     list-style: none;
@@ -68,18 +66,14 @@ export default {
   }
 
   a {
-    color: #24e666;
+    color: #fed246;
     text-decoration: none;
 
     &:hover {
       color: #fff6e8;
     }
     &.router-link-exact-active {
-      color: #12684b;
-
-      &:focus {
-        border-color: #12684b;
-      }
+      color: #fab800;
 
       &:before {
         content: "↝ ";
@@ -87,6 +81,17 @@ export default {
         left: -1.24rem;
       }
     }
+  }
+}
+.day .main-nav a {
+  color: $color-link-day;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text-day;
+  }
+  &.router-link-exact-active {
+    color: $color-link-day;
   }
 }
 </style>
