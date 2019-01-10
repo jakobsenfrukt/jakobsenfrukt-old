@@ -11,13 +11,11 @@
 
 <script>
 import Projects from '@/views/Projects.vue'
-import Dialogue from '@/components/play/Dialogue.vue'
 
 export default {
   name: 'home',
   components: {
-    Projects,
-    Dialogue
+    Projects
   }
 }
 </script>
