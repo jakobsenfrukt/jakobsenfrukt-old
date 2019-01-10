@@ -1,8 +1,10 @@
 <template>
-  <div id="dialogue" class="dialogue">
-    <button @click="write(story.chapter1, 13)">Hvem er "vi"?</button>
-    <button @click="write(story.chapter2, 60)">Blablabla</button>
-  </div>
+  <section id="dialogue" class="dialogue">
+    <p>Kult at du ville stikke innom, forresten! Hvorfor kom du hit i dag?</p>
+    <button @click="write(story.chapter1, 13)">Var bare nysgjerrig</button>
+    <button @click="write(story.chapter2, 13)">Ser etter en designer</button>
+    <button @click="write(story.chapter3, 13)">Trodde dette var en dagligvareforretning</button>
+  </section>
 </template>
 
 <script>
@@ -12,11 +14,15 @@ export default {
     return {
       story: {
         chapter1: {
-          text: '"Vi" er egentlig bare poteten <a href="https://elisejakob.no">Elise</a>. Hun jobbet tidligere i digitalbyrået <a href="https://netlife.com">Netlife</a>, men høsten 2018 bestemte hun seg for å satse fullt og helt på å drive eget studio.',
-          button: "click me"
+          text: 'Noe spesielt du er nysgjerrig på, som du vil jeg skal vise deg?',
+          button: "Livet"
         },
         chapter2: {
-          text: "this is chapter 2",
+          text: "Kanskje jeg kan hjelpe deg? Hva trenger du en designer til?",
+          button: "En nettside"
+        },
+        chapter3: {
+          text: "Høhø :)",
           button: "click me too"
         }
       }
@@ -24,10 +30,13 @@ export default {
   },
   methods: {
     write: function(chapter, speed) {
+      var dialogue = document.getElementById('dialogue');
+      var chapterParagraph = document.createElement('p');
+      dialogue.appendChild(chapterParagraph);
       var letters = chapter.text.split('');
       var i = 0;
       var typing = setInterval(function() {
-        document.getElementById('dialogue').innerHTML += letters[i];
+        chapterParagraph.innerHTML += letters[i];
         i++;
 
         if (i === letters.length) {
@@ -42,13 +51,14 @@ export default {
 <style lang="scss" scoped>
 @import '../../css/variables.scss';
 .dialogue {
+  padding-top: 3rem;
   font-size: 1.46rem;
 }
 button {
   display: block;
   margin-bottom: 0.6em;
-  font-family: inherit;
-  font-size: inherit;
+  font-family: $monospace;
+  font-size: 1rem;
   letter-spacing: inherit;
   border: none;
   transition: all 0.13s ease-in-out;

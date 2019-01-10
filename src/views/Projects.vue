@@ -66,7 +66,7 @@ export default {
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 0.8rem;
-      transform: skew(-13deg);
+      font-style: italic;
     }
   }
 </style>
