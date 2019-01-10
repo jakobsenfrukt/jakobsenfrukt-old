@@ -4,7 +4,7 @@
       <section class="intro">
         <p class="lead"><span class="name">Jakobsen Frukt &amp; Grønt</span> er et hyggelig, lite designstudio i Oslo, som spesialiserer seg på digital design.</p>
       </section>
-      <Projects heading="I det siste har vi jobbet med:" />
+      <Projects heading="Dette har skjedd i det siste:" />
       <Dialogue />
     </main>
   </div>

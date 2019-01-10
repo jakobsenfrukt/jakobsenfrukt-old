@@ -11,7 +11,7 @@
         description="Ruters digitale bærekraftstrategi"
       />
       <Project
-        image="https://thewellredmage.files.wordpress.com/2016/12/my-neighbor-totoro-images-8eca62fb-1f66-421f-8936-16b4fc64193-sm1.jpg?w=780&h=674&crop=1"
+        image="assets/images/julieaida1.png"
         description="Nettside for illustratør Julie Aida"
       />
       <Project
