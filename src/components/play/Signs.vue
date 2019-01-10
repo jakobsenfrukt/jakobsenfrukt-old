@@ -6,8 +6,6 @@
 </template>
 
 <script>
-import Leaf from '@/components/Leaf.vue'
-
 export default {
   name: 'Signs',
   data: function() {

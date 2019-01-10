@@ -18,18 +18,18 @@ export default {
 <style lang="scss" scoped>
 .project {
   margin: 0 1rem 1rem 0;
-  height: 16rem;
+  height: 18rem;
   display: inline-block;
   vertical-align: top;
 
   p {
     font-family: 'roboto mono', monospace;
     font-size: 0.7rem;
+    text-align: center;
   }
 
   img {
-    height: 100%;
-    object-fit: cover;
+    height: 16rem;
   }
 }
 </style>

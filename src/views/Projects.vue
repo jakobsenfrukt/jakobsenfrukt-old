@@ -11,7 +11,7 @@
         description="Ruters digitale bærekraftstrategi"
       />
       <Project
-        image="assets/images/julieaida1.png"
+        image="/static/julieaida1.png"
         description="Nettside for illustratør Julie Aida"
       />
       <Project
@@ -49,16 +49,18 @@ export default {
   .projects {
     background: transparent;
     position: relative;
-    height: 18rem;
-    overflow-x: visible;
+    height: 22rem;
+    overflow-y: hidden;
+    margin-left: -12rem;
+
     div {
-      height: 20rem;
+      height: 24rem;
       display: flex;
       overflow-x: scroll;
       padding: 0 1rem;
       position: absolute;
       top: 2.6rem;
-      left: -12rem;
+      left: 0;
       right: 0;
     }
     h2 {
@@ -67,6 +69,7 @@ export default {
       letter-spacing: 0.12em;
       font-size: 0.8rem;
       font-style: italic;
+      margin-left: 12rem;
     }
   }
 </style>

@@ -51,7 +51,6 @@ export default {
 <style lang="scss" scoped>
 @import '../../css/variables.scss';
 .dialogue {
-  padding-top: 3rem;
   font-size: 1.46rem;
 }
 button {

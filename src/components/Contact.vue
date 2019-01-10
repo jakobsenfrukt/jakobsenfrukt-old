@@ -27,10 +27,6 @@ export default {
 <style scoped lang="scss">
 .contact {
   width: 100%;
-
-  a {
-    color: #fe2436;
-  }
 }
 ul {
   list-style: none;
