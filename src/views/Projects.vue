@@ -55,11 +55,18 @@ export default {
       height: 20rem;
       display: flex;
       overflow-x: scroll;
-      padding: 0 4rem 0 13rem;
+      padding: 0 1rem;
       position: absolute;
       top: 2.6rem;
       left: -12rem;
       right: 0;
+    }
+    h2 {
+      font-family: $monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      transform: skew(-13deg);
     }
   }
 </style>

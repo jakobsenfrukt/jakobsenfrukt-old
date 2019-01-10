@@ -45,8 +45,11 @@ section {
 }
 .day .suphead {
   color: inherit;
+  font-family: $monospace;
   text-transform: uppercase;
-  letter-spacing: 0.084em;
-  margin: 2.4rem 0 0.68rem;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  transform: skew(-13deg);
+  margin: 3.6rem 0 1.2rem;
 }
 </style>

@@ -26,8 +26,8 @@ export default {
 }
 .soup-button {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   &:hover {
     cursor: pointer;
   }
