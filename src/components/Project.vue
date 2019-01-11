@@ -22,6 +22,10 @@ export default {
   display: inline-block;
   vertical-align: top;
 
+  &:last-child {
+    padding-right: 2rem;
+  }
+
   p {
     font-family: 'roboto mono', monospace;
     font-size: 0.7rem;

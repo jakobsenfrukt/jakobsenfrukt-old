@@ -57,7 +57,7 @@ export default {
       height: 24rem;
       display: flex;
       overflow-x: scroll;
-      padding: 0 1rem;
+      padding: 0 0 0 12rem;
       position: absolute;
       top: 2.6rem;
       left: 0;

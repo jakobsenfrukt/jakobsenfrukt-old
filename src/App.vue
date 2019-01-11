@@ -41,7 +41,7 @@ export default {
   beforeMount: function() {
     var now = new Date();
     var time = now.getHours();
-    if (time > 6 && time < 23) {
+    if (time > 6 && time < 18) {
       this.night = false;
       document.body.classList.add('day');
     }
@@ -51,6 +51,9 @@ export default {
 
 <style lang="scss">
 @import 'css/main.scss';
+.day {
+  @import 'css/variables-day.scss';
+}
 
 .main-nav {
   position: fixed;
