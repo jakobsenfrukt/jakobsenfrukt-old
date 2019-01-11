@@ -1,5 +1,5 @@
 html {
-	font-size: calc(16px + 6 * ((100vw - 480px) / 1900));
+	font-size: calc(16px + 6 * ((100vw - 320px) / 1900));
   height: 100%;
 }
 
@@ -23,7 +23,6 @@ body {
       margin-bottom: 0.1rem;
       border-bottom: 1px solid $color-link;
     }
-    border-radius: 2px;
   }
 
   &.day {
@@ -31,8 +30,6 @@ body {
     background: $color-background-day;
 
     * {
-      -webkit-font-smoothing: none;
-      -moz-osx-font-smoothing: none;
       &:focus {
         border-color: $color-link-day;
       }
@@ -49,6 +46,10 @@ body {
 
 main {
   margin: 8rem 0 0 12rem;
+
+  @media (max-width: $sm) {
+    margin: 0;
+  }
 }
 
 section {

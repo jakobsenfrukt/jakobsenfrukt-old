@@ -1,7 +1,6 @@
 <template>
   <div class="contact">
     <ul>
-      <li>&nbsp;</li>
       <li>
         <a href="mailto:hei@elisejakob.no?subject=🍅" target="_blank">E-post</a>
       </li>
@@ -25,9 +24,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.contact {
-  width: 100%;
-}
 ul {
   list-style: none;
   margin: 0;

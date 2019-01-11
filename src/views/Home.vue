@@ -25,6 +25,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '../css/variables.scss';
+.intro {
+  @media (max-width: $sm) {
+    margin-top: 3.6rem;
+  }
+}
 .name {
   color: $color-green;
 }

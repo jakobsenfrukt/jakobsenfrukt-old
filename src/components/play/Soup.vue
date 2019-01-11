@@ -19,6 +19,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../../css/variables.scss';
+.soup {
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
 .video iframe {
   position: fixed;
   bottom: 0;

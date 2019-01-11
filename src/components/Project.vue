@@ -29,7 +29,7 @@ export default {
   p {
     font-family: 'roboto mono', monospace;
     font-size: 0.7rem;
-    text-align: center;
+    padding: 0 1rem;
   }
 
   img {

@@ -59,6 +59,7 @@ button {
   font-family: $monospace;
   font-size: 1rem;
   letter-spacing: inherit;
+  text-align: left;
   border: none;
   transition: all 0.13s ease-in-out;
   padding: 0;
@@ -86,6 +87,6 @@ button {
   }
 }
 .day button {
-  color: $color-red;
+  color: $color-link-day;
 }
 </style>

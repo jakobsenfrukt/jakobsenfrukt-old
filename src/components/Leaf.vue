@@ -17,6 +17,11 @@ svg {
   width: 1.666rem;
   transition: transform 0.3s ease-in-out;
   transform-origin: 36% 36%;
+
+  @media (max-width: $sm) {
+    top: 1rem;
+    left: 1rem;
+  }
 }
 .fill {
   fill: $color-text;

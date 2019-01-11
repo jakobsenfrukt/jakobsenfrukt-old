@@ -2,12 +2,14 @@
   <div id="app">
     <Header />
     <nav class="main-nav">
-      <ul class="site-nav">
-        <li><router-link to="/">Forside</router-link></li>
-        <li><a href="#">Prosjekter</a></li>
-        <li><a href="#">Skriverier</a></li>
-        <li><router-link to="/about">Info</router-link></li>
-      </ul>
+      <div>
+        <ul class="site-nav">
+          <li><router-link to="/">Forside</router-link></li>
+          <li><a href="#">Prosjekter</a></li>
+          <li><a href="#">Skriverier</a></li>
+          <li><router-link to="/about">Info</router-link></li>
+        </ul>
+      </div>
       <Contact />
     </nav>
     <transition name="fade"><router-view/></transition>
@@ -59,9 +61,23 @@ export default {
   max-width: 10rem;
   z-index: 100;
 
+  @media (max-width: $sm) {
+    position: static;
+    max-width: none;
+    width: 100%;
+    padding: 1rem 1rem 1rem 6rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      flex: 1;
+    }
+  }
+
   .site-nav {
     list-style: none;
-    margin: 0;
+    margin: 0 0 1rem;
     padding: 0;
   }
 

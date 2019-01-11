@@ -70,5 +70,17 @@ export default {
       font-size: 0.8rem;
       margin-left: 12rem;
     }
+
+    @media (max-width: $sm) {
+      margin-left: 0;
+
+      h2 {
+        margin-left: 0;
+      }
+
+      div {
+        padding: 0 0 0 1rem;
+      }
+    }
   }
 </style>
