@@ -8,7 +8,7 @@
     </section>
     <section>
       <span class="suphead">Om Elise</span>
-      <p>Poteten Elise er utdannet fra <a href="http://khio.no/">KHiO</a> med en master i grafisk design og illustrasjon. Hun var tidligere ansatt i digitalbyrået <a href="https://netlife.com">Netlife</a>, der hun jobbet med kunder som Telenor, Kreftforeningen, Skogbrand, og DiBK. Høsten 2018 bestemte hun seg for å satse fullt og helt på egen praksis, og JF&amp;G tok form.</p>
+      <p>Poteten Elise er utdannet fra <a href="http://khio.no/">KHiO</a> med en master i grafisk design og illustrasjon. Hun var tidligere ansatt i digitalbyrået <a href="https://netlife.com">Netlife</a>, der hun jobbet med kunder som Telenor, UiO, Kreftforeningen, og DiBK. Høsten 2018 bestemte hun seg for å satse fullt og helt på egen praksis, og JF&amp;G tok form.</p>
       <p>Elise har også undervist i webdesign på <a href="http://khio.no/">KHiO</a>, sittet i juryen i <a href="https://www.gulltaggen.no/">Gulltaggen</a>, og vunnet pris i <a href="https://www.grafill.no/visuelt/vinnere/2015/digital-design/studentarbeid/">Visuelt</a>. Elise har skrevet denne teksten selv i tredjeperson, og {{ elise[Math.floor(Math.random() * elise.length)] }}.</p>
     </section>
     <section>
@@ -45,7 +45,6 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8rem;
-  font-style: italic;
   margin: 3.6rem 0 1.2rem;
 }
 </style>

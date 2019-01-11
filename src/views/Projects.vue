@@ -68,7 +68,6 @@ export default {
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 0.8rem;
-      font-style: italic;
       margin-left: 12rem;
     }
   }
