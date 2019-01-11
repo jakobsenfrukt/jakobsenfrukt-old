@@ -51,9 +51,6 @@ export default {
 
 <style lang="scss">
 @import 'css/main.scss';
-.day {
-  @import 'css/variables-day.scss';
-}
 
 .main-nav {
   position: fixed;
@@ -69,14 +66,14 @@ export default {
   }
 
   a {
-    color: #fed246;
+    color: $color-link;
     text-decoration: none;
 
     &:hover {
-      color: #fff6e8;
+      color: $color-text;
     }
     &.router-link-exact-active {
-      color: #fab800;
+      color: $color-text;
 
       &:before {
         content: "↝ ";

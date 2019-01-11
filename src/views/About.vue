@@ -41,15 +41,11 @@ section {
 }
 .suphead {
   display: block;
-  color: $color-green;
   font-family: $monospace;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8rem;
   font-style: italic;
   margin: 3.6rem 0 1.2rem;
-}
-.day .suphead {
-  color: inherit;
 }
 </style>

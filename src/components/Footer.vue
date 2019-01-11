@@ -62,10 +62,10 @@ h1 {
   font-family: $monospace;
   font-size: 0.6rem;
   font-style: italic;
-  color: $color-purple;
+  color: $color-subtext;
   margin: 0;
 }
 .day .cookies {
-  color: $color-yellow-dark;
+  color: $color-subtext;
 }
 </style>

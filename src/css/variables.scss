@@ -1,4 +1,6 @@
 
+$serif: 'itc clearface', serif;
+$monospace: 'roboto mono', monospace;
 
 $color-green: #24e666;
 $color-green-dark: #12684b;
@@ -11,18 +13,14 @@ $color-red-dark: #b20418;
 $color-white: #fff6e8;
 $color-black: #181818;
 
-.day {
-  $color-white: pink;
-}
+$color-background: $color-black;
+$color-text: $color-white;
+$color-subtext: $color-purple;
+$color-link: $color-yellow;
+$color-hover: $color-green;
 
-
-$color-text-night: $color-white;
-$color-background-night: $color-black;
-$color-link-night: $color-yellow;
-
-$color-text-day: $color-black;
 $color-background-day: $color-white;
+$color-text-day: $color-black;
+$color-subtext-day: $color-purple;
 $color-link-day: $color-red;
-
-$serif: 'itc clearface', serif;
-$monospace: 'roboto mono', monospace;
+$color-hover-day: $color-red;

@@ -19,7 +19,7 @@ svg {
   transform-origin: 36% 36%;
 }
 .fill {
-  fill: $color-text-night;
+  fill: $color-text;
   transition: fill 0.24s ease-in-out;
 }
 a:hover {
@@ -27,7 +27,7 @@ a:hover {
     transform: rotate(-24deg);
   }
   .fill {
-    fill: $color-green;
+    fill: $color-hover;
   }
 }
 .day .fill {
@@ -35,7 +35,7 @@ a:hover {
 }
 .day a:hover {
   .fill {
-    fill: $color-red;
+    fill: $color-hover-day;
   }
 }
 </style>
