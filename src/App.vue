@@ -5,8 +5,8 @@
       <div>
         <ul class="site-nav">
           <li><router-link to="/">Forside</router-link></li>
-          <li><a href="#">Prosjekter</a></li>
-          <li><a href="#">Skriverier</a></li>
+          <li><a href="/projects">Prosjekter</a></li>
+          <!--<li><a href="#">Skriverier</a></li>-->
           <li><router-link to="/about">Info</router-link></li>
         </ul>
       </div>

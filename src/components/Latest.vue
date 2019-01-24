@@ -45,42 +45,66 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../css/variables.scss';
-  .projects {
-    background: transparent;
-    position: relative;
-    height: 22rem;
-    overflow-y: hidden;
-    margin-left: -12rem;
+@import '@/css/variables.scss';
+.projects {
+  background: transparent;
+  position: relative;
+  height: 22rem;
+  overflow-y: hidden;
+  margin-left: -12rem;
+  margin-right: -3rem;
+
+  div {
+    height: 24rem;
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 0 0 12rem;
+    position: absolute;
+    top: 2.6rem;
+    left: 0;
+    right: 0;
+  }
+  
+  h2 {
+    font-family: $monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    margin-left: 12rem;
+  }
+
+  .project {
+    margin: 0 1rem 1rem 0;
+    height: 18rem;
+    display: inline-block;
+    vertical-align: top;
+
+    &:last-child {
+      padding-right: 2rem;
+    }
+
+    /deep/ img {
+      height: 16rem;
+    }
+  }
+
+  @media (max-width: $sm) {
+    margin-left: 0;
+    margin-right: 0;
+
+    h2 {
+      margin-left: 0;
+    }
 
     div {
-      height: 24rem;
-      display: flex;
-      overflow-x: scroll;
-      padding: 0 0 0 12rem;
-      position: absolute;
-      top: 2.6rem;
-      left: 0;
-      right: 0;
-    }
-    h2 {
-      font-family: $monospace;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 0.8rem;
-      margin-left: 12rem;
+      padding: 0 0 0 1rem;
     }
 
-    @media (max-width: $sm) {
-      margin-left: 0;
-
-      h2 {
-        margin-left: 0;
-      }
-
-      div {
-        padding: 0 0 0 1rem;
+    .project {
+      &:last-child {
+        padding-right: 1rem;
       }
     }
   }
+}
 </style>

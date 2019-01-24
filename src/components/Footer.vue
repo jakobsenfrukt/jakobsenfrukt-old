@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../css/variables.scss';
+@import '@/css/variables.scss';
 .site-footer {
   padding: 12rem 0 2rem 13rem;
   position: relative;
@@ -36,6 +36,10 @@ export default {
   @media (max-width: $sm) {
     padding:  3rem 1rem 1rem;
     text-align: center;
+  }
+
+  p {
+    max-width: none;
   }
 }
 h1 {
@@ -75,7 +79,6 @@ h1 {
 .cookies {
   font-family: $monospace;
   font-size: 0.8rem;
-  font-style: italic;
   color: $color-subtext;
   margin: 0;
 }

@@ -21,6 +21,7 @@ svg {
   @media (max-width: $sm) {
     top: 1rem;
     left: 1rem;
+    position: absolute;
   }
 }
 .fill {

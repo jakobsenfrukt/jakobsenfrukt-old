@@ -22,9 +22,19 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
+      path: '/projects',
+      name: 'projects',
+      component: () => import('./views/projects/All.vue')
+    },
+    {
       path: '*',
       name: 'notfound',
       component: () => import('./views/NotFound.vue')
+    },
+    {
+      path: '/test',
+      name: 'dialogue',
+      component: () => import('./components/play/test.vue')
     }
   ],
   scrollBehavior () {
