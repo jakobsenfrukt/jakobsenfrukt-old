@@ -23,12 +23,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/css/variables.scss';
 .project {
   font-family: 'roboto mono', monospace;
   font-size: 0.8rem;
 
+  img {
+    min-width: 18rem;
+  }
+
   p {
+    max-width: 18rem;
     padding: 0.3rem 1rem;
+    @media (max-width: $sm) {
+      padding: 0.3rem 0;
+    }
   }
 }
 </style>

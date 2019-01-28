@@ -49,10 +49,6 @@ export default {
       /deep/ img {
         max-width: 100%;
       }
-
-      /deep/ p {
-        max-width: 16.8rem;
-      }
     }
 
     @media (max-width: $sm) {

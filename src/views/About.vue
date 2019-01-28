@@ -9,7 +9,7 @@
     <section>
       <span class="suphead">Om Elise</span>
       <p>Poteten Elise vokste opp i Gartnerveien i Sarpsborg, men flyttet til Oslo i 2011 for å ta en master i grafisk design og illustrasjon på <a href="http://khio.no/">KHiO</a>.</p>
-      <p>Hun var tidligere ansatt i digitalbyrået <a href="https://netlife.com">Netlife</a>, der hun jobbet med kunder som Telenor, UiO og Kreftforeningen. Høsten 2018 bestemte hun seg for å satse fullt og helt på egen praksis, og JF&amp;G tok form.</p>
+      <p>Hun har tidligere vært ansatt i digitalbyrået <a href="https://netlife.com">Netlife</a>, der hun jobbet med kunder som Telenor, Kreftforeningen og UiO. Høsten 2018 bestemte hun seg for å satse fullt og helt på egen praksis, og JF&amp;G tok form.</p>
       <p>Elise har også undervist i webdesign på <a href="http://khio.no/">KHiO</a>, sittet i juryen i <a href="https://www.gulltaggen.no/">Gulltaggen</a>, og vunnet pris i <a href="https://www.grafill.no/visuelt/vinnere/2015/digital-design/studentarbeid/">Visuelt</a>. Elise har skrevet denne teksten selv i tredjeperson, og {{ elise[Math.floor(Math.random() * elise.length)] }}.</p>
     </section>
     <section>

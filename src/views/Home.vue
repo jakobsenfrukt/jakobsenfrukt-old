@@ -26,6 +26,9 @@ export default {
 <style lang="scss" scoped>
 @import '../css/variables.scss';
 .intro {
+  .lead {
+    font-size: 1.8rem;
+  }
   @media (max-width: $sm) {
     margin-top: 3.6rem;
   }
