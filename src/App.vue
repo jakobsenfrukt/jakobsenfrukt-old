@@ -70,6 +70,8 @@ export default {
     display: flex;
     justify-content: space-between;
 
+    font-size: 1.2rem;
+
     div {
       flex: 1;
     }
