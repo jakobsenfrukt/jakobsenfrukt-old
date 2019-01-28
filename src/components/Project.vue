@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .project {
   font-family: 'roboto mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 
   p {
     padding: 0 1rem;

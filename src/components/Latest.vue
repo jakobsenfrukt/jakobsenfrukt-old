@@ -57,12 +57,14 @@ export default {
   div {
     height: 24rem;
     display: flex;
-    overflow-x: scroll;
     padding: 0 0 0 12rem;
     position: absolute;
     top: 2.6rem;
     left: 0;
     right: 0;
+
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   
   h2 {
