@@ -1,0 +1,16 @@
+[
+  {
+    "image": "http://cdn.shopify.com/s/files/1/0157/3938/products/antonio-escandell-oranges-crate-label_1_grande.jpeg?v=1526439514",
+    "description": "Nettside for Kit Wan Studios 2, dette er den lange beskrivelsen!",
+    "short": "Nettside for Kit Wan Studios 2",
+    "id": "kitwan2",
+    "link": "#kitwan2"
+  },
+  {
+    "image": "http://cdn.shopify.com/s/files/1/0157/3938/products/antonio-escandell-oranges-crate-label_1_grande.jpeg?v=1526439514",
+    "description": "Nettside for Kit Wan Studios, dette er den lange beskrivelsen!",
+    "short": "Nettside for Kit Wan Studios",
+    "id": "kitwan",
+    "link": "#kitwan"
+  }
+]

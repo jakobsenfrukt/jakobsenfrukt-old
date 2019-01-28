@@ -1,52 +1,41 @@
 <template>
-  <section class="projects">
+  <section class="latest">
     <h2>{{ heading }}</h2>
     <div>
-      <Project
-        image="https://upload.wikimedia.org/wikipedia/commons/c/c8/Nicolas_Fouch%C3%A9_001.jpg"
-        description="Nettside for Bransjen" 
-      />
-      <Project
-        image="https://data.whicdn.com/images/272629578/original.gif"
-        description="Ruters digitale bærekraftstrategi"
-      />
-      <Project
-        image="/static/julieaida1.png"
-        description="Nettside for illustratør Julie Aida"
-      />
-      <Project
-        image="https://upload.wikimedia.org/wikipedia/commons/c/c8/Nicolas_Fouch%C3%A9_001.jpg"
-        description="Nettside for Bransjen" 
-      />
-      <Project
-        image="https://data.whicdn.com/images/272629578/original.gif"
-        description="Ruters digitale bærekraftstrategi"
-      />
-      <Project
-        image="https://thewellredmage.files.wordpress.com/2016/12/my-neighbor-totoro-images-8eca62fb-1f66-421f-8936-16b4fc64193-sm1.jpg?w=780&h=674&crop=1"
-        description="Nettside for illustratør Julie Aida"
+      <Project 
+        v-for="project in projects.slice(0,6)" 
+        :key="project.slug"
+        :image="project.image"
+        :short="project.short"
+        :link="project.link"
       />
     </div>
   </section>
 </template>
 
 <script>
+import projects from '@/data/projects.json'
 import Project from '@/components/Project.vue'
 
 export default {
-  name: 'projects',
+  name: 'latest',
   components: {
     Project
   },
   props: {
     heading: String
+  },
+  data: function() {
+    return {
+      projects
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/css/variables.scss';
-.projects {
+.latest {
   background: transparent;
   position: relative;
   height: 22rem;

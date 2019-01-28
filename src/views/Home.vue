@@ -2,7 +2,7 @@
   <div class="home">
     <main>
       <section class="intro">
-        <p class="lead"><span class="name">Jakobsen Frukt &amp; Grønt</span> er et hyggelig, lite designstudio i Oslo, som spesialiserer seg på digital design, og lager nettsider for små og mellomstore bedrifter.</p>
+        <p class="lead"><span class="name">Jakobsen Frukt &amp; Grønt</span> er et hyggelig, lite designstudio i Oslo, som spesialiserer seg på digital design, og lager glade ting på internett.</p>
       </section>
       <Latest heading="Dette har skjedd i det siste:" />
       <Dialogue />

@@ -5,7 +5,7 @@
       <div>
         <ul class="site-nav">
           <li><router-link to="/">Forside</router-link></li>
-          <li><a href="/projects">Prosjekter</a></li>
+          <li><router-link to="/projects">Prosjekter</router-link></li>
           <!--<li><a href="#">Skriverier</a></li>-->
           <li><router-link to="/about">Info</router-link></li>
         </ul>
@@ -70,7 +70,7 @@ export default {
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.2rem;
+    font-size: 1.24rem;
 
     div {
       flex: 1;
