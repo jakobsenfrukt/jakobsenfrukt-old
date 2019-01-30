@@ -45,7 +45,7 @@ section {
   font-family: $monospace;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 0.8rem;
+  font-size: $font-sm;
   margin: 3.6rem 0 1.2rem;
 }
 </style>

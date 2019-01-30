@@ -5,12 +5,14 @@
         v-for="project in projects" 
         :key="project.id"
         :image="project.image"
+        :title="project.title"
         :description="project.description"
+        :link="project.link"
         :id="project.id"
       />
-      <section>
+      <!--<section>
         <p>JF&amp;G har også jobbet med </p>
-      </section>
+      </section>-->
     </main>
   </div>
 </template>
@@ -44,16 +46,22 @@ export default {
     .project {
       display: inline-block;
       vertical-align: middle;
-      margin: 0 2rem 3rem 0;
+      padding: 1rem 2rem 2rem 0;
+      max-width: 800px;
+
+      &:first-child {
+        padding-top: 0;
+      }
 
       /deep/ img {
         max-width: 100%;
+        min-width: 24rem;
       }
     }
 
     @media (max-width: $sm) {
       .project {
-        margin: 0 1rem 1rem;
+        padding: 0 1rem 1rem;
       }
     }
   }

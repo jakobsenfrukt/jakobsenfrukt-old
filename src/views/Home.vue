@@ -5,20 +5,17 @@
         <p class="lead"><span class="name">Jakobsen Frukt &amp; Grønt</span> er et hyggelig, lite designstudio i Oslo, som spesialiserer seg på digital design, og lager glade ting på internett.</p>
       </section>
       <Latest heading="Dette har skjedd i det siste:" />
-      <Dialogue />
     </main>
   </div>
 </template>
 
 <script>
 import Latest from '@/components/Latest.vue'
-import Dialogue from '@/components/play/Dialogue.vue'
 
 export default {
   name: 'home',
   components: {
-    Latest,
-    Dialogue
+    Latest
   }
 }
 </script>

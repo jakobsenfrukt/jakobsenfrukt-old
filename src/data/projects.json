@@ -1,16 +1,38 @@
 [
   {
-    "image": "http://cdn.shopify.com/s/files/1/0157/3938/products/antonio-escandell-oranges-crate-label_1_grande.jpeg?v=1526439514",
-    "description": "Nettside for Kit Wan Studios 2, dette er den lange beskrivelsen!",
-    "short": "Nettside for Kit Wan Studios 2",
-    "id": "kitwan2",
-    "link": "#kitwan2"
+    "image": "/static/julieaida1.png",
+    "title": "Nettside for Julie Aida",
+    "description": "Illustratør og kunstner Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Kunsten hennes er et opprør mot samfunnets forkjærlighet for det perfekte. På nettsiden hennes oppmuntrer vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp!",
+    "short": "Nettside for Julie Aida",
+    "link": "https://julieaida.com",
+    "id": "julieaida",
+    "anchor": "#julieaida"
   },
   {
-    "image": "http://cdn.shopify.com/s/files/1/0157/3938/products/antonio-escandell-oranges-crate-label_1_grande.jpeg?v=1526439514",
-    "description": "Nettside for Kit Wan Studios, dette er den lange beskrivelsen!",
+    "image": "/static/kitwan1.png",
+    "title": "Nettside for Kit Wan Studios",
+    "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018. Andre kolleksjon, og andre versjon av nettsiden, er på vei!",
     "short": "Nettside for Kit Wan Studios",
+    "link": "https://kitwanstudios.com",
     "id": "kitwan",
-    "link": "#kitwan"
+    "anchor": "#kitwan"
+  },
+  {
+    "image": "https://grafill02.imgix.net/https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Fgrafill-files%2Fimages%2Fvisuelt%2F2015%2Fdigital-design%2Fstudentarbeid%2F1831_3.8_05.png%3Fmtime%3D20170712124507?auto=compress%2Cformat&fit=clip&fm=jpg&ixlib=php-1.1.0&q=80&w=1800&s=bd67647768f13ed17f97940eeb07b5e2",
+    "title": "Spill: Procrastination",
+    "description": "",
+    "short": "Spill: Procrastination",
+    "link": "http://procrastination.elisejakob.com/",
+    "id": "procrastination",
+    "anchor": "#procrastination"
+  },
+  {
+    "image": "/static/designavgang1.png",
+    "title": "Designavgang 2015",
+    "description": "",
+    "short": "Designavgang 2015",
+    "link": "http://2015.designavgang.no/",
+    "id": "designavgang",
+    "anchor": "#designavgang"
   }
 ]

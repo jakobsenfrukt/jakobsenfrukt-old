@@ -64,7 +64,7 @@ h1 {
   position: absolute;
   left: 2rem;
   bottom: 2rem;
-  font-size: 0.8rem;
+  font-size: $font-sm;
   margin: 0;
   @media (max-width: $sm) {
     position: static;
@@ -78,7 +78,7 @@ h1 {
 }
 .cookies {
   font-family: $monospace;
-  font-size: 0.8rem;
+  font-size: $font-sm;
   color: $color-subtext;
   margin: 0;
 }

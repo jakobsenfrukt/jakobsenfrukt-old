@@ -4,10 +4,10 @@
     <div>
       <Project 
         v-for="project in projects.slice(0,6)" 
-        :key="project.slug"
+        :key="project.id"
         :image="project.image"
         :short="project.short"
-        :link="project.link"
+        :anchor="project.anchor"
       />
     </div>
   </section>
@@ -60,7 +60,7 @@ export default {
     font-family: $monospace;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    font-size: 0.8rem;
+    font-size: $font-sm;
     margin-left: 12rem;
   }
 
