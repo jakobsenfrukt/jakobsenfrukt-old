@@ -1,6 +1,6 @@
 [
   {
-    "image": "/static/julieaida1.png",
+    "image": "/static/julieaida-night-hover.png",
     "title": "Nettside for Julie Aida",
     "description": "Illustratør og kunstner Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Kunsten hennes er et opprør mot samfunnets forkjærlighet for det perfekte. På nettsiden hennes oppmuntrer vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp!",
     "short": "Nettside for Julie Aida",
@@ -9,7 +9,7 @@
     "anchor": "#julieaida"
   },
   {
-    "image": "/static/kitwan1.png",
+    "image": "/static/kitwan-night.png",
     "title": "Nettside for Kit Wan Studios",
     "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018. Andre kolleksjon, og andre versjon av nettsiden, er på vei!",
     "short": "Nettside for Kit Wan Studios",
@@ -18,18 +18,18 @@
     "anchor": "#kitwan"
   },
   {
-    "image": "https://grafill02.imgix.net/https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Fgrafill-files%2Fimages%2Fvisuelt%2F2015%2Fdigital-design%2Fstudentarbeid%2F1831_3.8_05.png%3Fmtime%3D20170712124507?auto=compress%2Cformat&fit=clip&fm=jpg&ixlib=php-1.1.0&q=80&w=1800&s=bd67647768f13ed17f97940eeb07b5e2",
+    "image": "/static/procrastination-night.png",
     "title": "Spill: Procrastination",
-    "description": "",
+    "description": "En slags interaktiv illustrasjon av hvordan det oppleves å utsette viktige ting man egentlig burde gjort med én gang!",
     "short": "Spill: Procrastination",
     "link": "http://procrastination.elisejakob.com/",
     "id": "procrastination",
     "anchor": "#procrastination"
   },
   {
-    "image": "/static/designavgang1.png",
+    "image": "/static/designavgang-night.png",
     "title": "Designavgang 2015",
-    "description": "",
+    "description": "Nettside for den årlige avgangsutstillingen til designavdelingen på Kunsthøgskolen i Oslo.",
     "short": "Designavgang 2015",
     "link": "http://2015.designavgang.no/",
     "id": "designavgang",
