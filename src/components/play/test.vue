@@ -1,12 +1,14 @@
 <template>
-  <section id="dialogue" class="dialogue">
-    <div class="path">
-      <p>Kult at du ville stikke innom, forresten! Hvorfor kom du hit i dag?</p>
-      <div v-for="(path, index) in story.path0s" :key="path.id">
-        <button class="input" @click="write(index, path.reply)" :class="path.selected ? 'selected' : ''">{{ path.input }}</button>
+  <main>
+    <section id="dialogue" class="dialogue">
+      <div class="path">
+        <p>Kult at du ville stikke innom, forresten! Hvorfor kom du hit i dag?</p>
+        <div v-for="(path, index) in story.path0s" :key="path.id">
+          <button class="input" @click="write(index, path.reply)" :class="path.selected ? 'selected' : ''">{{ path.input }}</button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
