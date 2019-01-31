@@ -2,7 +2,7 @@
   {
     "image": "/static/julieaida-night-hover.png",
     "title": "Nettside for Julie Aida",
-    "description": "Illustratør og kunstner Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Kunsten hennes er et opprør mot samfunnets forkjærlighet for det perfekte. På nettsiden hennes oppmuntrer vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp!",
+    "description": "Illustratør og kunstner Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Hun omtaler kunsten sin som et opprør mot samfunnets forkjærlighet for det perfekte. På nettsiden hennes oppmuntrer vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp!",
     "short": "Nettside for Julie Aida",
     "link": "https://julieaida.com",
     "id": "julieaida",
@@ -11,20 +11,38 @@
   {
     "image": "/static/kitwan-night.png",
     "title": "Nettside for Kit Wan Studios",
-    "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018. Andre kolleksjon, og andre versjon av nettsiden, er på vei!",
+    "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018. Mon tro om ikke ny nettside kommer snart, nå som andre kolleksjon er på vei?",
     "short": "Nettside for Kit Wan Studios",
     "link": "https://kitwanstudios.com",
     "id": "kitwan",
     "anchor": "#kitwan"
   },
   {
-    "image": "/static/procrastination-night.png",
-    "title": "Spill: Procrastination",
-    "description": "En slags interaktiv illustrasjon av hvordan det oppleves å utsette viktige ting man egentlig burde gjort med én gang!",
-    "short": "Spill: Procrastination",
-    "link": "http://procrastination.elisejakob.com/",
-    "id": "procrastination",
-    "anchor": "#procrastination"
+    "image": "/static/matilda-night.png",
+    "title": "Nettside for Matilda Karlström",
+    "description": "Portfolio for klesdesigner Matilda Karlström, bygget på Craft CMS.",
+    "short": "Nettside for Matilda Karlström",
+    "link": "http://matildakarlstrom.com/",
+    "id": "matilda",
+    "anchor": "#matilda"
+  },
+  {
+    "image": "/static/ida-night.png",
+    "title": "Nettside for Ida Christensen",
+    "description": "Portfolio for grafisk designer Ida Christensen.",
+    "short": "Nettside for Ida Christensen",
+    "link": "http://idachristensen.no/",
+    "id": "ida",
+    "anchor": "#ida"
+  },
+  {
+    "image": "/static/iselin-night.png",
+    "title": "Nettside for Iselin Kleiva",
+    "description": "Portfolio for kunstner Iselin Kleiva, bygget på Wordpress.",
+    "short": "Nettside for Iselin Kleiva",
+    "link": "http://iselinkleiva.com/",
+    "id": "iselin",
+    "anchor": "#iselin"
   },
   {
     "image": "/static/designavgang-night.png",
@@ -34,5 +52,40 @@
     "link": "http://2015.designavgang.no/",
     "id": "designavgang",
     "anchor": "#designavgang"
+  },
+  {
+    "image": "/static/kulturutvalget-night.png",
+    "title": "Nettside for Kulturutvalget",
+    "description": "Kulturutvalget er en forening tilknyttet Det Norske Studentersamfund, som arrangerer foredrag, debatter og samtaler om politikk, litteratur og vitenskap.",
+    "short": "Nettside for Kulturutvalget",
+    "link": "http://kulturutvalget/",
+    "id": "kulturutvalget",
+    "anchor": "#kulturutvalget"
+  },
+  {
+    "image": "/static/tatarius-night-1.png",
+    "title": "Nettside for Tatarius",
+    "description": "RnB-bandet Tatarius viser frem musikken sin gjennom en rolig nettside med NASA-backdrop.",
+    "short": "Nettside for Tatarius",
+    "link": "http://tatarius.com/",
+    "id": "tatarius",
+    "anchor": "#tatarius"
+  },
+  {
+    "image": "/static/livespace-night-hover.png",
+    "title": "Live Space",
+    "description": "Nettside for avdelingen for interiørarkitektur og møbeldesign ved Kunsthøgskolen i Oslo. Her kan studentene selv dele hva de holder på med, i tillegg til de kuraterte nyhetene fra avdelingen. Besøker du nettsiden samtidig som andre, vil du se sporene etter deres musepekere som tegnes i bakgrunnen.",
+    "link": "http://livespace.no/",
+    "id": "livespace",
+    "anchor": "#livespace"
+  },
+  {
+    "image": "/static/procrastination-night.png",
+    "title": "Spill: Procrastination",
+    "description": "En slags interaktiv illustrasjon av hvordan det oppleves å utsette viktige ting man egentlig burde gjort med én gang (noe profesjonelle designere selvfølgelig ikke gjør).",
+    "short": "Spill: Procrastination",
+    "link": "http://procrastination.elisejakob.com/",
+    "id": "procrastination",
+    "anchor": "#procrastination"
   }
 ]
