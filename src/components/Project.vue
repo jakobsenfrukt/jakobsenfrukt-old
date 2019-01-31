@@ -54,9 +54,6 @@ export default {
   .text {
     max-width: 24rem;
     padding: 0.3rem 1rem;
-    @media (max-width: $sm) {
-      padding: 0.3rem 0;
-    }
   }
 }
 </style>
