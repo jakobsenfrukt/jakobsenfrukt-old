@@ -15,7 +15,7 @@
     <transition name="fade"><router-view/></transition>
     <Footer />
     <Stars v-if="night" />
-    <Soup />
+    <Smu />
   </div>
 </template>
 
@@ -25,7 +25,7 @@ import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import Contact from '@/components/Contact.vue'
 import Stars from '@/components/play/Stars.vue'
-import Soup from '@/components/play/Soup.vue'
+import Smu from '@/components/play/Smu.vue'
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
     Footer,
     Contact,
     Stars,
-    Soup
+    Smu
   },
   data: function() {
     return {
