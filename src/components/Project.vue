@@ -32,7 +32,7 @@ export default {
 @import '@/css/variables.scss';
 .project {
   font-family: 'roboto mono', monospace;
-  font-size: 0.68rem;
+  font-size: $font-xs;
 
   h2 {
     font-size: inherit;

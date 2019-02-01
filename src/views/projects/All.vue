@@ -45,13 +45,9 @@ export default {
 
     .project {
       display: inline-block;
-      vertical-align: middle;
-      padding: 1rem 2rem 2rem 0;
+      vertical-align: top;
+      padding: 0 2rem 2rem 0;
       max-width: 800px;
-
-      &:first-child {
-        padding-top: 0;
-      }
 
       /deep/ img {
         max-width: 100%;
@@ -61,7 +57,10 @@ export default {
 
     @media (max-width: $sm) {
       .project {
-        padding: 0 1rem 1rem;
+        padding: 0 0 3rem;
+        &:first-child {
+          padding-top: 3.6rem;
+        }
       }
     }
   }

@@ -2,7 +2,7 @@
   <div class="contact">
     <ul>
       <li>
-        <a href="mailto:hei@elisejakob.no?subject=🍅" target="_blank">E-post</a>
+        <a href="mailto:mail@jakobsenfrukt.no?subject=🍅" target="_blank">E-post</a>
       </li>
       <li>
         <a href="https://instagram.com/jakobsenfrukt" target="_blank">Instagram</a>

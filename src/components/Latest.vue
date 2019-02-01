@@ -10,6 +10,7 @@
         :anchor="project.anchor"
       />
     </div>
+    <router-link to="/projects" class="view-all">Vis alle &rarr;</router-link>
   </section>
 </template>
 
@@ -79,6 +80,24 @@ export default {
     }
   }
 
+  .view-all {
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    display: block;
+    transform-origin: 0 50%;
+    transform: rotate(6deg);
+
+    font-family: 'roboto mono', monospace;
+    text-transform: uppercase;
+    color: #fff6e8;
+    text-shadow: 0 0 1.2em $color-red, 0 0 1em $color-red, 0 0 0.6em $color-red, 0 0 0.4em $color-red;
+    
+    &:hover {
+      text-shadow: 0 0 1.2em $color-green, 0 0 1em $color-green, 0 0 0.6em $color-green, 0 0 0.4em $color-green;
+    }
+  }
+
   @media (max-width: $sm) {
     margin-left: 0;
     margin-right: 0;
@@ -88,13 +107,35 @@ export default {
     }
 
     div {
-      padding: 0 0 0 1rem;
+      padding: 0;
     }
 
     .project {
       &:last-child {
         padding-right: 1rem;
       }
+    }
+
+    .view-all {
+      display: none;
+    }
+  }
+}
+.day {
+  .view-all {
+    background: $color-green;
+    color: $color-black;
+    padding: 0.3em 0.6em;
+    border-radius: 2px;
+    transform: skew(-12deg);
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: 0;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+      text-shadow: none;
+      background: $color-yellow;
     }
   }
 }

@@ -18,6 +18,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     &:focus {
+      outline-color: $color-green;
+    }
+  }
+
+  .main-nav a, p a {
+    &:focus {
       outline: none;
       padding-bottom: 0.1rem;
       margin-bottom: 0.1rem;
@@ -29,7 +35,7 @@ body {
     color: $color-text-day;
     background: $color-background-day;
 
-    * {
+    .main-nav a, p a {
       &:focus {
         border-color: $color-link-day;
       }

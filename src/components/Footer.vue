@@ -1,14 +1,20 @@
 <template>
   <footer class="site-footer">
     <h1 @click="toTop()">ヤーコブセン</h1>
+    <Smu />
     <p class="cookies">Vi har ingen cookies. Her er det kun frukt &amp; grønt!</p>
     <p class="themes"><span class="toggle-time" @click="toggleTime()">&#9790; / &#9737;</span></p>
   </footer>
 </template>
 
 <script>
+import Smu from '@/components/play/Smu.vue'
+
 export default {
   name: 'Footer',
+  components: {
+    Smu
+  },
   props: {
     text: String
   },
@@ -26,7 +32,7 @@ export default {
 <style scoped lang="scss">
 @import '@/css/variables.scss';
 .site-footer {
-  padding: 12rem 0 2rem 13rem;
+  padding: 12rem 3rem 2rem 13rem;
   position: relative;
 
   section {
@@ -34,8 +40,7 @@ export default {
   }
 
   @media (max-width: $sm) {
-    padding:  3rem 1rem 1rem;
-    text-align: center;
+    padding:  3rem 1rem 2rem;
   }
 
   p {
@@ -44,7 +49,7 @@ export default {
 }
 h1 {
   margin: 1rem 0;
-  font-size: 12px;
+  font-size: $font-xs;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.36em;
@@ -57,11 +62,11 @@ h1 {
 
   @media (max-width: $sm) {
     position: static;
-    margin: 1rem auto;
+    cursor: pointer;
   }
 }
 .themes {
-  position: absolute;
+  position: fixed;
   left: 2rem;
   bottom: 2rem;
   font-size: $font-sm;
@@ -79,10 +84,6 @@ h1 {
 .cookies {
   font-family: $monospace;
   font-size: $font-sm;
-  color: $color-subtext;
   margin: 0;
-}
-.day .cookies {
-  color: $color-subtext;
 }
 </style>

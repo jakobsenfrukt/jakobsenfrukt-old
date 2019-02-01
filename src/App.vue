@@ -15,7 +15,6 @@
     <transition name="fade"><router-view/></transition>
     <Footer />
     <Stars v-if="night" />
-    <Smu />
   </div>
 </template>
 
@@ -25,15 +24,13 @@ import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import Contact from '@/components/Contact.vue'
 import Stars from '@/components/play/Stars.vue'
-import Smu from '@/components/play/Smu.vue'
 
 export default {
   components: {
     Header,
     Footer,
     Contact,
-    Stars,
-    Smu
+    Stars
   },
   data: function() {
     return {
@@ -86,6 +83,7 @@ export default {
   a {
     color: $color-link;
     text-decoration: none;
+    position: relative;
 
     &:hover {
       color: $color-text;
@@ -109,7 +107,7 @@ export default {
     color: $color-text-day;
   }
   &.router-link-exact-active {
-    color: $color-link-day;
+    color: $color-text-day;
   }
 }
 </style>
