@@ -38,10 +38,14 @@ export default new Router({
     }
   ],
   scrollBehavior (to) {
-    if (to.hash) {
-      return { selector: to.hash }
-    } else {
-      return { x: 0, y: 0 }
-    }
-  }
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        if (to.hash) {
+          resolve({ selector: to.hash })
+        } else {
+          resolve({ x: 0, y: 0 })
+        }
+      }, 100)
+    })
+  },
 })

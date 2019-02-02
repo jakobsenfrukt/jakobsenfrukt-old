@@ -11,6 +11,7 @@
 <style lang="scss" scoped>
 @import '../css/variables.scss';
 svg {
+  z-index: 666;
   position: fixed;
   top: 2rem;
   left: 2rem;

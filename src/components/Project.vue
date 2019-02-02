@@ -1,6 +1,6 @@
 <template>
   <article class="project" :id="id">
-    <router-link v-if="anchor" :to="`projects${anchor}`">
+    <router-link v-if="anchor" :to="`projects/${anchor}`">
       <img :src="image" class="project-image" alt="Bilde fra prosjekt" />
     </router-link>
     <img v-else :src="image" class="project-image" alt="Bilde fra prosjekt" />
