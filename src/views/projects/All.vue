@@ -46,7 +46,7 @@ export default {
     .project {
       display: inline-block;
       vertical-align: top;
-      padding: 0 2rem 2rem 0;
+      padding: 0 2rem 4.6rem 0;
       max-width: 800px;
 
       /deep/ img {
