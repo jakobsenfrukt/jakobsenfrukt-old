@@ -3,7 +3,7 @@
     <h2>{{ heading }}</h2>
     <div>
       <Project 
-        v-for="project in projects.slice(0,6)" 
+        v-for="project in projects.slice(0,5)" 
         :key="project.id"
         :image="project.image"
         :short="project.short"
