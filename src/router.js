@@ -30,11 +30,6 @@ export default new Router({
       path: '*',
       name: 'notfound',
       component: () => import('./views/NotFound.vue')
-    },
-    {
-      path: '/test',
-      name: 'dialogue',
-      component: () => import('./components/play/test.vue')
     }
   ],
   scrollBehavior (to) {
