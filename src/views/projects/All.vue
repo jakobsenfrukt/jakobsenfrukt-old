@@ -57,7 +57,7 @@ export default {
 
     @media (max-width: $sm) {
       .project {
-        padding: 0 0 3rem;
+        padding: 0 0 6rem;
         &:first-child {
           padding-top: 3.6rem;
         }
