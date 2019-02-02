@@ -10,7 +10,7 @@
         :anchor="project.anchor"
       />
     </div>
-    <router-link to="/projects" class="view-all">Vis alle &rarr;</router-link>
+    <router-link to="/projects" class="view-all">Vis alle</router-link>
   </section>
 </template>
 
