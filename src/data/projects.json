@@ -1,6 +1,6 @@
 [
   {
-    "image": "/static/julieaida-night-hover.png",
+    "image": "/static/images/julieaida-night-hover.png",
     "title": "Portefølje og nettbutikk for Julie Aida",
     "description": "Kunstner og illustratør Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Hun omtaler kunsten sin som et opprør mot samfunnets forkjærlighet for det perfekte. På nettsiden hennes oppmuntrer vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp!",
     "short": "Portefølje og nettbutikk for kunstner og illustratør Julie Aida",
@@ -9,7 +9,7 @@
     "anchor": "#julieaida"
   },
   {
-    "image": "/static/kitwan-night.png",
+    "image": "/static/images/kitwan-night.png",
     "title": "Nettside for Kit Wan Studios",
     "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018. Mon tro om ikke ny nettside kommer snart, nå som andre kolleksjon er på vei?",
     "short": "Nettside for lanseringen av Kit Wan Studios",
@@ -18,7 +18,7 @@
     "anchor": "#kitwan"
   },
   {
-    "image": "/static/matilda-night.png",
+    "image": "/static/images/matilda-night.png",
     "title": "Nettside for Matilda Karlström",
     "description": "Portefølje for klesdesigner Matilda Karlström, bygget på Craft CMS.",
     "short": "Portefølje for klesdesigner Matilda Karlström",
@@ -27,7 +27,7 @@
     "anchor": "#matilda"
   },
   {
-    "image": "/static/ida-night.png",
+    "image": "/static/images/ida-night.png",
     "title": "Nettside for Ida Christensen",
     "description": "Enkel nettside med oversikt over arbeider for grafisk designer Ida Christensen.",
     "short": "Nettside for grafisk designer Ida Christensen",
@@ -36,7 +36,7 @@
     "anchor": "#ida"
   },
   {
-    "image": "/static/iselin-night.png",
+    "image": "/static/images/iselin-night.png",
     "title": "Nettside for Iselin Kleiva",
     "description": "Portefølje for kunstner Iselin Kleiva, bygget på Wordpress.",
     "short": "Portefølje for kunstner Iselin Kleiva",
@@ -45,7 +45,7 @@
     "anchor": "#iselin"
   },
   {
-    "image": "/static/designavgang-night.png",
+    "image": "/static/images/designavgang-night.png",
     "title": "Designavgang 2015",
     "description": "Nettside for den årlige avgangsutstillingen til designavdelingen ved Kunsthøgskolen i Oslo.",
     "short": "Nettside for avgangsutstillingen til designavdelingen ved KHiO",
@@ -54,7 +54,7 @@
     "anchor": "#designavgang"
   },
   {
-    "image": "/static/kulturutvalget-night.png",
+    "image": "/static/images/kulturutvalget-night.png",
     "title": "Nettside for Kulturutvalget",
     "description": "Kulturutvalget er en forening tilknyttet Det Norske Studentersamfund, som arrangerer foredrag, debatter og samtaler om politikk, litteratur og vitenskap.",
     "short": "Nettside for Kulturutvalget",
@@ -63,7 +63,7 @@
     "anchor": "#kulturutvalget"
   },
   {
-    "image": "/static/tatarius-night-1.png",
+    "image": "/static/images/tatarius-night-1.png",
     "title": "Nettside for Tatarius",
     "description": "RnB-bandet Tatarius viser frem musikken sin gjennom en rolig nettside med NASA-backdrop.",
     "short": "Nettside for Tatarius",
@@ -72,7 +72,7 @@
     "anchor": "#tatarius"
   },
   {
-    "image": "/static/livespace-night-hover.png",
+    "image": "/static/images/livespace-night-hover.png",
     "title": "Live Space",
     "description": "Nettside for avdelingen for interiørarkitektur og møbeldesign ved Kunsthøgskolen i Oslo. Her kan studentene selv dele hva de holder på med, i tillegg til de kuraterte nyhetene fra avdelingen. Besøker du nettsiden samtidig som andre, vil du se sporene etter deres musepekere som tegnes i bakgrunnen.",
     "link": "http://livespace.no/",
@@ -80,7 +80,7 @@
     "anchor": "#livespace"
   },
   {
-    "image": "/static/procrastination-night.png",
+    "image": "/static/images/procrastination-night.png",
     "title": "Spill: Procrastination",
     "description": "En slags interaktiv illustrasjon av hvordan det oppleves å utsette viktige ting man egentlig skulle ha gjort (noe profesjonelle designere selvfølgelig ikke gjør).",
     "short": "Spill: Procrastination",
