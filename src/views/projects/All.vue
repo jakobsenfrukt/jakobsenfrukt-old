@@ -1,20 +1,15 @@
 <template>
-  <div class="projects">
-    <main>
-      <Project 
-        v-for="project in projects" 
-        :key="project.id"
-        :image="project.image"
-        :title="project.title"
-        :description="project.description"
-        :link="project.link"
-        :id="project.id"
-      />
-      <!--<section>
-        <p>JF&amp;G har også jobbet med </p>
-      </section>-->
-    </main>
-  </div>
+  <main class="projects">
+    <Project 
+      v-for="project in projects" 
+      :key="project.id"
+      :image="project.image"
+      :title="project.title"
+      :description="project.description"
+      :link="project.link"
+      :id="project.id"
+    />
+  </main>
 </template>
 
 <script>
