@@ -2,11 +2,12 @@
   <section class="latest">
     <h2>{{ heading }}</h2>
     <div>
-      <Project 
-        v-for="project in projects.slice(0,5)" 
+      <ProjectThumb 
+        v-for="project in projects.slice(0,8)" 
         :key="project.id"
-        :image="project.image"
+        :mainImage="project.mainImage"
         :short="project.short"
+        :link="project.link"
         :anchor="project.anchor"
       />
     </div>
@@ -16,12 +17,12 @@
 
 <script>
 import projects from '@/data/projects.json'
-import Project from '@/components/Project.vue'
+import ProjectThumb from '@/components/ProjectThumb.vue'
 
 export default {
   name: 'latest',
   components: {
-    Project
+    ProjectThumb
   },
   props: {
     heading: String
@@ -39,52 +40,23 @@ export default {
 .latest {
   background: transparent;
   position: relative;
-  height: 22rem;
-  overflow-y: hidden;
-  margin-left: -12rem;
-  margin-right: -3rem;
-
-  div {
-    height: 24rem;
-    display: flex;
-    padding: 0 0 0 12rem;
-    position: absolute;
-    top: 2.6rem;
-    left: 0;
-    right: 0;
-
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
+  text-align: center;
   
   h2 {
     font-family: $monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
     font-size: $font-sm;
-    margin-left: 12rem;
   }
 
   .project {
-    margin: 0 1rem 1rem 0;
-    height: 18rem;
+    margin: 1rem;
     display: inline-block;
+    width: 18rem;
     vertical-align: top;
-
-    &:last-child {
-      padding-right: 2rem;
-    }
-
-    /deep/ img {
-      height: 16rem;
-    }
   }
 
   .view-all {
-    position: absolute;
-    right: 2rem;
-    top: 0;
-    display: block;
+    margin-top: 3rem;
+    display: inline-block;
     transform-origin: 0 50%;
     transform: rotate(6deg);
 
@@ -111,9 +83,8 @@ export default {
     }
 
     .project {
-      &:last-child {
-        padding-right: 1rem;
-      }
+      width: 100%;
+      margin: 0 auto 1rem;
     }
 
     .view-all {

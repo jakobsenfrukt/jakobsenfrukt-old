@@ -26,6 +26,11 @@ export default new Router({
       name: 'projects',
       component: () => import('./views/projects/All.vue')
     },
+    /*{
+      path: '/blog',
+      name: 'blog',
+      component: () => import('./views/blog/All.vue')
+    },*/
     {
       path: '*',
       name: 'notfound',

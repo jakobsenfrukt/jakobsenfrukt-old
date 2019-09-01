@@ -25,9 +25,12 @@ export default {
 .intro {
   .lead {
     font-size: 1.8rem;
-  }
-  @media (max-width: $sm) {
-    margin-top: 3.6rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      font-size: 1.3rem;
+    }
   }
 }
 .name {

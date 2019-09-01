@@ -3,7 +3,8 @@
     <Project 
       v-for="project in projects" 
       :key="project.id"
-      :image="project.image"
+      :mainImage="project.mainImage"
+      :images="project.images"
       :title="project.title"
       :description="project.description"
       :link="project.link"
@@ -33,21 +34,16 @@ export default {
 @import '@/css/variables.scss';
   .projects {
     position: relative;
+    margin-top: -6rem;
 
     p {
       font-size: 1.2rem;
     }
 
     .project {
-      display: inline-block;
-      vertical-align: top;
-      padding: 0 2rem 4.6rem 0;
-      max-width: 800px;
-
-      /deep/ img {
-        max-width: 100%;
-        min-width: 24rem;
-      }
+      display: block;
+      padding-top: 6rem;
+      margin: 0 auto 6rem;
     }
 
     @media (max-width: $sm) {

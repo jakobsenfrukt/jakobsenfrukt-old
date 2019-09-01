@@ -13,13 +13,13 @@ $color-purple: #a12e68;
 $color-purple-dark: #6c2448;
 $color-red: #fe2436;
 $color-red-dark: #b20418;
-$color-white: #fffbee;
+$color-white: #fefefe;
 $color-black: #181818;
 
 $color-background: $color-black;
 $color-text: $color-white;
 $color-subtext: $color-purple;
-$color-link: $color-yellow;
+$color-link: $color-green;
 $color-hover: $color-green;
 
 $color-background-day: $color-white;
@@ -27,5 +27,13 @@ $color-text-day: $color-black;
 $color-subtext-day: $color-purple;
 $color-link-day: $color-red;
 $color-hover-day: $color-red;
+
+$color-border: $color-black;
+$color-border-day: $color-black;
+
+$color-browser: #424242;
+$color-browser-day: #242424;
+
+$width-p: 32rem;
 
 $sm: 800px;

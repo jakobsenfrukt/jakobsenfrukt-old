@@ -1,6 +1,10 @@
 <template>
   <main class="about">
     <section>
+      <span class="suphead">Kontakt</span>
+      <p>Lurer du på om vi kan være en bra match? Send en mail til <a href="mailto:mail@jakobsenfrukt.no?subject=🍅" target="_blank">mail@jakobsenfrukt.no</a> eller skriv til @jakobsenfrukt på <a href="https://instagram.com/jakobsenfrukt" target="_blank">Instagram</a> eller <a href="https://facebook.com/jakobsenfrukt" target="_blank">Facebook</a> :)</p>
+    </section>
+    <section>
       <span class="suphead">Om JF&amp;G</span>
       <p>Jakobsen Frukt &amp; Grønt spesialiserer seg på å lage nettsider for små og mellomstore bedrifter, men gjør også trykksaker, visuell identitet, illustrasjon og andre kreative oppdrag.</p>
       <p>JF&amp;G leverer fullstendige nettsider og gjør vanligvis all frontendutvikling selv. Å jobbe direkte med kode som et håndverk er en viktig del av designprosessen. Du finner kodeprosjektene på <a href="https://github.com/jakobsenfrukt">GitHub</a>.</p>
@@ -38,7 +42,7 @@ export default {
 }
 section {
   position: relative;
-  margin-bottom: 1.68rem;
+  margin-bottom: 4.20rem;
 }
 .suphead {
   display: block;
@@ -46,6 +50,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: $font-sm;
-  margin: 3.6rem 0 1.2rem;
+  max-width: 32rem;
+  margin: 0 auto 1.2rem;
 }
 </style>

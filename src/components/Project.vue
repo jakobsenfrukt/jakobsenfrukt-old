@@ -1,14 +1,13 @@
 <template>
   <article class="project" :id="id">
-    <router-link v-if="anchor" :to="`projects/${anchor}`">
-      <img :src="image" class="project-image" alt="Bilde fra prosjekt" />
-    </router-link>
-    <img v-else :src="image" class="project-image" alt="Bilde fra prosjekt" />
     <div class="text">
       <h2 v-if="title">{{ title }}</h2>
       <p v-if="description">{{ description }}</p>
       <p><a v-if="link" :href="`${link}`">Besøk nettsiden</a></p>
       <p v-if="short">{{ short }}</p>
+    </div>
+    <div v-if="images" class="project-gallery">
+      <img v-for="(image, index) in images" :key="`image-${index}`" :src="image" alt="Bilde fra prosjekt" />
     </div>
   </article>
 </template>
@@ -17,7 +16,8 @@
 export default {
   name: 'Project',
   props: {
-    image: String,
+    mainImage: String,
+    images: Array,
     title: String,
     description: String,
     short: String,
@@ -33,16 +33,15 @@ export default {
 .project {
   font-family: 'roboto mono', monospace;
   font-size: $font-xs;
+  width: 100%;
+  margin: 0 auto;
 
   h2 {
-    font-size: inherit;
-    margin: 0;
+    font-family: $serif;
+    font-size: 1.86rem;
+    margin: 0 0 1rem;
     font-weight: bold;
-    line-height: 1.6;
-  }
-
-  p {
-    margin-bottom: 0;
+    line-height: 1.2;
   }
 
   p a {
@@ -52,8 +51,18 @@ export default {
   }
 
   .text {
-    max-width: 24rem;
+    max-width: $width-p;
+    margin: 0 auto;
     padding: 0.3rem 1rem;
+  }
+
+  .project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      width: 50%;
+    }
   }
 }
 </style>

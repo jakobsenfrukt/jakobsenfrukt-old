@@ -1,6 +1,7 @@
 html {
 	font-size: calc(14px + 6 * ((100vw - 320px) / 1200));
   height: 100%;
+  background: $color-black;
 }
 
 body {
@@ -12,6 +13,23 @@ body {
   font-family: 'itc clearface', sans-serif;
   letter-spacing: 0.012em;
   line-height: 1.42;
+
+  border: 0.8rem solid $color-border;
+  &:before, &:after {
+    content: " ";
+    display: block;
+    position: fixed;
+    z-index: 666;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.8rem;
+    background: $color-border;
+  }
+  &:after {
+    top: auto;
+    bottom: 0;
+  }
 
   * {
     box-sizing: border-box;
@@ -35,6 +53,11 @@ body {
     color: $color-text-day;
     background: $color-background-day;
 
+    border-color: $color-border-day;
+    &:before, &:after {
+      background: $color-border-day;
+    }
+
     .main-nav a, p a {
       &:focus {
         border-color: $color-link-day;
@@ -51,10 +74,10 @@ body {
 }
 
 main {
-  margin: 8rem 3rem 0 12rem;
+  padding: 6rem 3rem 3rem;
 
   @media (max-width: $sm) {
-    margin: 0;
+    padding: 8rem 0;
   }
 }
 
@@ -64,8 +87,12 @@ section {
   margin-bottom: 6rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2, p {
-  margin: 0 0 1.24rem;
+  margin: 0 auto 1.24rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,7 +106,7 @@ h2 {
 
 p {
   line-height: 1.6;
-  max-width: 32rem;
+  max-width: $width-p;
   position: relative;
 }
 

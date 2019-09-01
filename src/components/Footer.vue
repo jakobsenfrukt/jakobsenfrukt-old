@@ -1,19 +1,18 @@
 <template>
   <footer class="site-footer">
     <h1 @click="toTop()">ヤーコブセン</h1>
-    <Smu />
-    <p class="cookies">Vi har ingen cookies. Her er det kun frukt &amp; grønt!</p>
+    <Contact />
     <p class="themes"><span class="toggle-time" @click="toggleTime()">&#9790; / &#9737;</span></p>
+    <p class="cookies">Vi har ingen cookies. Her er det kun frukt &amp; grønt!</p>
   </footer>
 </template>
 
 <script>
-import Smu from '@/components/play/Smu.vue'
-
+import Contact from '@/components/Contact.vue'
 export default {
   name: 'Footer',
   components: {
-    Smu
+    Contact
   },
   props: {
     text: String
@@ -32,7 +31,7 @@ export default {
 <style scoped lang="scss">
 @import '@/css/variables.scss';
 .site-footer {
-  padding: 12rem 3rem 2rem 13rem;
+  padding: 6rem 3rem 1rem;
   position: relative;
 
   section {
@@ -40,7 +39,7 @@ export default {
   }
 
   @media (max-width: $sm) {
-    padding:  3rem 1rem 2rem;
+    padding:  3rem 1rem 1rem;
   }
 
   p {
@@ -57,23 +56,25 @@ h1 {
   writing-mode: vertical-rl;
   text-orientation: upright;
   position: fixed;
-  top: 1rem;
-  right: 2rem;
+  top: .8rem;
+  right: 1.8rem;
+
+  cursor: default;
 
   @media (max-width: $sm) {
-    position: static;
-    cursor: pointer;
+    display: none;
   }
 }
 .themes {
   position: fixed;
-  left: 2rem;
-  bottom: 2rem;
+  right: 1.8rem;
+  bottom: 1.666rem;
   font-size: $font-sm;
   margin: 0;
   @media (max-width: $sm) {
     position: static;
-    margin-top: 1rem;
+    margin: 0 auto 3rem;
+    text-align: center;
   }
 }
 .toggle-time {
@@ -83,7 +84,8 @@ h1 {
 }
 .cookies {
   font-family: $monospace;
-  font-size: $font-sm;
+  font-size: $font-xs;
   margin: 0;
+  text-align: center;
 }
 </style>
