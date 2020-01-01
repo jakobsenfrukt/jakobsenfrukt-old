@@ -87,18 +87,6 @@
     "anchor": "#allerconceptstore"
   },
   {
-    "mainImage": "/static/images/orseng-visittkort.jpg",
-    "images": [
-      "/static/images/orseng-visittkort.jpg"
-    ],
-    "title": "Logo for Ørseng Interiørarkitektur",
-    "description": "<a href=\"http://orseng.no/\" target=\"_blank\">Ørseng Interiørarkitektur</a> ble etablert våren 2019. Logoen ble laget i tett samarbeid med kunden. Visittkort av <a href=\"http://www.presse-rommet.no/\" target=\"_blank\">Presserommet</a>.",
-    "short": "Logo for Ørseng Interiørarkitektur",
-    "type": "identity",
-    "id": "orseng",
-    "anchor": "#orseng"
-  },
-  {
     "mainImage": "/static/thumbnails/ruter-small.png",
     "largeImages": [
       "/static/images/ruter-fullwidth.png"
