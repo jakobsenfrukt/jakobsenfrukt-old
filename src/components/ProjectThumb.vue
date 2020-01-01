@@ -1,15 +1,16 @@
 <template>
-  <article class="project" :class="{ website: link, hidden: ishidden }" :id="id">
+  <article class="project" :class="{ website: type === 'website', hidden: ishidden }" :id="id">
     <div class="project-image">
-      <div class="buttons" v-if="link">
+      <div class="buttons" v-if="type === 'website'">
         <div class="close" @click="ishidden = !ishidden"></div>
-        <a class="maximize" :href="link" target="_blank"></a>
+        <a class="maximize" v-if="link" :href="link" target="_blank"></a>
       </div>
-      <router-link :to="`projects/${anchor}`">
-        <img :src="mainImage" alt="Bilde fra prosjekt" />
+      <router-link v-if="anchor" :to="`projects/${anchor}`">
+        <img :src="mainImage" :alt="title" />
       </router-link>
+      <img v-else :src="mainImage" :alt="title" />
     </div>
-    <div class="text">
+    <div v-if="short" class="text">
       <p>{{ short }}</p>
     </div>
   </article>
@@ -21,7 +22,9 @@ export default {
   props: {
     mainImage: String,
     short: String,
+    title: String,
     link: String,
+    type: String,
     anchor: String,
     id: String,
   },
@@ -37,10 +40,11 @@ export default {
 @import '@/css/variables.scss';
 .project {
   font-family: 'roboto mono', monospace;
-  font-size: $font-xs;
+  font-size: $font-sm;
 
   p {
     margin-bottom: 0;
+    line-height: 1.42;
   }
 
   .text {
@@ -59,6 +63,10 @@ export default {
       border-radius: 3px;
       border-top-width: .8rem;
       position: relative;
+
+      a, img {
+        width: 100%;
+      }
 
       .buttons {
         position: absolute;
@@ -85,14 +93,17 @@ export default {
       }
     }
     &.hidden {
-      animation: hide .3s ease-out;
-      animation-fill-mode: forwards;
+      .project-image, .text {
+        animation: hide .3s ease-out;
+        animation-fill-mode: forwards;
+      }
     }
   }
 }
 @keyframes hide {
   from {
     opacity: 1;
+    visibility: visible;
   }
   to {
     opacity: 0;

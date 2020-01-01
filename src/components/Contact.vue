@@ -48,6 +48,7 @@ ul {
   @media (max-width: $sm) {
     position: static;
     text-align: center;
+    line-height: 2.4;
     margin-bottom: 3rem;
   }
 }

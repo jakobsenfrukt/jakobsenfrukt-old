@@ -1,9 +1,9 @@
 <template>
   <div id="app">
+    <Stars v-if="night" />
     <Header />
     <transition name="fade"><router-view/></transition>
     <Footer />
-    <Stars v-if="night" />
   </div>
 </template>
 

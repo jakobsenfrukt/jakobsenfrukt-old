@@ -1,13 +1,124 @@
 [
   {
-    "mainImage": "/static/thumbnails/julieaida-night-hover.png",
+    "mainImage": "/static/thumbnails/balansemerket-thumb.png",
     "images": [
-      "/static/images/julieaida-night-hover.png"
+      "/static/images/balansemerket-index.png",
+      "/static/images/balansemerket-samtale.png"
+    ],
+    "title": "Nettside for Balansemerket",
+    "description": "Høsten 2019 lanserte <a href=\"https://balansekunst.no\" target=\"_blank\">Balansekunst</a> en ny merkeordning mot seksuell trakassering i kulturlivet, med støtte fra Kulturdepartementet. På Balansemerket.no presenteres forslag til forebyggende tiltak tilpasset kulturlivet, og en samling av ressurser man kan ta i bruk på arbeidsplassen for å kartlegge risikofaktorer og etablere grenser. Prosjektet ble utført i samarbeid med illustratør <a href=\"https://sunnivakrogseth.com\" target=\"_blank\">Sunniva Sunde Krogseth</a>.",
+    "short": "Nettside og brosjyre for Balansemerket",
+    "link": "https://balansemerket.no",
+    "type": "website",
+    "id": "balansemerket",
+    "anchor": "#balansemerket"
+  },
+  {
+    "mainImage": "/static/thumbnails/neuf-thumb.png",
+    "images": [
+      "/static/images/neuf-index.png",
+      "/static/images/neuf-utleie.png"
+    ],
+    "title": "Nettside for Chateau Neuf",
+    "description": "Det Norske Studentersamfund holder til på Chateau Neuf og arrangerer en rekke forestillinger, filmvisninger, og kurs, samt quiz, ølsmaking, og så videre. Det er også mulig å være med å arrangere gjennom å engasjere seg i en av foreningene, eller leie lokaler på huset. Nettsiden hadde behov for en oppgradering for å tydeliggjøre de ulike tilbudene. I tillegg gjorde vi en opprydning i den visuelle identiteten. Laget i samarbeid med <a href=\"https://nettveveriet.no\" target=\"_blank\">Braathens Nettveveri</a>.",
+    "short": "Nettside for Chateau Neuf",
+    "link": "https://neuf.no",
+    "type": "website",
+    "id": "neuf",
+    "anchor": "#neuf"
+  },
+  {
+    "mainImage": "/static/thumbnails/mm-thumb.png",
+    "images": [
+      "/static/images/mm-hero.png",
+      "/static/images/mm-about.png",
+      "/static/images/mm-jul.png"
+    ],
+    "title": "Nettside for Marcus & Martinus",
+    "description": "I forbindelse med lanseringen av deres nye EP SOON i 2019 ønsket Marcus & Martinus seg en mer moderne og leken nettside. Vi utviklet et fleksibelt design som kan tilpasses fremtidige utgivelser, og med fargetema som kan endres via publiseringssystemet. Nettsiden er bygget på Craft CMS. Her finnes det også et par easter eggs, lagt til for den ivrige fansens skyld.",
+    "short": "Nettside for Marcus & Martinus",
+    "link": "https://marcusandmartinus.com",
+    "type": "website",
+    "id": "marcusandmartinus",
+    "anchor": "#marcusandmartinus"
+  },
+  {
+    "mainImage": "/static/thumbnails/julieaida-v2.png",
+    "images": [
+      "/static/images/julieaida-v2-index.png",
+      "/static/images/julieaida-v2-project.png"
+    ],
+    "title": "Redesign av nettsiden til Julie Aida",
+    "description": "Det er viktig at en porteføljeside vokser med eieren, og ett år etter første lansering ble nettsiden til Julie Aida voksen. Hun hadde behov for å vise flere og mer varierte prosjekter, både profesjonelle og personlige. Vi beholdt muligheten for besøkende til å tegne på siden, men gjorde den litt mer diskrét. Vi la også til funksjonalitet som gjør at man nå kan tegne på alle sider og bilder, og velge farge på tusjen selv.",
+    "short": "Redesign av nettsiden til Julie Aida",
+    "link": "https://julieaida.com",
+    "type": "website",
+    "id": "julieaida-v2",
+    "anchor": "#julieaida-v2"
+  },
+  {
+    "mainImage": "/static/thumbnails/dorna-index.png",
+    "images": [
+      "/static/images/dorna-index.png",
+      "/static/images/dorna-cv.png",
+      "/static/images/dorna-carpitla.png"
+    ],
+    "title": "Nettside for Dorna Lakayan",
+    "description": "Portefølje for arkitekt og designer Dorna Lakayan, bygget på Craft CMS.",
+    "short": "Nettside for Dorna Lakayan",
+    "link": "https://dorna.no",
+    "type": "website",
+    "id": "dorna",
+    "anchor": "#dorna"
+  },
+  {
+    "mainImage": "/static/thumbnails/acs-thumb.png",
+    "images": [
+      "/static/images/acs-top.png",
+      "/static/images/acs-scrolled.png",
+      "/static/images/acs-prosjekter.png"
+    ],
+    "title": "Nettside for Aller Concept Store",
+    "description": "Nettside for Aller Concept Store, laget i samarbeid med <a href=\"https://hyper.no\" target=\"_blank\">Hyper</a>.",
+    "short": "Nettside for Aller Concept Store",
+    "link": "https://allerconceptstore.com",
+    "type": "website",
+    "id": "allerconceptstore",
+    "anchor": "#allerconceptstore"
+  },
+  {
+    "mainImage": "/static/images/orseng-visittkort.jpg",
+    "images": [
+      "/static/images/orseng-visittkort.jpg"
+    ],
+    "title": "Logo for Ørseng Interiørarkitektur",
+    "description": "<a href=\"http://orseng.no/\" target=\"_blank\">Ørseng Interiørarkitektur</a> ble etablert våren 2019. Logoen ble laget i tett samarbeid med kunden. Visittkort av <a href=\"http://www.presse-rommet.no/\" target=\"_blank\">Presserommet</a>.",
+    "short": "Logo for Ørseng Interiørarkitektur",
+    "type": "identity",
+    "id": "orseng",
+    "anchor": "#orseng"
+  },
+  {
+    "mainImage": "/static/thumbnails/ruter-small.png",
+    "largeImages": [
+      "/static/images/ruter-fullwidth.png"
+    ],
+    "title": "Nettside for Ruter",
+    "description": "Som ansvarlig for kollektivtrafikken i Oslo og Akershus vil Ruter gjøre sitt for å bidra til et mer bærekraftig samfunn. De har utviklet en strategi basert på FNs bærekraftsmål, og JF&amp;G designet nettside basert på Ruters øvrige designsystem! Utviklet av <a href=\"https://kokkos.io/\" target=\"_blank\">Kokkos</a>, i samarbeid med <a href=\"https://www.smfb.com/\" target=\"_blank\">SMFB</a>.",
+    "short": "Nettside for Ruters bærekraftstrategi",
+    "link": "https://barekraft.ruter.no",
+    "type": "website",
+    "id": "ruter",
+    "anchor": "#ruter"
+  },
+  {
+    "mainImage": "/static/thumbnails/julieaida-visuelt-2.png",
+    "images": [
+      "/static/images/julieaida-macbook.png"
     ],
     "title": "Portefølje og nettbutikk for Julie Aida",
-    "description": "Kunstner og illustratør Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Hun omtaler kunsten sin som et opprør mot samfunnets forkjærlighet for det perfekte. På nettsiden hennes oppmuntrer vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp!",
+    "description": "Kunstner og illustratør Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Hun omtaler kunsten sin som et opprør mot samfunnets forkjærlighet for det perfekte. På den første versjonen av nettsiden hennes oppmuntret vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp! Nettsiden fikk diplom i <a href=\"https://www.grafill.no/visuelt/vinnere/2019/digital-design/egenprofil-og-portfolio/nettside-for-julie-aida\" target=\"_blank\">Visuelt 2019</a>.",
     "short": "Portefølje og nettbutikk for kunstner og illustratør Julie Aida",
-    "link": "https://julieaida.com",
     "type": "website",
     "id": "julieaida",
     "anchor": "#julieaida"
@@ -18,7 +129,7 @@
       "/static/images/kitwan-night.png"
     ],
     "title": "Nettside for Kit Wan Studios",
-    "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018. Mon tro om ikke ny nettside kommer snart, nå som andre kolleksjon er på vei?",
+    "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018.",
     "short": "Nettside for lanseringen av Kit Wan Studios",
     "link": "https://kitwanstudios.com",
     "type": "website",

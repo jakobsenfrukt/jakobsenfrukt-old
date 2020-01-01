@@ -2,7 +2,7 @@
   <main class="about">
     <section>
       <span class="suphead">Kontakt</span>
-      <p>Lurer du på om vi kan være en bra match? Send en mail til <a href="mailto:mail@jakobsenfrukt.no?subject=🍅" target="_blank">mail@jakobsenfrukt.no</a> eller skriv til @jakobsenfrukt på <a href="https://instagram.com/jakobsenfrukt" target="_blank">Instagram</a> eller <a href="https://facebook.com/jakobsenfrukt" target="_blank">Facebook</a> :)</p>
+      <p>Har du et prosjekt du vil snakke om? Skriv til <a href="mailto:mail@jakobsenfrukt.no?subject=🍅" target="_blank">mail@jakobsenfrukt.no</a> eller ta kontakt med <a href="https://instagram.com/jakobsenfrukt" target="_blank">@jakobsenfrukt</a> på <a href="https://instagram.com/jakobsenfrukt" target="_blank">Instagram</a> eller <a href="https://facebook.com/jakobsenfrukt" target="_blank">Facebook</a> :)</p>
     </section>
     <section>
       <span class="suphead">Om JF&amp;G</span>

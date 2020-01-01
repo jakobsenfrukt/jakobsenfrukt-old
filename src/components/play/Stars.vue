@@ -43,6 +43,5 @@ export default {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: -24;
 }
 </style>

@@ -4,6 +4,7 @@
       v-for="project in projects" 
       :key="project.id"
       :mainImage="project.mainImage"
+      :largeImages="project.largeImages"
       :images="project.images"
       :title="project.title"
       :description="project.description"
@@ -48,9 +49,9 @@ export default {
 
     @media (max-width: $sm) {
       .project {
-        padding: 0 0 6rem;
+        padding: 0 0 3rem;
         &:first-child {
-          padding-top: 3.6rem;
+          padding-top: 6rem;
         }
       }
     }

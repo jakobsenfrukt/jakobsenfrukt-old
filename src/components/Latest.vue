@@ -3,15 +3,18 @@
     <h2>{{ heading }}</h2>
     <div>
       <ProjectThumb 
-        v-for="project in projects.slice(0,8)" 
+        v-for="(project, index) in projects.slice(0,9)" 
         :key="project.id"
         :mainImage="project.mainImage"
         :short="project.short"
+        :title="project.title"
         :link="project.link"
+        :type="project.type"
         :anchor="project.anchor"
+        :style="{ animationDelay: index/12 + 's' }"
       />
     </div>
-    <router-link to="/projects" class="view-all">Vis alle</router-link>
+    <router-link to="/projects" class="view-all">Se alle</router-link>
   </section>
 </template>
 
@@ -50,8 +53,12 @@ export default {
   .project {
     margin: 1rem;
     display: inline-block;
-    width: 18rem;
     vertical-align: top;
+    width: 18rem;
+    opacity: 0;
+    transform: translateY(-2rem);
+    animation: fade-in .6s ease-in-out;
+    animation-fill-mode: forwards;
   }
 
   .view-all {
@@ -84,7 +91,7 @@ export default {
 
     .project {
       width: 100%;
-      margin: 0 auto 1rem;
+      margin: 0 auto 3rem;
     }
 
     .view-all {
@@ -108,6 +115,16 @@ export default {
       text-shadow: none;
       background: $color-yellow;
     }
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>

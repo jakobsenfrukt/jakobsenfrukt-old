@@ -14,7 +14,7 @@ body {
   letter-spacing: 0.012em;
   line-height: 1.42;
 
-  border: 0.8rem solid $color-border;
+  border: 0.4rem solid $color-border;
   &:before, &:after {
     content: " ";
     display: block;
@@ -23,14 +23,13 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 0.8rem;
+    height: 0.4rem;
     background: $color-border;
   }
   &:after {
     top: auto;
     bottom: 0;
   }
-
   * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -68,13 +67,20 @@ body {
 
   transition: color 0.6s ease-in-out, background 0.6s ease-in-out;
 
-  @media (max-width: 700px) {
+  @media (max-width: $sm) {
     padding: 0;
+    border-color: $color-background;
+    &:after {
+      display: none;
+    }
+    &.day {
+      border-color: $color-background-day;
+    }
   }
 }
 
 main {
-  padding: 6rem 3rem 3rem;
+  padding: 8rem 3rem 3rem;
 
   @media (max-width: $sm) {
     padding: 8rem 0;

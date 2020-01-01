@@ -84,7 +84,7 @@ h1 {
 }
 .cookies {
   font-family: $monospace;
-  font-size: $font-xs;
+  font-size: $font-sm;
   margin: 0;
   text-align: center;
 }

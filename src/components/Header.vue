@@ -46,7 +46,7 @@ h1 {
   margin: 0;
   text-align: center;
   z-index: 9000;
-  font-size: $font-xs;
+  font-size: 8px;
   color: $color-black;
   text-transform: uppercase;
   letter-spacing: 0.24em;
