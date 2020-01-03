@@ -32,6 +32,8 @@ export default {
 <style lang="scss" scoped>
 @import '@/css/variables.scss';
 .blog {
+  @include fadeAnimation;
+
   position: relative;
 
   p {

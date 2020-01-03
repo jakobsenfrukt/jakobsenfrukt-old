@@ -66,15 +66,13 @@ export default {
   }
 
   .project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1600px;
     padding: 1rem;
     margin: 0 auto 1rem;
     img {
-      width: 50%;
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
       padding: 0 .24rem .24rem 0;
       &:nth-child(even) {
         padding: 0 0 .24rem .24rem;
@@ -85,6 +83,7 @@ export default {
       margin-bottom: 3rem;
       img {
         width: 100%;
+        max-width: 1800px;
       }
     }
 

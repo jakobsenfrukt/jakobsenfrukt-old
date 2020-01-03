@@ -51,14 +51,12 @@ export default {
   }
 
   .project {
-    margin: 1rem;
+    margin: 1.5%;
     display: inline-block;
     vertical-align: top;
-    width: 18rem;
-    opacity: 0;
-    transform: translateY(-2rem);
-    animation: fade-in .6s ease-in-out;
-    animation-fill-mode: forwards;
+    width: 30%;
+    max-width: 600px;
+    @include fadeUpAnimation;
   }
 
   .view-all {
@@ -76,7 +74,17 @@ export default {
       text-shadow: 0 0 1.2em $color-green, 0 0 1em $color-green, 0 0 0.6em $color-green, 0 0 0.4em $color-green;
     }
   }
+  @media (max-width: $m) {
+    .project {
+      display: block;
+      width: 100%;
+      margin: 1rem auto 3rem;
 
+      &:nth-child(7), &:nth-child(8), &:nth-child(9) {
+        display: none;
+      }
+    }
+  }
   @media (max-width: $sm) {
     margin-left: 0;
     margin-right: 0;
@@ -115,16 +123,6 @@ export default {
       text-shadow: none;
       background: $color-yellow;
     }
-  }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 </style>

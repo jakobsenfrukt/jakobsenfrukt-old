@@ -2,7 +2,7 @@
   <div id="app">
     <Stars v-if="night" />
     <Header />
-    <transition name="fade"><router-view/></transition>
+    <router-view />
     <Footer />
   </div>
 </template>

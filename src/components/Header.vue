@@ -77,6 +77,10 @@ h1 {
   .logo {
     margin: 0 1.666rem 0 0;
     width: 1.42rem;
+
+    @media (max-width: $sm) {
+      margin-right: 2.8rem;
+    }
   }
 
   .site-nav {
@@ -95,6 +99,10 @@ h1 {
 
     li {
       margin-right: 1.666rem;
+
+      @media (max-width: $sm) {
+        margin-right: 2.8rem;
+      }
     }
   }
 
@@ -106,17 +114,37 @@ h1 {
 
   a {
     color: $color-text;
+    text-shadow: 0 0 0.3em $color-black, 0 0.05em $color-black;
     text-decoration: none;
     position: relative;
     display: block;
     font-size: $font-sm;
+    transition: all .2s linear;
 
     &:hover, &:focus, &.router-link-exact-active {
       color: $color-text;
-      font-weight: bold;
-      border: none;
       padding: 0;
       margin: 0;
+      border: none;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        opacity: 0;
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+        -webkit-transition: opacity .1s,-webkit-transform 1s;
+        transition: opacity .1s,-webkit-transform 1s;
+        transition: transform 1s,opacity .1s;
+        transition: transform 1s,opacity .1s,-webkit-transform 1s;
+        pointer-events: none;
+      }
     }
     &:focus {
       color: $color-link;
@@ -130,6 +158,7 @@ h1 {
   .main-nav a {
     color: $color-text-day;
     text-decoration: none;
+    text-shadow: 0 0 0.3em $color-background-day, 0 0.04em $color-background-day;
 
     &:hover, &.router-link-exact-active {
       color: $color-text-day;

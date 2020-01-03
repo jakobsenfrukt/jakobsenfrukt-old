@@ -6,7 +6,7 @@
     </section>
     <section>
       <span class="suphead">Om JF&amp;G</span>
-      <p>Jakobsen Frukt &amp; Grønt spesialiserer seg på å lage nettsider for små og mellomstore bedrifter, men gjør også trykksaker, visuell identitet, illustrasjon og andre kreative oppdrag.</p>
+      <p>Jakobsen Frukt &amp; Grønt spesialiserer seg på å lage skreddersydde nettsider for små og mellomstore bedrifter, men gjør også trykksaker, visuell identitet, illustrasjon og andre kreative oppdrag.</p>
       <p>JF&amp;G leverer fullstendige nettsider og gjør vanligvis all frontendutvikling selv. Å jobbe direkte med kode som et håndverk er en viktig del av designprosessen. Du finner kodeprosjektene på <a href="https://github.com/jakobsenfrukt">GitHub</a>.</p>
       <p>JF&amp;G er et enkvinnes designstudio som ble startet og drives av <a href="https://elisejakob.no">Elise</a>, men samarbeider med en rekke andre flinke folk i <a href="https://bransjen.no">Bransjen</a>, <a href="https://jonasbraathen.no">Braathens Nettveveri</a>, <a href="https://kokkos.io">Kokkos</a>, etc.</p>
     </section>
@@ -38,6 +38,8 @@ export default {
 <style scoped lang="scss">
 @import '../css/variables.scss';
 .about {
+  @include fadeAnimation;
+  
   font-size: 1.24rem;
 }
 section {

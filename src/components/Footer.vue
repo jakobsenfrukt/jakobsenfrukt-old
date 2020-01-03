@@ -31,7 +31,7 @@ export default {
 <style scoped lang="scss">
 @import '@/css/variables.scss';
 .site-footer {
-  padding: 6rem 3rem 1rem;
+  padding: 6rem 3rem 1.666rem;
   position: relative;
 
   section {

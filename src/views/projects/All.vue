@@ -33,27 +33,29 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/css/variables.scss';
-  .projects {
-    position: relative;
-    margin-top: -6rem;
+.projects {
+  @include fadeAnimation;
 
-    p {
-      font-size: 1.2rem;
-    }
+  position: relative;
+  margin-top: -6rem;
 
+  p {
+    font-size: 1.2rem;
+  }
+
+  .project {
+    display: block;
+    padding-top: 6rem;
+    margin: 0 auto 6rem;
+  }
+
+  @media (max-width: $sm) {
     .project {
-      display: block;
-      padding-top: 6rem;
-      margin: 0 auto 6rem;
-    }
-
-    @media (max-width: $sm) {
-      .project {
-        padding: 0 0 3rem;
-        &:first-child {
-          padding-top: 6rem;
-        }
+      padding: 0 0 3rem;
+      &:first-child {
+        padding-top: 6rem;
       }
     }
   }
+}
 </style>

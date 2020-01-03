@@ -1,5 +1,5 @@
 html {
-	font-size: calc(14px + 6 * ((100vw - 320px) / 1200));
+	font-size: calc(16px + 6 * ((100vw - 320px) / 1200));
   height: 100%;
   background: $color-black;
 }
@@ -9,27 +9,12 @@ body {
   padding: 0;
   color: $color-text;
   background: $color-background;
+  background-attachment: fixed;
 
   font-family: 'itc clearface', sans-serif;
   letter-spacing: 0.012em;
   line-height: 1.42;
 
-  border: 0.4rem solid $color-border;
-  &:before, &:after {
-    content: " ";
-    display: block;
-    position: fixed;
-    z-index: 666;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0.4rem;
-    background: $color-border;
-  }
-  &:after {
-    top: auto;
-    bottom: 0;
-  }
   * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -52,11 +37,6 @@ body {
     color: $color-text-day;
     background: $color-background-day;
 
-    border-color: $color-border-day;
-    &:before, &:after {
-      background: $color-border-day;
-    }
-
     .main-nav a, p a {
       &:focus {
         border-color: $color-link-day;
@@ -68,7 +48,7 @@ body {
   transition: color 0.6s ease-in-out, background 0.6s ease-in-out;
 
   @media (max-width: $sm) {
-    padding: 0;
+    padding: 1rem;
     border-color: $color-background;
     &:after {
       display: none;
@@ -80,7 +60,7 @@ body {
 }
 
 main {
-  padding: 8rem 3rem 3rem;
+  padding: 10rem 3rem 3rem;
 
   @media (max-width: $sm) {
     padding: 8rem 0;
@@ -158,4 +138,9 @@ p a {
   &:hover {
     color: $color-text-day;
   }
+}
+
+.site-header a, .site-footer a {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
