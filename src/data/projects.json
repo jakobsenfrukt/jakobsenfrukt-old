@@ -89,7 +89,7 @@
   {
     "mainImage": "/static/thumbnails/ruter-small.png",
     "largeImages": [
-      "/static/images/ruter-fullwidth.png"
+      "/static/ruter-fullwidth.png"
     ],
     "title": "Nettside for Ruter",
     "description": "Som ansvarlig for kollektivtrafikken i Oslo og Akershus vil Ruter gjøre sitt for å bidra til et mer bærekraftig samfunn. De har utviklet en strategi basert på FNs bærekraftsmål, og JF&amp;G designet nettside basert på Ruters øvrige designsystem! Utviklet av <a href=\"https://kokkos.io/\" target=\"_blank\">Kokkos</a>, i samarbeid med <a href=\"https://www.smfb.com/\" target=\"_blank\">SMFB</a>.",
@@ -100,7 +100,7 @@
     "anchor": "#ruter"
   },
   {
-    "mainImage": "/static/thumbnails/julieaida-visuelt-2.png",
+    "mainImage": "/static/thumbnails/julieaida-visuelt.png",
     "images": [
       "/static/images/julieaida-macbook.png"
     ],
@@ -195,8 +195,7 @@
   {
     "mainImage": "/static/thumbnails/tatarius-night-1.png",
     "images": [
-      "/static/images/tatarius-night-1.png",
-      "/static/images/tatarius-night-2.png"
+      "/static/images/tatarius-night-1.png"
     ],
     "title": "Nettside for Tatarius",
     "description": "RnB-bandet Tatarius viser frem musikken sin gjennom en rolig nettside med NASA-backdrop.",

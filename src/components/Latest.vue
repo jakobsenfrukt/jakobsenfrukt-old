@@ -11,6 +11,7 @@
         :link="project.link"
         :type="project.type"
         :anchor="project.anchor"
+        :id="project.id"
         :style="{ animationDelay: index/12 + 's' }"
       />
     </div>

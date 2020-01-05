@@ -27,6 +27,15 @@ export default {
     return {
       projects
     }
+  },
+  computed: {
+    visibleProjects: function() {
+      if (!this.$route.params.current) {
+        return this.projects
+      } else {
+        return this.projects.filter(project => project.id === this.$route.params.current);
+      }
+    }
   }
 }
 </script>

@@ -5,11 +5,11 @@
       <p v-html="description"></p>
       <p v-if="link"><a :href="`${link}`" target="_blank">Besøk nettsiden</a></p>
     </div>
-    <div v-if="largeImages" class="project-gallery large">
-      <img v-for="(image, index) in largeImages" :key="`image-${index}`" :src="image" :alt="title" />
+    <div v-if="largeImagesComputed" class="project-gallery large">
+      <img v-for="(image, index) in largeImagesComputed" :key="`image-${index}`" :src="image" :alt="title" />
     </div>
-    <div v-if="images" class="project-gallery">
-      <img v-for="(image, index) in images" :key="`image-${index}`" :src="image" :alt="title" />
+    <div v-if="imagesComputed" class="project-gallery">
+      <img v-for="(image, index) in imagesComputed" :key="`image-${index}`" :src="image" :alt="title" />
     </div>
   </article>
 </template>
@@ -27,6 +27,28 @@ export default {
     link: String,
     anchor: String,
     id: String,
+  },
+  data: () => ({ observer: null, intersected: false }),
+  computed: {
+    largeImagesComputed() {
+      return this.intersected ? this.largeImages : '';
+    },
+    imagesComputed() {
+      return this.intersected ? this.images : '';
+    }
+  },
+  mounted() {
+    this.observer = new IntersectionObserver(projects => {
+      const image = projects[0];
+      if (image.isIntersecting) {
+        this.intersected = true;
+      }
+    });
+
+    this.observer.observe(this.$el);
+  },
+  destroyed() {
+    this.observer.disconnect();
   }
 }
 </script>
