@@ -101,7 +101,7 @@ h1 {
       margin-right: 1.666rem;
 
       @media (max-width: $sm) {
-        margin-right: 2.8rem;
+        margin-right: 2.2rem;
       }
     }
   }
