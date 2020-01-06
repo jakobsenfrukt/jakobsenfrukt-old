@@ -28,7 +28,7 @@ export default {
     anchor: String,
     id: String,
   },
-  data: () => ({ observer: null, intersected: false }),
+  data: () => ({ observer: null, intersected: true }),
   computed: {
     largeImagesComputed() {
       return this.intersected ? this.largeImages : '';
@@ -42,6 +42,8 @@ export default {
       const image = projects[0];
       if (image.isIntersecting) {
         this.intersected = true;
+      } else {
+        this.intersected = false;
       }
     });
 
@@ -120,8 +122,8 @@ export default {
         }
       }
       &.large {
-        margin-left: -1rem;
-        margin-right: -1rem;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
