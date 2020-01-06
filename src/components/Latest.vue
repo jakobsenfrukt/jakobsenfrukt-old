@@ -45,7 +45,9 @@ export default {
   background: transparent;
   position: relative;
   text-align: center;
-  
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 6vw;
   h2 {
     font-family: $monospace;
     font-size: $font-sm;
@@ -56,7 +58,7 @@ export default {
     display: inline-block;
     vertical-align: top;
     width: 30%;
-    max-width: 600px;
+    max-width: 500px;
     @include fadeUpAnimation;
   }
 
