@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import IntersectionObserver from 'intersection-observer-polyfill';
 export default {
   name: 'Project',
   props: {
@@ -28,7 +29,7 @@ export default {
     anchor: String,
     id: String,
   },
-  data: () => ({ observer: null, intersected: true }),
+  data: () => ({ observer: null, intersected: false }),
   computed: {
     largeImagesComputed() {
       return this.intersected ? this.largeImages : '';
@@ -39,10 +40,10 @@ export default {
   },
   mounted() {
     this.observer = new IntersectionObserver(projects => {
-      this.intersected = false;
       const image = projects[0];
       if (image.isIntersecting) {
         this.intersected = true;
+        this.observer.disconnect();
       }
     });
 
