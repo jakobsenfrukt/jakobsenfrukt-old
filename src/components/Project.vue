@@ -6,10 +6,18 @@
       <p v-if="link"><a :href="`${link}`" target="_blank">Besøk nettsiden</a></p>
     </div>
     <div v-if="largeImages" class="project-gallery large">
-      <img v-for="(image, index) in largeImages" :key="`image-${index}`" :src="image" :alt="title" />
+      <picture v-for="(image, index) in largeImages" :key="`image-${index}`">
+        <source type="image/webp" :srcset="`${image}.webp`" />
+        <source type="image/png" :srcset="`${image}.png`" />
+        <img :src="`${image}.png`" :alt="title" />
+      </picture>
     </div>
     <div v-if="images" class="project-gallery">
-      <img v-for="(image, index) in images" :key="`image-${index}`" :src="image" :alt="title" />
+      <picture v-for="(image, index) in images" :key="`image-${index}`">
+        <source type="image/webp" :srcset="`${image}.webp`" />
+        <source type="image/png" :srcset="`${image}.png`" />
+        <img :src="`${image}.png`" :alt="title" />
+      </picture>
     </div>
   </article>
 </template>

@@ -1,9 +1,9 @@
 [
   {
-    "mainImage": "/static/thumbnails/balansemerket-thumb.webp",
+    "mainImage": "/static/thumbnails/balansemerket-thumb",
     "images": [
-      "/static/images/balansemerket-index.webp",
-      "/static/images/balansemerket-samtale.webp"
+      "/static/images/balansemerket-index",
+      "/static/images/balansemerket-samtale"
     ],
     "title": "Nettside for Balansemerket",
     "description": "Høsten 2019 lanserte <a href=\"https://balansekunst.no\" target=\"_blank\">Balansekunst</a> en ny merkeordning mot seksuell trakassering i kulturlivet, med støtte fra Kulturdepartementet. På Balansemerket.no presenteres forslag til forebyggende tiltak tilpasset kulturlivet, og en samling av ressurser man kan ta i bruk på arbeidsplassen for å kartlegge risikofaktorer og etablere grenser. Prosjektet ble utført i samarbeid med illustratør <a href=\"https://sunnivakrogseth.com\" target=\"_blank\">Sunniva Sunde Krogseth</a>.",
@@ -14,10 +14,10 @@
     "anchor": "#balansemerket"
   },
   {
-    "mainImage": "/static/thumbnails/neuf-thumb.webp",
+    "mainImage": "/static/thumbnails/neuf-thumb",
     "images": [
-      "/static/images/neuf-index.webp",
-      "/static/images/neuf-utleie.webp"
+      "/static/images/neuf-index",
+      "/static/images/neuf-utleie"
     ],
     "title": "Nettside for Chateau Neuf",
     "description": "Det Norske Studentersamfund holder til på Chateau Neuf og arrangerer en rekke forestillinger, filmvisninger, og kurs, samt quiz, ølsmaking, og så videre. Det er også mulig å være med å arrangere gjennom å engasjere seg i en av foreningene, eller leie lokaler på huset. Nettsiden hadde behov for en oppgradering for å tydeliggjøre de ulike tilbudene. I tillegg gjorde vi en opprydning i den visuelle identiteten. Laget i samarbeid med <a href=\"https://nettveveriet.no\" target=\"_blank\">Braathens Nettveveri</a>.",
@@ -28,11 +28,11 @@
     "anchor": "#neuf"
   },
   {
-    "mainImage": "/static/thumbnails/mm-thumb.webp",
+    "mainImage": "/static/thumbnails/mm-thumb",
     "images": [
-      "/static/images/mm-hero.webp",
-      "/static/images/mm-about.webp",
-      "/static/images/mm-jul.webp"
+      "/static/images/mm-hero",
+      "/static/images/mm-about",
+      "/static/images/mm-jul"
     ],
     "title": "Nettside for Marcus & Martinus",
     "description": "I forbindelse med lanseringen av deres nye EP SOON i 2019 ønsket Marcus & Martinus seg en mer moderne og leken nettside. Vi utviklet et fleksibelt design som kan tilpasses fremtidige utgivelser, og med fargetema som kan endres via publiseringssystemet. Nettsiden er bygget på Craft CMS. Her finnes det også et par easter eggs, lagt til for den ivrige fansens skyld.",
@@ -43,10 +43,10 @@
     "anchor": "#marcusandmartinus"
   },
   {
-    "mainImage": "/static/thumbnails/julieaida-v2.webp",
+    "mainImage": "/static/thumbnails/julieaida-v2",
     "images": [
-      "/static/images/julieaida-v2-index.webp",
-      "/static/images/julieaida-v2-project.webp"
+      "/static/images/julieaida-v2-index",
+      "/static/images/julieaida-v2-project"
     ],
     "title": "Redesign av nettsiden til Julie Aida",
     "description": "Det er viktig at en porteføljeside vokser med eieren, og ett år etter første lansering ble nettsiden til Julie Aida voksen. Hun hadde behov for å vise flere og mer varierte prosjekter, både profesjonelle og personlige. Vi beholdt muligheten for besøkende til å tegne på siden, men gjorde den litt mer diskrét. Vi la også til funksjonalitet som gjør at man nå kan tegne på alle sider og bilder, og velge farge på tusjen selv.",
@@ -57,11 +57,11 @@
     "anchor": "#julieaida-v2"
   },
   {
-    "mainImage": "/static/thumbnails/dorna-index.webp",
+    "mainImage": "/static/thumbnails/dorna-index",
     "images": [
-      "/static/images/dorna-index.webp",
-      "/static/images/dorna-cv.webp",
-      "/static/images/dorna-carpitla.webp"
+      "/static/images/dorna-index",
+      "/static/images/dorna-cv",
+      "/static/images/dorna-carpitla"
     ],
     "title": "Nettside for Dorna Lakayan",
     "description": "Portefølje for arkitekt og designer Dorna Lakayan, bygget på Craft CMS.",
@@ -72,11 +72,11 @@
     "anchor": "#dorna"
   },
   {
-    "mainImage": "/static/thumbnails/acs-thumb.webp",
+    "mainImage": "/static/thumbnails/acs-thumb",
     "images": [
-      "/static/images/acs-top.webp",
-      "/static/images/acs-scrolled.webp",
-      "/static/images/acs-prosjekter.webp"
+      "/static/images/acs-top",
+      "/static/images/acs-scrolled",
+      "/static/images/acs-prosjekter"
     ],
     "title": "Nettside for Aller Concept Store",
     "description": "Nettside for Aller Concept Store, laget i samarbeid med <a href=\"https://hyper.no\" target=\"_blank\">Hyper</a>.",
@@ -87,9 +87,9 @@
     "anchor": "#allerconceptstore"
   },
   {
-    "mainImage": "/static/thumbnails/ruter-small.webp",
+    "mainImage": "/static/thumbnails/ruter-small",
     "largeImages": [
-      "/static/ruter-fullwidth.webp"
+      "/static/ruter-fullwidth"
     ],
     "title": "Nettside for Ruter",
     "description": "Som ansvarlig for kollektivtrafikken i Oslo og Akershus vil Ruter gjøre sitt for å bidra til et mer bærekraftig samfunn. De har utviklet en strategi basert på FNs bærekraftsmål, og JF&amp;G designet nettside basert på Ruters øvrige designsystem! Utviklet av <a href=\"https://kokkos.io/\" target=\"_blank\">Kokkos</a>, i samarbeid med <a href=\"https://www.smfb.com/\" target=\"_blank\">SMFB</a>.",
@@ -100,9 +100,9 @@
     "anchor": "#ruter"
   },
   {
-    "mainImage": "/static/thumbnails/julieaida-visuelt.webp",
+    "mainImage": "/static/thumbnails/julieaida-visuelt",
     "images": [
-      "/static/images/julieaida-macbook.webp"
+      "/static/images/julieaida-macbook"
     ],
     "title": "Portefølje og nettbutikk for Julie Aida",
     "description": "Kunstner og illustratør Julie Aida dyrker det naive og barnlige gjennom sterke farger, tykke tusjer, og glade figurer. Hun omtaler kunsten sin som et opprør mot samfunnets forkjærlighet for det perfekte. På den første versjonen av nettsiden hennes oppmuntret vi til lek gjennom et slags interaktivt tegneprogram, uten angreknapp! Nettsiden fikk diplom i <a href=\"https://www.grafill.no/visuelt/vinnere/2019/digital-design/egenprofil-og-portfolio/nettside-for-julie-aida\" target=\"_blank\">Visuelt 2019</a>.",
@@ -112,9 +112,9 @@
     "anchor": "#julieaida"
   },
   {
-    "mainImage": "/static/thumbnails/kitwan-night.webp",
+    "mainImage": "/static/thumbnails/kitwan-night",
     "images": [
-      "/static/images/kitwan-night.webp"
+      "/static/images/kitwan-night"
     ],
     "title": "Nettside for Kit Wan Studios",
     "description": "Klesdesigner og multimediekunstner Kit Wan hadde behov for en enkel nettside for å annonsere sin første kolleksjon høsten 2018.",
@@ -125,10 +125,10 @@
     "anchor": "#kitwan"
   },
   {
-    "mainImage": "/static/thumbnails/matilda-night-hover.webp",
+    "mainImage": "/static/thumbnails/matilda-night-hover",
     "images": [
-      "/static/images/matilda-night.webp",
-      "/static/images/matilda-night-hover.webp"
+      "/static/images/matilda-night",
+      "/static/images/matilda-night-hover"
     ],
     "title": "Nettside for Matilda Karlström",
     "description": "Portefølje for klesdesigner Matilda Karlström, bygget på Craft CMS.",
@@ -139,9 +139,9 @@
     "anchor": "#matilda"
   },
   {
-    "mainImage": "/static/thumbnails/ida-night.webp",
+    "mainImage": "/static/thumbnails/ida-night",
     "images": [
-      "/static/images/ida-night.webp"
+      "/static/images/ida-night"
     ],
     "title": "Nettside for Ida Christensen",
     "description": "Enkel nettside med oversikt over arbeider for grafisk designer Ida Christensen.",
@@ -152,10 +152,10 @@
     "anchor": "#ida"
   },
   {
-    "mainImage": "/static/thumbnails/iselin-night.webp",
+    "mainImage": "/static/thumbnails/iselin-night",
     "images": [
-      "/static/images/iselin-night.webp",
-      "/static/images/iselin-night-hover.webp"
+      "/static/images/iselin-night",
+      "/static/images/iselin-night-hover"
     ],
     "title": "Nettside for Iselin Kleiva",
     "description": "Portefølje for kunstner Iselin Kleiva, bygget på Wordpress.",
@@ -166,10 +166,10 @@
     "anchor": "#iselin"
   },
   {
-    "mainImage": "/static/thumbnails/designavgang-night.webp",
+    "mainImage": "/static/thumbnails/designavgang-night",
     "images": [
-      "/static/images/designavgang-night.webp",
-      "/static/images/designavgang-night-3.webp"
+      "/static/images/designavgang-night",
+      "/static/images/designavgang-night-3"
     ],
     "title": "Designavgang 2015",
     "description": "Nettside for den årlige avgangsutstillingen til designavdelingen ved Kunsthøgskolen i Oslo.",
@@ -180,9 +180,9 @@
     "anchor": "#designavgang"
   },
   {
-    "mainImage": "/static/thumbnails/kulturutvalget-night.webp",
+    "mainImage": "/static/thumbnails/kulturutvalget-night",
     "images": [
-      "/static/images/kulturutvalget-night.webp"
+      "/static/images/kulturutvalget-night"
     ],
     "title": "Nettside for Kulturutvalget",
     "description": "Kulturutvalget er en forening tilknyttet Det Norske Studentersamfund, som arrangerer foredrag, debatter og samtaler om politikk, litteratur og vitenskap.",
@@ -193,9 +193,9 @@
     "anchor": "#kulturutvalget"
   },
   {
-    "mainImage": "/static/thumbnails/tatarius-night-1.webp",
+    "mainImage": "/static/thumbnails/tatarius-night-1",
     "images": [
-      "/static/images/tatarius-night-1.webp"
+      "/static/images/tatarius-night-1"
     ],
     "title": "Nettside for Tatarius",
     "description": "RnB-bandet Tatarius viser frem musikken sin gjennom en rolig nettside med NASA-backdrop.",
@@ -206,10 +206,10 @@
     "anchor": "#tatarius"
   },
   {
-    "mainImage": "/static/thumbnails/livespace-night-hover.webp",
+    "mainImage": "/static/thumbnails/livespace-night-hover",
     "images": [
-      "/static/images/livespace-night.webp",
-      "/static/images/livespace-night-hover.webp"
+      "/static/images/livespace-night",
+      "/static/images/livespace-night-hover"
     ],
     "title": "Live Space",
     "description": "Nettside for avdelingen for interiørarkitektur og møbeldesign ved Kunsthøgskolen i Oslo. Her kan studentene selv dele hva de holder på med, i tillegg til de kuraterte nyhetene fra avdelingen. Besøker du nettsiden samtidig som andre, vil du se sporene etter deres musepekere som tegnes i bakgrunnen.",
@@ -219,11 +219,11 @@
     "anchor": "#livespace"
   },
   {
-    "mainImage": "/static/thumbnails/procrastination-night.webp",
+    "mainImage": "/static/thumbnails/procrastination-night",
     "images": [
-      "/static/images/procrastination-night.webp",
-      "/static/images/procrastination-book-night.webp",
-      "/static/images/procrastination-brain-night.webp"
+      "/static/images/procrastination-night",
+      "/static/images/procrastination-book-night",
+      "/static/images/procrastination-brain-night"
     ],
     "title": "Spill: Procrastination",
     "description": "En slags interaktiv illustrasjon av hvordan det oppleves å utsette viktige ting man egentlig skulle ha gjort (noe profesjonelle designere selvfølgelig ikke gjør).",

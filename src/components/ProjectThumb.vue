@@ -6,9 +6,17 @@
         <a class="maximize" v-if="link" :href="link" target="_blank"></a>
       </div>
       <router-link v-if="anchor" :to="`projects/${anchor}`">
-        <img :src="mainImage" :alt="title" />
+        <picture>
+          <source type="image/webp" :srcset="`${mainImage}.webp`" />
+          <source type="image/png" :srcset="`${mainImage}.png`" />
+          <img :src="`${mainImage}.png`" :alt="title" />
+        </picture>
       </router-link>
-      <img v-else :src="mainImage" :alt="title" />
+      <picture v-else>
+        <source type="image/webp" :srcset="`${mainImage}.webp`" />
+        <source type="image/png" :srcset="`${mainImage}.png`" />
+        <img :src="`${mainImage}.png`" :alt="title" />
+      </picture>
     </div>
     <div v-if="short" class="text">
       <p>{{ short }}</p>
