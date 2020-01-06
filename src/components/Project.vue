@@ -5,17 +5,16 @@
       <p v-html="description"></p>
       <p v-if="link"><a :href="`${link}`" target="_blank">Besøk nettsiden</a></p>
     </div>
-    <div v-if="largeImagesComputed" class="project-gallery large">
-      <img v-for="(image, index) in largeImagesComputed" :key="`image-${index}`" :src="image" :alt="title" />
+    <div v-if="largeImages" class="project-gallery large">
+      <img v-for="(image, index) in largeImages" :key="`image-${index}`" :src="image" :alt="title" />
     </div>
-    <div v-if="imagesComputed" class="project-gallery">
-      <img v-for="(image, index) in imagesComputed" :key="`image-${index}`" :src="image" :alt="title" />
+    <div v-if="images" class="project-gallery">
+      <img v-for="(image, index) in images" :key="`image-${index}`" :src="image" :alt="title" />
     </div>
   </article>
 </template>
 
 <script>
-import IntersectionObserver from 'intersection-observer-polyfill';
 export default {
   name: 'Project',
   props: {
