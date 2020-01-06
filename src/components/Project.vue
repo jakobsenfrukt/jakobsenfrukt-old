@@ -39,11 +39,10 @@ export default {
   },
   mounted() {
     this.observer = new IntersectionObserver(projects => {
+      this.intersected = false;
       const image = projects[0];
       if (image.isIntersecting) {
         this.intersected = true;
-      } else {
-        this.intersected = false;
       }
     });
 
