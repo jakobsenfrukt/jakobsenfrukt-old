@@ -1,6 +1,7 @@
 // Light default theme
 body {
  	--bg-color: #eee;
+	--bg-image: linear-gradient(#eee, #fff);
  	--bg-content-color: rgb(255, 255, 255);
  	--body-color: rgb(49, 43, 35);
  	--title-color: rgb(26, 23, 23);
@@ -24,6 +25,7 @@ body {
 // Override variables for Dark theme
 body[data-theme="dark"] {
  	--bg-color: #090909;
+	--bg-image: linear-gradient(#090909, #000);
  	--bg-content-color: #0f4440;
  	--border-color:  rgba(255,255,255,.1);;
  	--body-color: #ced8de;

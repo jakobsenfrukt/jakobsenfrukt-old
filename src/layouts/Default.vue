@@ -17,9 +17,11 @@
       <span class="katakana">ヤーコブセン</span>
     </header>
 
-    <main class="site-main">
-      <slot/>
-    </main>
+    <transition name="fade" appear>
+      <main class="site-main">
+        <slot/>
+      </main>
+    </transition>
 
     <footer class="site-footer">
       <p>Her er det ingen cookies, kun frukt & grønt :)</p>
@@ -71,6 +73,14 @@ export default {
 
 .site-main {
   padding: 8rem 0;
+}
+
+.fade-enter-active {
+  transition: opacity .6s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 
 .site-footer {
