@@ -1,5 +1,8 @@
-# ignore
+*.log
+.cache
 .DS_Store
-node_modules/
-dist/
-.BridgeLabelsAndRatings
+src/.temp
+node_modules
+dist
+.env
+.env.*

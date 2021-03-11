@@ -1,0 +1,83 @@
+@import url("https://use.typekit.net/cbr3coa.css");
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: 'hero-new', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+p {
+	margin-bottom: 1.4rem;
+}
+
+.lead {
+  font-family: 'ivypresto-headline', serif;
+  font-size: 4rem;
+  font-weight: 200;
+  line-height: 1.1;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  transition: color .6s;
+  color: var(--title-color);
+  margin: 2.75rem 0 1rem;
+  font-family: 'ivypresto-headline', serif;
+  font-weight: 200;
+  line-height: 1.1;
+}
+
+
+h1 {
+  margin-top: 0;
+  font-size: 6rem;
+  font-weight: 200;
+}
+
+h2 {font-size: 4em;}
+
+h3 {font-size: 1.424em;}
+
+h4 {font-size: 1.266em;}
+
+h5 {font-size: 1.125em;}
+
+small {font-size: 0.889em;}
+
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: calc(var(--space) / 2);
+  color: var(--title-color);
+}
+
+em {
+  font-style: italic;
+}
+
+ul { 
+  list-style-type: disc; 
+  margin-left: 1.25em;
+  margin-bottom: 1.25em;
+  li {
+    margin-bottom: .6em;
+  }
+}
+ol { 
+  list-style-type: decimal; 
+  margin-left: 1.25em;
+  margin-bottom: 1.25em;
+  li {
+    margin-bottom: .6em;
+  }
+}

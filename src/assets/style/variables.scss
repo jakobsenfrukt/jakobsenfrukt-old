@@ -1,0 +1,32 @@
+// Light default theme
+body {
+ 	--bg-color: #f1e3cd;
+ 	--bg-content-color: rgb(255, 255, 255);
+ 	--body-color: rgb(49, 43, 35);
+ 	--title-color: rgb(26, 23, 23);
+ 	--link-color: #e61755;
+ 	--border-color:  rgba(0,0,0,.1);;
+  --space: 3.5rem;
+  --content-width: 860px;
+  --header-height: 80px;
+  --radius: 5px;
+}
+
+// Make  things smaller for mobile
+@media screen and (max-width: 666px) {
+	body {
+		--space: 1.5rem;
+		--header-height: 60px;
+	}
+}
+
+
+// Override variables for Dark theme
+body[data-theme="dark"] {
+ 	--bg-color: #0a3029;
+ 	--bg-content-color: #0f4440;
+ 	--border-color:  rgba(255,255,255,.1);;
+ 	--body-color: #ced8de;
+ 	--title-color: #fff;
+ 	--link-color: #f08124;
+}
