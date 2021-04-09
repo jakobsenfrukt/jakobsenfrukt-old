@@ -6,7 +6,7 @@
 
 
 <script>
-import ProjectGrid from '~/components/ProjectGrid'
+import ProjectGrid from '~/components/projects/ProjectGrid'
 
 export default {
   components: {
