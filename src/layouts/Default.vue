@@ -72,7 +72,7 @@ export default {
 }
 
 .site-main {
-  padding: 8rem 0;
+  padding: 6rem 6rem 12rem;
 }
 
 .fade-enter-active {

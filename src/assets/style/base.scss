@@ -12,7 +12,7 @@ html {
 body {
  	background-color: var(--bg-color);
 	background-image: var(--bg-image);
- 	color: var(--body-color);
+ 	color: var(--color-text);
  	transition: color .6s, background-color .6s;
 	height: 100%;
   margin: 0;
@@ -21,9 +21,9 @@ body {
 
 a:not(.button) {
 	color: var(--link-color);
- 	transition: opacity .2s;
+ 	transition: color .2s;
 	&:hover {
-		opacity: .8;
+		color: var(--color-hover);
 	}
 }
 

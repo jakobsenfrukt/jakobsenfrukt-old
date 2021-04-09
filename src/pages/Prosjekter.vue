@@ -1,15 +1,17 @@
 <template>
   <Layout>
-    <header class="page-header">
-      <h1>Prosjekter</h1>
-      <g-link to="/prosjekter/testprosjekt">Testprosjekt</g-link>
-    </header>
+    <ProjectGrid />
   </Layout>
 </template>
 
 
 <script>
+import ProjectGrid from '~/components/ProjectGrid'
+
 export default {
+  components: {
+    ProjectGrid
+  },
   metaInfo: {
     title: 'Prosjekter'
   }

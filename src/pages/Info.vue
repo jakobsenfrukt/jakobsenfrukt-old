@@ -8,7 +8,22 @@
       <span class="suphead">Om JF&amp;G</span>
       <p>Jakobsen Frukt &amp; Grønt spesialiserer seg på å lage skreddersydde nettsider for små og mellomstore bedrifter, men gjør også trykksaker, visuell identitet, illustrasjon og andre kreative oppdrag.</p>
       <p>JF&amp;G leverer fullstendige nettsider og gjør vanligvis all frontendutvikling selv. Å jobbe direkte med kode som et håndverk er en viktig del av designprosessen. Du finner kodeprosjektene på <a href="https://github.com/jakobsenfrukt" target="_blank">GitHub</a>.</p>
-      <p>JF&amp;G er et enkvinnes designstudio som ble startet og drives av <a href="https://elisejakob.no" target="_blank">Elise</a>, men samarbeider med en rekke andre flinke folk i <a href="https://bransjen.no" target="_blank">Bransjen</a>, <a href="https://jonasbraathen.no" target="_blank">Braathens Nettveveri</a>, <a href="https://kokkos.io" target="_blank">Kokkos</a>, etc.</p>
+      <p>JF&amp;G er et enkvinnes designstudio som ble startet og drives av <a href="https://elisejakob.no" target="_blank">Elise</a>, men samarbeider med en rekke andre flinke folk i <a href="https://bransjen.no" target="_blank">Bransjen</a>, <a href="https://jonasbraathen.no" target="_blank">Braathens Nettveveri</a>, etc.</p>
+    </section>
+    <section class="clients">
+      <span class="suphead">Kunder</span>
+      <ul>
+        <li>Gyldendal</li>
+        <li>Kunsthøgskolen i Oslo</li>
+        <li>Ruter</li>
+        <li>Balansekunst</li>
+        <li>Universitetet i Oslo</li>
+        <li>Bergesenstiftelsen</li>
+        <li>Det Norske Studentersamfund</li>
+        <li>Web Rebels</li>
+        <li>Marcus & Martinus</li>
+        <li>Aller Media</li>
+      </ul>
     </section>
     <section>
       <span class="suphead">Om Elise</span>
@@ -53,5 +68,22 @@ section {
   letter-spacing: 0.12em;
   max-width: 32rem;
   margin: 0 auto 1.2rem;
+}
+.clients {
+  ul {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 2rem;
+
+    li {
+      display: inline;
+      &:not(:last-of-type):after {
+        content: ", ";
+      }
+    }
+  }
 }
 </style>

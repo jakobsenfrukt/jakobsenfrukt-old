@@ -8,12 +8,18 @@
 <style lang="scss">
 .intro {
   margin: 2rem auto;
+  padding: 4rem 4rem 0;
   text-align: center;
-  padding: 0 4rem;
 
   .lead {
     max-width: 20em;
+    font-size: 2.6rem;
     margin: 0 auto 6rem;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
   }
 }
 </style>

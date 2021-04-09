@@ -22,7 +22,7 @@
   svg {
     width: 100%;
     path {
-      fill: var(--body-color);
+      fill: var(--color-text);
     }
   }
 }

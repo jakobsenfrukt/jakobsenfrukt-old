@@ -74,7 +74,7 @@ export default {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  color: var(--body-color);
+  color: var(--color-text);
   cursor: pointer;
 
   &:hover {
