@@ -25,6 +25,22 @@
         <li>Aller Media</li>
       </ul>
     </section>
+     <section class="press">
+      <span class="suphead">Presse</span>
+      <ul>
+        <li>Digi</li>
+        <li>Kode24</li>
+        <li>Grafill</li>
+      </ul>
+    </section>
+    <section class="awards">
+      <span class="suphead">Utmerkelser</span>
+      <ul>
+        <li>Visuelt 2021: Diplom</li>
+        <li>Visuelt 2019: Diplom</li>
+        <li>Visuelt 2015: Gull</li>
+      </ul>
+    </section>
     <section>
       <span class="suphead">Om Elise</span>
       <p>Poteten Elise vokste opp i Gartnerveien i Sarpsborg, men flyttet til Oslo i 2011 for å ta en master i grafisk design og illustrasjon på <a href="http://khio.no/" target="_blank">KHiO</a>.</p>
