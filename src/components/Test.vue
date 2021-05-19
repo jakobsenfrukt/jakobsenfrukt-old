@@ -10,7 +10,9 @@
         'no': !isInView,
       }"
     >
-      Animation
+      Animation<br>
+      {{ text }}<br>
+      {{ message }}
     </div>
   </div>
 </template>
@@ -25,12 +27,24 @@ export default {
   data() {
     return {
       isInView: false,
+      text: "h",
+      message: "",
+      fullMessage: "Hei jeg heter elise jeg er tøff",
+      counter: 0
     }
   },
   methods: {
     onEnterViewport(value) {
       this.isInView = value;
+      this.text += "e";
+      this.writeMessage();
     },
+    writeMessage() {
+      for (let i = this.counter; i < this.fullMessage.length; i++) {
+        this.message += this.fullMessage.charAt(i)
+        this.counter = i
+      }
+    }
   }
 }
 </script>
@@ -40,11 +54,11 @@ export default {
   transition: all .5s ease;
 }
 .yes {
-  transform: translateX(100px);
+  transform: translateX(0);
   opacity: 1;
 }
 .no {
-  transform: translateX(0);
+  transform: translateX(-100%);
   opacity: 0;
 }
 </style>

@@ -8,8 +8,6 @@
     <svg
       v-if="darkTheme"
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -31,8 +29,6 @@
     <svg
       v-else
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -72,10 +68,17 @@ export default {
   background-color: transparent;
   border: 0;
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: var(--spacing-siteborder);
+  right: var(--spacing-siteborder);
   color: var(--color-text);
   cursor: pointer;
+  z-index: 666;
+  padding: 0;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
 
   &:hover {
     opacity: 0.8;

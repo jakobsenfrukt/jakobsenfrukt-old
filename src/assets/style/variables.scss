@@ -1,38 +1,39 @@
 :root {
 	// color palette
 	--color-green: #24e666;
+	--color-black: #111;
+	--color-white: #fefefe;
+	--color-pink: #e60666;
+	--color-git: #386132;
 }
 
-// light default theme
+// light theme etc
 body {
- 	--bg-color: #eee;
-	--bg-image: linear-gradient(#eee, #fff);
- 	--bg-content-color: rgb(255, 255, 255);
- 	--color-text: rgb(49, 43, 35);
- 	--title-color: rgb(26, 23, 23);
- 	--link-color: #e61755;
-	--color-hover: #24e666;
- 	--border-color:  rgba(0,0,0,.1);;
-  --space: 3.5rem;
-  --content-width: 860px;
-  --radius: 6px;
+ 	--color-background: var(--color-white);
+ 	--color-text: var(--color-black);
+ 	--color-link: var(--color-pink);
+	--color-hover: var(--color-green);
+
+	--spacing-siteborder: 1.6rem;
+
+	--font-size-small: .8rem;
+	--font-size-xsmall: .68rem;
+
+	--letter-spacing: .12em;
+	--letter-spacing-large: .36em;
 }
 
-// make  things smaller for mobile
+// dark theme
+body[data-theme="dark"] {
+ 	--color-background: var(--color-black);
+ 	--color-text: var(--color-white);
+ 	--color-link: var(--color-green);
+	--color-hover: var(--color-pink);
+}
+
+// mobile
 @media screen and (max-width: 666px) {
 	body {
-		--space: 1.5rem;
+		--spacing-siteborder: 1rem;
 	}
-}
-
-
-// override variables for dark theme
-body[data-theme="dark"] {
- 	--bg-color: #090909;
-	--bg-image: linear-gradient(#090909, #000);
- 	--bg-content-color: #0f4440;
- 	--border-color:  rgba(255,255,255,.1);;
- 	--color-text: #ced8de;
- 	--title-color: #fff;
- 	--link-color: #f08124;
 }

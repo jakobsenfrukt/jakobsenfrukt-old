@@ -10,19 +10,22 @@
 
 <style lang="scss" scoped>
 .leaf {
-  width: 1rem;
+  width: 100%;
   z-index: 666;
   transition: transform 0.3s ease-in-out;
   transform-origin: center;
-
-  &:hover, &:focus {
-    transform: rotate(24deg);
-  }
-
   svg {
     width: 100%;
     path {
       fill: var(--color-text);
+    }
+  }
+  &:hover, &:focus {
+    transform: rotate(-24deg);
+    svg {
+      path {
+        fill: var(--color-hover);
+      }
     }
   }
 }

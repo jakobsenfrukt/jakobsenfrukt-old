@@ -1,26 +1,22 @@
 <template>
   <Layout>
     <ProjectGrid />
+    <ProjectArchive />
   </Layout>
 </template>
 
 
 <script>
 import ProjectGrid from '~/components/projects/ProjectGrid'
+import ProjectArchive from '~/components/projects/ProjectArchive'
 
 export default {
   components: {
-    ProjectGrid
+    ProjectGrid,
+    ProjectArchive
   },
   metaInfo: {
     title: 'Prosjekter'
   }
 }
 </script>
-
-<style scoped lang="scss">
-.page-header {
-  max-width: 32rem;
-  margin: 0 auto 2rem;
-}
-</style>
