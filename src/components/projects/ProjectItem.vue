@@ -6,9 +6,9 @@
     <h1 class="project-title">{{ title }}</h1>
     <p class="project-lead">{{ lead }}</p>
     <span class="project-year">{{ year }}</span>
-    <div v-if="link && url" class="project-links">
-      <div><g-link to="/prosjekter/urdal" class="page-link">Mer om prosjektet</g-link> &rarr;</div>
-      <div><g-link :to="url" class="web-link">Besøk {{ link }}</g-link> &#8599;</div>
+    <div v-if="(link && url) || slug" class="project-links">
+      <div v-if="slug"><g-link to="/prosjekter/urdal" class="page-link">Mer om prosjektet</g-link> &rarr;</div>
+      <div v-if="link && url"><g-link :to="url" class="web-link">Besøk {{ link }}</g-link> &#8599;</div>
     </div>
   </article>
 </template>
