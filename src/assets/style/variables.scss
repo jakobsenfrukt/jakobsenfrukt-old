@@ -3,15 +3,18 @@
 	--color-green: #24e666;
 	--color-black: #111;
 	--color-white: #fefefe;
-	--color-pink: #e60666;
+	--color-red: #e60666;
 	--color-git: #386132;
+	--color-yellow: #fff420;
+	--color-purple: #420666;
+	--color-orange: #e66624;
 }
 
-// light theme etc
+// light theme + basics
 body {
  	--color-background: var(--color-white);
  	--color-text: var(--color-black);
- 	--color-link: var(--color-pink);
+ 	--color-link: var(--color-red);
 	--color-hover: var(--color-green);
 
 	--spacing-siteborder: 1.6rem;
@@ -28,7 +31,7 @@ body[data-theme="dark"] {
  	--color-background: var(--color-black);
  	--color-text: var(--color-white);
  	--color-link: var(--color-green);
-	--color-hover: var(--color-pink);
+	--color-hover: var(--color-red);
 }
 
 // mobile

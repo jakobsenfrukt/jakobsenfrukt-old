@@ -11,7 +11,7 @@
       <a class="nav-link" href="https://instagram.com/jakobsenfrukt" target="_blank">Instagram</a>
       <a class="nav-link" href="https://facebook.com/jakobsenfrukt" target="_blank">Facebook</a>
     </nav>
-    <ToggleTheme />
+    <ToggleTheme class="toggletheme" />
     <span class="katakana">ヤーコブセン</span>
   </header>
 </template>

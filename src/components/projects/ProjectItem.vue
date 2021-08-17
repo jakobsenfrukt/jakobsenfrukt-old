@@ -8,7 +8,7 @@
     <span class="project-year">{{ year }}</span>
     <div v-if="(link && url) || slug" class="project-links">
       <div v-if="slug"><g-link to="/prosjekter/urdal" class="page-link">Mer om prosjektet</g-link> &rarr;</div>
-      <div v-if="link && url"><g-link :to="url" class="web-link">Besøk {{ link }}</g-link> &#8599;</div>
+      <div v-if="link && url"><g-link :to="url" class="web-link">{{ link }}</g-link> &#8599;</div>
     </div>
   </article>
 </template>
@@ -43,6 +43,7 @@ export default {
     font-size: var(--font-size-xsmall);
     margin-bottom: 0;
     line-height: 1.48;
+    opacity: .6;
   }
 
   &-image {

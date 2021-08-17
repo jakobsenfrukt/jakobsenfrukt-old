@@ -92,7 +92,7 @@ export default {
 <style lang="scss">
 .archive {
   margin-top: 9rem;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--color-text);
 
   &-heading {
     padding: 1rem 0;

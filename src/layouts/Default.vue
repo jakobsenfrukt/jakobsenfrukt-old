@@ -10,7 +10,7 @@
     </transition>
 
     <footer class="site-footer">
-      <p>Her er det ingen cookies, kun frukt & grønt :)</p>
+      <p>Her er det ingen cookies, kun frukt & grønt!</p>
     </footer>
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
 }
 
 .site-main {
-  padding: 6rem;
+  padding: 3rem;
 }
 
 .fade-enter-active {
@@ -73,5 +73,12 @@ export default {
   top: var(--spacing-siteborder);
   right: var(--spacing-siteborder);
   cursor: default;
+  padding-top: .16rem;
+}
+
+@media (min-width: 800px) {
+  .site-main {
+    padding: 6rem;
+  }
 }
 </style>

@@ -17,6 +17,12 @@
           Bildetekst
         </figcaption>
       </figure>
+      <div class="client-quote">
+        <blockquote class="quote">I really wanted something that blended editorial elements with enticing visuals; a site that managed to explain my — at times (at least to me) — confusing mix of journalism and design.</blockquote>
+        <div class="quoteby">
+          <a href="https://www.instagram.com/p/CIqSTvjJv76/" class="quoteby-link" target="_blank">Thea Urdal</a>
+        </div>
+      </div>
     </section>
   </Layout>
 </template>

@@ -30,17 +30,18 @@
       image="/assets/images/thumbs/urdal.png"
       url="https://theaurdal.com"
       link="theaurdal.com"
+      slug="thea"
       year="2020"
     />
     <ProjectItem
       title="Gyldendal"
-      lead="Illustrasjoner til Gyldendals digitale læremiddel Smart Øving."
+      lead="Design og illustrasjoner til Gyldendals digitale læremiddel Smart Øving."
       image="/assets/images/thumbs/gyldendal.png"
       year="2020"
     />
     <ProjectItem
       title="Bergesenstiftelsen"
-      lead="Nettside med filtrerbar oversikt over stiftelsens tildelinger, bygget på Vue/Nuxt og Craft CMS."
+      lead="Nettside for Bergesenstiftelsen med søknadsveiledning og filtrerbar oversikt over stiftelsens tildelinger, bygget på Vue/Nuxt og Craft CMS."
       image="/assets/images/thumbs/bergesenstiftelsen.png"
       url="https://bergesenstiftelsen.no"
       link="bergesenstiftelsen.no"
@@ -48,7 +49,7 @@
     />
     <ProjectItem
       title="IMKHiO"
-      lead="Nettside for KHiOs avdeling for interiørarkitektur og møbeldesign, bygget på Craft CMS."
+      lead="Nettside for KHiOs avdeling for interiørarkitektur og møbeldesign med studentprosjekter og nyheter om hva som skjer på avdelingen, bygget på Craft CMS."
       image="/assets/images/thumbs/imkhio.png"
       url="https://imkhio.no"
       link="imkhio.no"
