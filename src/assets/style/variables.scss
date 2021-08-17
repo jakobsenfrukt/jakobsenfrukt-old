@@ -17,7 +17,11 @@ body {
  	--color-link: var(--color-red);
 	--color-hover: var(--color-green);
 
-	--spacing-siteborder: 1.6rem;
+	--spacing-siteborder: 1rem;
+	--spacing-sitepadding: 3.4rem;
+	--spacing-gap: 1.2rem;
+
+	--border-radius: 3px;
 
 	--font-size-small: .8rem;
 	--font-size-xsmall: .68rem;
@@ -34,9 +38,18 @@ body[data-theme="dark"] {
 	--color-hover: var(--color-red);
 }
 
-// mobile
-@media screen and (max-width: 666px) {
+@media screen and (min-width: 666px) {
 	body {
-		--spacing-siteborder: 1rem;
+		--spacing-siteborder: 1.6rem;
+		--spacing-sitepadding: 4.6rem;
+		--spacing-gap: 2.4rem;
+
+		--border-radius: 6px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		--border-radius: 8px;
 	}
 }

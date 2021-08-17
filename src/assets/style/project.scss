@@ -1,0 +1,124 @@
+.project {
+  &-mainimage {
+    width: 100%;
+    padding: 2rem 0;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 80vh;
+    }
+  }
+  &-info {
+    font-size: var(--font-size-small);
+    margin: 2rem auto 4rem;
+    width: 50%;
+    min-width: 240px;
+    position: relative;
+    z-index: 200;
+
+    @media (min-width: 666px) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 3fr;
+      column-gap: var(--spacing-gap);
+    }
+  }
+
+  &-title {
+    font-size: var(--font-size-small);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    line-height: inherit;
+  }
+
+  &-lead {
+    margin: 0;
+    line-height: inherit;
+  }
+
+  &-gallery {
+    margin: 6rem 0;
+
+    &-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-gap);
+      align-items: center;
+
+      &.asymmetric {
+        .project-image:nth-of-type(odd) {
+          padding: 0 0 36% 0;
+        }
+        .project-image:nth-of-type(even) {
+          padding: 36% 0 0 0;
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      gap: var(--spacing-gap);
+    }
+  }
+
+  &-image {
+    margin: 0 auto;
+    img {
+      display: block;
+      margin: 0 auto 4rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .12);
+    }
+  }
+
+  .quote {
+    margin: 0 auto 4rem;
+    width: 50%;
+    min-width: 240px;
+
+    blockquote {
+      font-size: var(--font-size-small);
+      font-style: italic;
+      margin-bottom: 1rem;
+      padding-right: 1.2rem;
+    }
+    &-by {
+      font-size: var(--font-size-small);
+      text-align: right;
+    }
+  }
+}
+
+.project-archive {
+  margin-top: 9rem;
+  border-top: 1px solid var(--color-text);
+
+  &-heading {
+    padding: 1rem 0;
+    margin: 0 0 1rem;
+
+    span {
+      opacity: .6;
+      font-style: italic;
+      font-size: var(--font-size-xsmall);
+    }
+  }
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+
+  @media (min-width: 2000px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (max-width: 1600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+}

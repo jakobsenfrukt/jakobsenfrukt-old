@@ -1,29 +1,72 @@
 <template>
-  <Layout>
+  <Layout class="project">
     <section class="project-hero">
       <div class="project-mainimage">
-        <g-image alt="Example image" src="/assets/images/thumbs/urdal.jpg" />
+        <g-image alt="Mockup av en monitor med Urdal-nettsiden på skjermen" src="/assets/images/projects/urdal/01.png" />
       </div>
       <div class="project-info">
-        <h1 class="project-title">Prosjekttittel</h1>
+        <h1 class="project-title">Urdal</h1>
         <span class="project-year">2021</span>
         <p class="project-lead">En tekst om prosjektet</p>
-      </div>
-    </section>
-    <section class="project-gallery">
-      <figure class="project-image">
-        <g-image alt="Example image" src="/assets/images/fin-tomat.png" />
-        <figcaption>
-          Bildetekst
-        </figcaption>
-      </figure>
-      <div class="client-quote">
-        <blockquote class="quote">I really wanted something that blended editorial elements with enticing visuals; a site that managed to explain my — at times (at least to me) — confusing mix of journalism and design.</blockquote>
-        <div class="quoteby">
-          <a href="https://www.instagram.com/p/CIqSTvjJv76/" class="quoteby-link" target="_blank">Thea Urdal</a>
+        <div class="project-link">
+          <g-link to="https://theaurdal.com">theaurdal.com &#8599;</g-link>
         </div>
       </div>
     </section>
+    
+    <section class="project-gallery">
+      <div class="project-gallery-column">
+        <figure class="project-image">
+          <g-image alt="Example image" src="/assets/images/projects/urdal/02.jpg" />
+        </figure>
+        <figure class="project-image">
+          <g-image alt="Example image" src="/assets/images/projects/urdal/03.jpg" />
+        </figure>
+      </div>
+
+      <div class="quote">
+        <blockquote>I really wanted something that blended editorial elements with enticing visuals; a site that managed to explain my — at times (at least to me) — confusing mix of journalism and design.</blockquote>
+        <div class="quote-by">
+          <a href="https://www.instagram.com/p/CIqSTvjJv76/" class="quoteby-link" target="_blank">Thea Urdal</a>
+        </div>
+      </div>
+
+      <div class="project-gallery-row">
+        <figure class="project-image">
+          <g-image alt="Example image" src="/assets/images/projects/urdal/04-sizes1.jpg" />
+        </figure>
+        <figure class="project-image">
+          <g-image alt="Example image" src="/assets/images/projects/urdal/05-sizes2.jpg" />
+        </figure>
+        <figure class="project-image">
+          <g-image alt="Example image" src="/assets/images/projects/urdal/06-sizes3.jpg" />
+        </figure>
+      </div>
+
+      <div class="quote">
+        <blockquote>Siden formidler bredden og tverrfagligheten til Thea Urdals prosjekter innen design og journalistikk på en inspirerende, leken og forfriskende måte. Typografien, fargebruk, tone of voice, animasjoner og grafiske elementer er vennlige, imøtekommende og gir mye energi. En fin og engasjerende nettside som ikke lar et rikt og ekspressivt uttrykk stå i veien for en god leseopplevelse.</blockquote>
+        <div class="quote-by">
+          <a href="https://www.grafill.no/visuelt/vinnere/2021/digital-design/egenprofilering/nettside-for-urdal" class="quoteby-link" target="_blank">
+            <strong>Juryens kommentar</strong><br />
+            Visuelt 2021
+          </a>
+        </div>
+      </div>
+
+      <div class="project-gallery-column asymmetric">
+        <figure class="project-image">
+          <g-image alt="Example image" src="/assets/images/projects/urdal/07.jpg" />
+        </figure>
+        <figure class="project-image">
+          <g-image alt="Example image" src="/assets/images/projects/urdal/08.jpg" />
+        </figure>
+      </div>
+
+      <figure class="project-image">
+        <g-image alt="Example image" src="/assets/images/projects/urdal/09.jpg" />
+      </figure>
+    </section>
+
   </Layout>
 </template>
 
@@ -35,40 +78,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="scss">
-.project {
-  &-mainimage {
-    max-height: 60vh;
-    width: 100%;
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-  }
-  &-info {
-    background: var(--color-text);
-    color: var(--color-background);
-    font-size: var(--font-size-small);
-    padding: 1rem 1rem 2rem;
-    max-width: 16rem;
-    position: relative;
-    z-index: 200;
-  }
-
-  &-title {
-    font-size: var(--font-size-small);
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: var(--letter-spacing);
-  }
-
-  &-lead {
-    margin: 0;
-  }
-
-  &-gallery {
-    margin: 6rem 0;
-  }
-}
-</style>

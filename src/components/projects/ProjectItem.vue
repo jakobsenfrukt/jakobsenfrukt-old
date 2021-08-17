@@ -1,13 +1,13 @@
 <template>
-  <article class="project">
-    <div class="project-image">
+  <article class="project-item">
+    <div class="project-item-image">
       <g-image :alt="alt" :src="image" />
     </div>
-    <div class="project-text">
-      <h1 class="project-title">{{ title }}</h1>
-      <p class="project-lead">{{ lead }}</p>
-      <span class="project-year">{{ year }}</span>
-      <div v-if="(link && url) || slug" class="project-links">
+    <div class="project-item-text">
+      <h1 class="project-item-title">{{ title }}</h1>
+      <p class="project-item-lead">{{ lead }}</p>
+      <span class="project-item-year">{{ year }}</span>
+      <div v-if="(link && url) || slug" class="project-item-links">
         <div v-if="slug"><g-link to="/prosjekter/urdal" class="page-link">Mer om prosjektet</g-link> &rarr;</div>
         <div v-if="link && url"><g-link :to="url" class="web-link">{{ link }}</g-link> &#8599;</div>
       </div>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.project {
+.project-item {
   &-title {
     font-family: var(--font-mono);
     font-size: var(--font-size-small);

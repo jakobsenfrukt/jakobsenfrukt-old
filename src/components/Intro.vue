@@ -12,7 +12,7 @@
 
   .lead {
     max-width: 36rem;
-    font-size: 1.24rem;
+    font-size: 1.28rem;
     margin: 0 auto 4rem;
   }
 

@@ -131,24 +131,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3rem;
-
-  @media (min-width: 2000px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  @media (max-width: 1600px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 720px) {
-    grid-template-columns: 1fr;
-  }
-}
-</style>

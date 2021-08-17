@@ -55,6 +55,7 @@ export default {
     &.logo {
       width: 1.42rem;
       margin-top: -.3rem;
+      padding: 0;
     }
   }
 }
@@ -62,8 +63,13 @@ export default {
 .contact {
   position: fixed;
   left: var(--spacing-siteborder);
-  bottom: .8rem;
+  bottom: 0;
   transform: rotate(-90deg);
   transform-origin: 0 0;
+}
+@media (min-width: 666px) {
+  .contact {
+    bottom: .6rem;
+  }
 }
 </style>

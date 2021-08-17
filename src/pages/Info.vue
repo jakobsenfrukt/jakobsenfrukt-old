@@ -67,9 +67,13 @@ export default {
 
 <style scoped lang="scss">
 p {
-  margin: 0 auto 1.24rem;
+  margin: 0 auto;
   font-family: var(--font-serif);
   font-size: 1.24rem;
+
+  + p {
+    text-indent: 3.24rem;
+  }
 }
 section {
   position: relative;
