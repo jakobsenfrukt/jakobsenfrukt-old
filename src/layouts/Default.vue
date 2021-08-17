@@ -41,7 +41,7 @@ export default {
 }
 
 .site-main {
-  padding: 3rem;
+  padding: 3rem 3.6rem;
 }
 
 .fade-enter-active {
@@ -56,7 +56,7 @@ export default {
   width: 100%;
   text-align: center;
   font-size: var(--font-size-small);
-  padding: 6rem 3rem 1.666rem;
+  padding: 6rem 3.6rem 1.666rem;
   p {
     margin: 0 auto;
   }
@@ -79,6 +79,9 @@ export default {
 @media (min-width: 800px) {
   .site-main {
     padding: 6rem;
+  }
+  .site-footer {
+    padding: 6rem 6rem 1.666rem;
   }
 }
 </style>

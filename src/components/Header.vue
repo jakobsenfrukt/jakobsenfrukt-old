@@ -43,10 +43,14 @@ export default {
   &-link {
     display: inline-block;
     color: var(--color-text);
+    background: var(--color-background);
+    box-shadow: 0 0 0 .2rem var(--color-background);
     text-decoration: none;
-    margin-right: 1.8rem;
+    margin-right: 1.4rem;
+    padding: 0 .2rem;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing);
+    transition: color .2s ease-in-out, background-color .6s ease-in-out, box-shadow .6s ease-in-out;
 
     &.logo {
       width: 1.42rem;
