@@ -69,10 +69,10 @@ export default {
 p {
   margin: 0 auto;
   font-family: var(--font-serif);
-  font-size: 1.24rem;
+  font-size: 1rem;
 
   + p {
-    text-indent: 3.24rem;
+    text-indent: 1.8rem;
   }
 }
 section {
@@ -116,6 +116,14 @@ section {
       &:not(:last-of-type):after {
         content: ", ";
       }
+    }
+  }
+}
+@media (min-width: 666px) {
+  p {
+    font-size: 1.24rem;
+    + p {
+      text-indent: 3.24rem;
     }
   }
 }

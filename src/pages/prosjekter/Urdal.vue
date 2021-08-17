@@ -27,7 +27,10 @@
       <div class="quote">
         <blockquote>I really wanted something that blended editorial elements with enticing visuals; a site that managed to explain my — at times (at least to me) — confusing mix of journalism and design.</blockquote>
         <div class="quote-by">
-          <a href="https://www.instagram.com/p/CIqSTvjJv76/" class="quoteby-link" target="_blank">Thea Urdal</a>
+          <a href="https://www.instagram.com/p/CIqSTvjJv76/" class="quoteby-link" target="_blank">
+            <strong>Thea Urdal</strong><br />
+            på Instagram
+          </a>
         </div>
       </div>
 
