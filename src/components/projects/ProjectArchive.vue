@@ -1,6 +1,6 @@
 <template>
   <section class="project-archive">
-    <h2 class="archive-heading">Arkivet <span>&mdash; prosjekter som er eldre enn 5 år, eller ikke lenger online</span></h2>
+    <h2 class="project-archive-heading">Arkivet <span>&mdash; prosjekter som er eldre enn 5 år, eller ikke lenger online</span></h2>
     <div class="project-grid">
       <ProjectItem
         title="Marcus & Martinus"

@@ -29,7 +29,7 @@
         <div class="quote-by">
           <a href="https://www.instagram.com/p/CIqSTvjJv76/" class="quoteby-link" target="_blank">
             <strong>Thea Urdal</strong><br />
-            på Instagram
+            på Instagram &#8599;
           </a>
         </div>
       </div>
@@ -51,7 +51,7 @@
         <div class="quote-by">
           <a href="https://www.grafill.no/visuelt/vinnere/2021/digital-design/egenprofilering/nettside-for-urdal" class="quoteby-link" target="_blank">
             <strong>Juryens kommentar</strong><br />
-            Visuelt 2021
+            Visuelt 2021 &#8599;
           </a>
         </div>
       </div>

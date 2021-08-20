@@ -8,7 +8,7 @@
       <p class="project-item-lead">{{ lead }}</p>
       <span class="project-item-year">{{ year }}</span>
       <div v-if="(link && url) || slug" class="project-item-links">
-        <div v-if="slug"><g-link to="/prosjekter/urdal" class="page-link">Mer om prosjektet</g-link> &rarr;</div>
+        <div v-if="slug"><g-link :to="`/prosjekter/${slug}`" class="page-link">Mer om prosjektet</g-link> &rarr;</div>
         <div v-if="link && url"><g-link :to="url" class="web-link">{{ link }}</g-link> &#8599;</div>
       </div>
     </div>
@@ -44,7 +44,7 @@ export default {
     font-size: var(--font-size-xsmall);
     margin-bottom: 0;
     line-height: 1.48;
-    opacity: .6;
+    color: var(--color-text-opacity);
   }
 
   &-image {
@@ -66,6 +66,7 @@ export default {
     a {
       display: inline;
       text-decoration: underline;
+      text-decoration-color: var(--color-text-opacity);
       text-underline-offset: .2em;
       color: inherit;
     }

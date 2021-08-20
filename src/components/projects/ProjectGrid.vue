@@ -14,6 +14,7 @@
       image="/assets/images/thumbs/bransjen.png"
       url="https://bransjen.no"
       link="bransjen.no"
+      slug="bransjen"
       year="2021"
     />
     <ProjectItem
@@ -30,7 +31,7 @@
       image="/assets/images/thumbs/urdal.png"
       url="https://theaurdal.com"
       link="theaurdal.com"
-      slug="thea"
+      slug="urdal"
       year="2020"
     />
     <ProjectItem

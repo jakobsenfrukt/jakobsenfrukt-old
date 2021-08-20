@@ -1,11 +1,22 @@
 <template>
   <section class="showcase">
     <g-image alt="Example image" src="/assets/images/thumbs/urdal.png" />
+    <A4 />
     <p class="giant">
       Jeg vil bare lage kule ting
     </p>
   </section>
 </template>
+
+<script>
+import A4 from '@/components/fun/a4'
+
+export default {
+  components: {
+    A4
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .showcase {
