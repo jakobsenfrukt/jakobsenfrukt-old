@@ -2,6 +2,7 @@
   <section class="showcase">
     <g-image alt="Example image" src="/assets/images/thumbs/urdal.png" />
     <A4 />
+    <Test />
     <p class="giant">
       Jeg vil bare lage kule ting
     </p>
@@ -10,10 +11,12 @@
 
 <script>
 import A4 from '@/components/fun/a4'
+import Test from '@/components/Test'
 
 export default {
   components: {
-    A4
+    A4,
+    Test
   }
 }
 </script>

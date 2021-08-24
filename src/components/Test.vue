@@ -1,9 +1,9 @@
 <template>
   <div>
-    <IntersectionObserver
+    <IntersectionObserverOnce
       id="test"
       @on-enter-viewport="onEnterViewport"
-    ></IntersectionObserver>
+    ></IntersectionObserverOnce>
     <div
       class="heroimage"
       :class="{'inview': isInView}"
@@ -16,21 +16,15 @@
     >
       Animation<br>
     </div>
-    <p class="one">Jakobsen Frukt & Grønt er et hyggelig, lite designstudio i Oslo som spesialiserer seg på digital design og lager glade ting på internett.</p>
-    <p class="two">Jakobsen Frukt & Grønt er et hyggelig, lite designstudio i Oslo som spesialiserer seg på digital design og lager glade ting på internett.</p>
-    <p class="three">Jakobsen Frukt & Grønt er et hyggelig, lite designstudio i Oslo som spesialiserer seg på digital design og lager glade ting på internett.</p>
-    <p class="four">Jakobsen Frukt & Grønt er et hyggelig, lite designstudio i Oslo som spesialiserer seg på digital design og lager glade ting på internett.</p>
-    <p class="five">Jakobsen Frukt & Grønt er et hyggelig, lite designstudio i Oslo som spesialiserer seg på digital design og lager glade ting på internett.</p>
-    <p class="six">Jakobsen Frukt & Grønt er et hyggelig, lite designstudio i Oslo som spesialiserer seg på digital design og lager glade ting på internett.</p>
   </div>
 </template>
 
 <script>
-import IntersectionObserver from '~/components/tools/IntersectionObserver'
+import IntersectionObserverOnce from '~/components/tools/IntersectionObserverOnce'
 
 export default {
   components: {
-    IntersectionObserver
+    IntersectionObserverOnce
   },
   data() {
     return {
@@ -52,7 +46,9 @@ export default {
   padding: 2rem;
   font-family: var(--font-serif);
   font-size: 2rem;
-  transition: all .5s ease;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease;
 
   &.inview {
     transform: translateX(0);
@@ -65,36 +61,13 @@ export default {
   padding: 2rem;
   font-family: var(--font-serif);
   font-size: 2rem;
-  transition: all .5s ease;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease;
 
   &.inview {
     transform: translateX(0);
     opacity: 1;
-  }
-}
-p {
-  font-size: 14px;
-  width: 300px;
-  display: inline-block;
-  margin: 2rem;
-
-  &.one {
-    color: var(--color-green);
-  }
-  &.two {
-    color: var(--color-red);
-  }
-  &.three {
-    color: var(--color-yellow);
-  }
-  &.four {
-    color: var(--color-purple);
-  }
-  &.five {
-    color: var(--color-orange);
-  }
-  &.six {
-    color: var(--color-git);
   }
 }
 </style>
