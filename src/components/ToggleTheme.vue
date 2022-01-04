@@ -1,43 +1,51 @@
 <template>
   <button
     role="button"
-    aria-label="Toggle dark/light"
+    aria-label="Bytt mellom mørkt/lyst tema"
     @click.prevent="toggleTheme"
     class="toggle-theme"
   >
     <svg
       v-if="darkTheme"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-sun"
+      viewBox="0 0 112 112"
+      fill="currentColor"
     >
-      <circle cx="12" cy="12" r="5" />
-      <line x1="12" y1="1" x2="12" y2="3" />
-      <line x1="12" y1="21" x2="12" y2="23" />
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-      <line x1="1" y1="12" x2="3" y2="12" />
-      <line x1="21" y1="12" x2="23" y2="12" />
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      <path
+        d="M34.338 71.6755C53.9115 71.6755 69.779 55.808 69.779 36.2345C69.779 27.1573 66.3665 18.8772 60.7545 12.607C59.4432 11.142 60.5102 8.6503 62.4372 9.04104C83.3603 13.2837 99.1094 31.7801 99.1094 53.955C99.1094 79.2655 78.5912 99.7838 53.2806 99.7838C32.1658 99.7838 14.3862 85.5044 9.0717 66.0756C8.55292 64.1791 10.9672 62.9505 12.5157 64.1622C18.5316 68.8696 26.1071 71.6755 34.338 71.6755Z"
+      />
     </svg>
     <svg
       v-else
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-moon"
+      viewBox="0 0 112 112"
+      fill="currentColor"
     >
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      <circle cx="56" cy="56" r="28.432" />
+      <path
+        d="M55.0959 0.575994C55.454 -0.191999 56.546 -0.191998 56.9041 0.575995L64.4098 16.6714C64.7182 17.3328 64.2354 18.0906 63.5056 18.0906H48.4944C47.7646 18.0906 47.2818 17.3328 47.5902 16.6714L55.0959 0.575994Z"
+      />
+      <path
+        d="M56.9041 111.424C56.546 112.192 55.454 112.192 55.0959 111.424L47.5902 95.3286C47.2818 94.6673 47.7646 93.9094 48.4944 93.9094H63.5056C64.2354 93.9094 64.7182 94.6673 64.4098 95.3286L56.9041 111.424Z"
+      />
+      <path
+        d="M94.509 16.1508C95.3023 15.8665 96.069 16.6331 95.7847 17.4264L89.8217 34.0666C89.5748 34.7556 88.6947 34.953 88.1772 34.4354L77.5 23.7583C76.9824 23.2407 77.1799 22.3606 77.8689 22.1137L94.509 16.1508Z"
+      />
+      <path
+        d="M17.3618 95.8493C16.5685 96.1336 15.8018 95.3669 16.0861 94.5736L22.0491 77.9335C22.296 77.2445 23.1761 77.047 23.6936 77.5646L34.3708 88.2418C34.8884 88.7593 34.6909 89.6394 34.0019 89.8863L17.3618 95.8493Z"
+      />
+      <path
+        d="M95.7846 94.5736C96.0689 95.3669 95.3023 96.1335 94.5089 95.8493L77.8688 89.8863C77.1798 89.6394 76.9824 88.7593 77.4999 88.2417L88.1771 77.5646C88.6946 77.047 89.5748 77.2444 89.8217 77.9334L95.7846 94.5736Z"
+      />
+      <path
+        d="M16.0861 17.4264C15.8018 16.6331 16.5685 15.8665 17.3618 16.1507L34.0019 22.1137C34.6909 22.3606 34.8884 23.2407 34.3708 23.7583L23.6936 34.4354C23.1761 34.953 22.296 34.7555 22.0491 34.0665L16.0861 17.4264Z"
+      />
+      <path
+        d="M111.424 55.0959C112.192 55.454 112.192 56.546 111.424 56.9041L95.3286 64.4098C94.6672 64.7182 93.9094 64.2354 93.9094 63.5056V48.4944C93.9094 47.7646 94.6672 47.2818 95.3286 47.5902L111.424 55.0959Z"
+      />
+      <path
+        d="M0.575994 56.9041C-0.191999 56.546 -0.191998 55.454 0.575995 55.0959L16.6714 47.5902C17.3328 47.2818 18.0906 47.7646 18.0906 48.4944L18.0906 63.5056C18.0906 64.2354 17.3328 64.7182 16.6714 64.4098L0.575994 56.9041Z"
+      />
     </svg>
   </button>
 </template>
@@ -46,21 +54,21 @@
 export default {
   data() {
     return {
-      darkTheme: false
-    }
+      darkTheme: false,
+    };
   },
   methods: {
     toggleTheme() {
-      this.darkTheme = !this.darkTheme
+      this.darkTheme = !this.darkTheme;
 
       // This is using a script that is added in index.html
-      window.__setPreferredTheme(this.darkTheme ? 'dark' : 'light')
-    }
+      window.__setPreferredTheme(this.darkTheme ? "dark" : "light");
+    },
   },
   mounted() {
-    if (window.__theme == 'dark') this.darkTheme = true
-  }
-}
+    if (window.__theme == "dark") this.darkTheme = true;
+  },
+};
 </script>
 
 <style lang="scss">
@@ -76,12 +84,15 @@ export default {
   padding: 0;
 
   svg {
-    width: 1rem;
-    height: 1rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    transition: fill 0.24s ease-out;
   }
 
   &:hover {
-    opacity: 0.8;
+    svg {
+      fill: var(--color-hover);
+    }
   }
   &:focus {
     outline: none;

@@ -5,7 +5,7 @@
 
     <transition name="fade" appear>
       <main class="site-main">
-        <slot/>
+        <slot />
       </main>
     </transition>
 
@@ -24,15 +24,15 @@ query {
 </static-query>
 
 <script>
-import Stars from '@/components/Stars'
-import Header from '@/components/Header'
+import Stars from "@/components/Stars";
+import Header from "@/components/Header";
 
 export default {
   components: {
     Stars,
-    Header
-  }
-}
+    Header,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -45,7 +45,7 @@ export default {
 }
 
 .fade-enter-active {
-  transition: opacity .6s;
+  transition: opacity 0.6s;
 }
 
 .fade-enter {
@@ -55,7 +55,7 @@ export default {
 .site-footer {
   width: 100%;
   text-align: center;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-s);
   padding: 6rem var(--spacing-sitepadding) 1.666rem;
   p {
     margin: 0 auto;
@@ -65,14 +65,14 @@ export default {
 .katakana {
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: .36em;
-  font-size: var(--font-size-xsmall);
+  letter-spacing: 0.36em;
+  font-size: var(--font-size-xs);
   writing-mode: vertical-rl;
   text-orientation: upright;
   position: fixed;
   top: var(--spacing-siteborder);
   right: var(--spacing-siteborder);
   cursor: default;
-  padding-top: .16rem;
+  padding-top: 0.16rem;
 }
 </style>

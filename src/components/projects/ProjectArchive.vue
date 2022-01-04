@@ -1,7 +1,20 @@
 <template>
   <section class="project-archive">
-    <h2 class="project-archive-heading">Arkivet <span>&mdash; prosjekter som er eldre enn 5 år, eller ikke lenger online</span></h2>
+    <h2 class="project-archive-heading">
+      Arkivet
+      <span
+        >&mdash; prosjekter som er eldre enn 5 år, eller ikke lenger
+        online</span
+      >
+    </h2>
     <div class="project-grid">
+      <ProjectItem
+        title="Julie Aida v2.0"
+        lead="Portfolio for kunstner og illustratør Julie Aida, bygget på Craft CMS."
+        image="/assets/images/thumbs/julieaida.png"
+        url="https://julieaida.com"
+        year="2018"
+      />
       <ProjectItem
         title="Marcus & Martinus"
         lead="Nettside for artist Marcus & Martinus, bygget på Vue/Nuxt og Craft CMS."
@@ -80,11 +93,11 @@
 </template>
 
 <script>
-import ProjectItem from '~/components/projects/ProjectItem'
+import ProjectItem from "~/components/projects/ProjectItem";
 
 export default {
   components: {
-    ProjectItem
-  }
-}
+    ProjectItem,
+  },
+};
 </script>

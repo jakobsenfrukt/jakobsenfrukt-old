@@ -10,7 +10,7 @@
     }
   }
   &-info {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-s);
     margin: 4rem auto 6rem;
     width: 50%;
     min-width: 240px;
@@ -25,7 +25,7 @@
   }
 
   &-title {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-s);
     margin: 0;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing);
@@ -77,13 +77,13 @@
     min-width: 240px;
 
     blockquote {
-      font-size: var(--font-size-small);
+      font-size: var(--font-size-s);
       font-style: italic;
       margin-bottom: 1rem;
       padding-right: 1.2rem;
     }
     &-by {
-      font-size: var(--font-size-small);
+      font-size: var(--font-size-s);
       text-align: right;
     }
   }
@@ -99,7 +99,7 @@
 
     span {
       font-style: italic;
-      font-size: var(--font-size-xsmall);
+      font-size: var(--font-size-xs);
       color: var(--color-text-opacity);
     }
   }

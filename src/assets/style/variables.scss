@@ -1,60 +1,68 @@
 :root {
-	// color palette
-	--color-green: #24e666;
-	--color-black: #111;
-	--color-white: #fefefe;
-	--color-red: #e60666;
-	--color-git: #386132;
-	--color-yellow: #fff420;
-	--color-purple: #420666;
-	--color-orange: #e66624;
+  --font-mono: "roboto mono", monospace;
+  --font-sans: "acumin-pro-wide", sans-serif;
+  --font-serif: "itc clearface", serif;
+
+  // color palette
+  --color-green: #24e666;
+  --color-black: #080806;
+  --color-white: #fefefe;
+  --color-red: #e60666;
+  --color-git: #386132;
+  --color-yellow: #fff420;
+  --color-purple: #420666;
+  --color-orange: #e66624;
 }
 
 // light theme + basics
 body {
- 	--color-background: var(--color-white);
- 	--color-text: var(--color-black);
-	--color-text-opacity: rgba(0, 0, 0, .6);
- 	--color-link: var(--color-red);
-	--color-hover: var(--color-green);
+  --color-background: var(--color-white);
+  --color-text: var(--color-black);
+  --color-text-opacity: rgba(0, 0, 0, 0.6);
+  --color-link: var(--color-red);
+  --color-hover: var(--color-green);
+  --color-shadow: rgba(0, 0, 0, 0.24);
 
-	--spacing-siteborder: 1rem;
-	--spacing-sitepadding: 3.4rem;
-	--spacing-gap: 1.2rem;
+  --spacing-siteborder: 1rem;
+  --spacing-sitepadding: 3.6rem;
+  --spacing-gap: 1.2rem;
 
-	--border-radius: 3px;
-	--box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .12);
+  --border-radius: 3px;
+  --box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.12);
 
-	--font-size-small: .8rem;
-	--font-size-xsmall: .68rem;
+  --font-size-l: 1.2rem;
+  --font-size-m: 1rem;
+  --font-size-s: 0.8rem;
+  --font-size-xs: 0.68rem;
 
-	--letter-spacing: .12em;
-	--letter-spacing-large: .36em;
+  --letter-spacing: 0.12em;
+  --letter-spacing-large: 0.36em;
 }
 
 // dark theme
 body[data-theme="dark"] {
- 	--color-background: var(--color-black);
- 	--color-text: var(--color-white);
-	--color-text-opacity: rgba(255, 255, 255, .6);
- 	--color-link: var(--color-green);
-	--color-hover: var(--color-red);
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-text-opacity: rgba(255, 255, 255, 0.6);
+  --color-link: var(--color-green);
+  --color-hover: var(--color-red);
+  --color-shadow: rgba(255, 255, 255, 0.24);
 }
 
 @media screen and (min-width: 666px) {
-	body {
-		--spacing-siteborder: 1.6rem;
-		--spacing-sitepadding: 4.6rem;
-		--spacing-gap: 2.4rem;
+  body {
+    --spacing-siteborder: 1.6rem;
+    --spacing-sitepadding: 6rem;
+    --spacing-gap: 2.4rem;
 
-		--border-radius: 6px;
-		--box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .12);
-	}
+    --border-radius: 12px;
+    --box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-	body {
-		--border-radius: 8px;
-		--box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .12);
-	}
+  body {
+    --border-radius: 16px;
+    --box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.12);
+  }
 }
