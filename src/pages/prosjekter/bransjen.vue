@@ -16,11 +16,11 @@
             Nettside for designstudioet Bransjen, bygget på Gridsome og Sanity,
             og designet i samarbeid med Bransjen selv.
           </p>
+        </div>
+        <div class="project-meta">
           <div class="project-link">
             <g-link to="https://bransjen.no">bransjen.no &#8599;</g-link>
           </div>
-        </div>
-        <div class="project-meta">
           <div class="project-tags">
             <ul class="tag-list">
               <li class="tag">Vue</li>

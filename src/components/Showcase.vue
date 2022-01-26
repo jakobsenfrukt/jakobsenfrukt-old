@@ -20,22 +20,28 @@
       />
     </div>
     <Chatbubble text="Jeg liker internett" class="item" />
-    <p class="giant item">
+    <p class="giant">
       Kul web design
     </p>
+    <div class="item gyldendal">
+      <Gyldendal />
+    </div>
   </section>
 </template>
 
 <script>
+import Gyldendal from "@/components/showcase/Gyldendal";
+
 import Chatbubble from "@/components/fun/chatbubble";
 import Test from "@/components/Test";
 
 export default {
   components: {
+    Gyldendal,
     Chatbubble,
     Test,
   },
-  created() {
+  mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {
@@ -44,16 +50,18 @@ export default {
   methods: {
     handleScroll(event) {
       var scrollTop = window.scrollY;
-      var oddImgPos = scrollTop / 6 + "px";
-      var evenImgPos = scrollTop / 3 + "px";
+      var fastPos = scrollTop / 6 + "px";
+      var mediumPos = scrollTop / 4 + "px";
+      var slowPos = scrollTop / 3 + "px";
+      var slowestPos = scrollTop / 2 + "px";
 
       var oddItems = document.querySelectorAll(".item:nth-child(odd)");
       oddItems.forEach(function(item) {
-        item.style.transform = "translateY(" + oddImgPos + ")";
+        item.style.transform = "translateY(" + fastPos + ")";
       });
       var evenItems = document.querySelectorAll(".item:nth-child(even)");
       evenItems.forEach(function(item) {
-        item.style.transform = "translateY(" + evenImgPos + ")";
+        item.style.transform = "translateY(" + slowPos + ")";
       });
     },
   },
@@ -65,6 +73,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  padding-bottom: 24rem;
 
   @media (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);

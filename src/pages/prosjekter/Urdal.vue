@@ -17,11 +17,11 @@
             Sanity og designet i samarbeid med Urdal selv. Prosjektet fikk
             diplom i Visueltkonkurransen 2021.
           </p>
+        </div>
+        <div class="project-meta">
           <div class="project-link">
             <g-link to="https://theaurdal.com">theaurdal.com &#8599;</g-link>
           </div>
-        </div>
-        <div class="project-meta">
           <div class="project-tags">
             <ul class="tag-list">
               <li class="tag">Vue</li>

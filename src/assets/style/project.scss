@@ -12,8 +12,7 @@
   &-info {
     font-size: var(--font-size-s);
     margin: 4rem auto 6rem;
-    width: 60%;
-    min-width: 240px;
+    max-width: 40rem;
     position: relative;
     z-index: 200;
 
@@ -67,6 +66,7 @@
   }
 
   &-link {
+    margin-bottom: 0.6rem;
     a {
       display: inline-block;
       color: var(--color-background);
