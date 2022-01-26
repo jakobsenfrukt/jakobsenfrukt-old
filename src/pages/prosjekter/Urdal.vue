@@ -7,31 +7,16 @@
           src="/assets/images/projects/urdal/01.png"
         />
       </div>
-      <div class="project-info">
-        <div class="project-text">
-          <h1 class="project-title">
-            Urdal <span class="project-year">2021</span>
-          </h1>
-          <p class="project-lead">
-            Nettside for designer/journalist Thea Urdal, utviklet på Nuxt +
-            Sanity og designet i samarbeid med Urdal selv. Prosjektet fikk
-            diplom i Visueltkonkurransen 2021.
-          </p>
-        </div>
-        <div class="project-meta">
-          <div class="project-link">
-            <g-link to="https://theaurdal.com">theaurdal.com &#8599;</g-link>
-          </div>
-          <div class="project-tags">
-            <ul class="tag-list">
-              <li class="tag">Vue</li>
-              <li class="tag">Gridsome</li>
-              <li class="tag">Sanity</li>
-              <li class="tag">Visuelt 2021</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <ProjectInfo
+        title="Urdal"
+        year="2021"
+        lead="Nettside for designer/journalist Thea Urdal, utviklet på Nuxt og
+            Sanity, og designet i samarbeid med Urdal selv. Prosjektet fikk
+            diplom i Visueltkonkurransen 2021."
+        url="https://theaurdal.com"
+        link="theaurdal.com"
+        :tags="['Vue', 'Nuxt', 'Sanity', 'Samarbeid', 'Visuelt 2021']"
+      />
     </section>
 
     <section class="project-gallery">
@@ -136,7 +121,12 @@
 </template>
 
 <script>
+import ProjectInfo from "@/components/projects/ProjectInfo";
+
 export default {
+  components: {
+    ProjectInfo,
+  },
   metaInfo: {
     title: "Testprosjekt",
   },

@@ -7,30 +7,16 @@
           src="/assets/images/projects/bransjen/top.png"
         />
       </div>
-      <div class="project-info">
-        <div class="project-description">
-          <h1 class="project-title">
-            Bransjen <span class="project-year">2021</span>
-          </h1>
-          <p class="project-lead">
-            Nettside for designstudioet Bransjen, bygget på Gridsome og Sanity,
-            og designet i samarbeid med Bransjen selv.
-          </p>
-        </div>
-        <div class="project-meta">
-          <div class="project-link">
-            <g-link to="https://bransjen.no">bransjen.no &#8599;</g-link>
-          </div>
-          <div class="project-tags">
-            <ul class="tag-list">
-              <li class="tag">Vue</li>
-              <li class="tag">Gridsome</li>
-              <li class="tag">Sanity</li>
-              <li class="tag">Samarbeid</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <ProjectInfo
+        title="Bransjen"
+        year="2021"
+        lead="Nettside for designstudioet Bransjen, bygget på Gridsome og Sanity,
+            og designet i samarbeid med Bransjen selv. Her får Bransjen vist
+            fram sine vakre arbeider, sine mange logoer, og siste bransjenytt."
+        url="https://bransjen.no"
+        link="bransjen.no"
+        :tags="['Vue', 'Gridsome', 'Sanity', 'Samarbeid']"
+      />
     </section>
 
     <section class="project-gallery">
@@ -82,7 +68,12 @@
 </template>
 
 <script>
+import ProjectInfo from "@/components/projects/ProjectInfo";
+
 export default {
+  components: {
+    ProjectInfo,
+  },
   metaInfo: {
     title: "Testprosjekt",
   },
