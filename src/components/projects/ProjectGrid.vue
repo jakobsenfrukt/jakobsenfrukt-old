@@ -60,7 +60,7 @@
       image="/assets/images/thumbs/renate-thor.png"
       url="https://renatethor.com"
       link="renatethor.com"
-      year="2021"
+      year="2020"
       :tags="['Vue', 'Nuxt', 'Sanity']"
     />
     <ProjectItem

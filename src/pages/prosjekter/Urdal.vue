@@ -9,7 +9,7 @@
       </div>
       <ProjectInfo
         title="Urdal"
-        year="2021"
+        year="2020"
         lead="Nettside for designer/journalist Thea Urdal, utviklet på Nuxt og
             Sanity, og designet i samarbeid med Urdal selv. Prosjektet fikk
             diplom i Visueltkonkurransen 2021."

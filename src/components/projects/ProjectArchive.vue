@@ -9,6 +9,29 @@
     </h2>
     <div class="project-grid">
       <ProjectItem
+        title="Marcus & Martinus"
+        lead="Nettside for artist Marcus & Martinus, bygget på Vue/Nuxt og Craft CMS."
+        image="/assets/images/thumbs/marcusandmartinus.png"
+        year="2019"
+        :tags="['Vue', 'Nuxt', 'Craft CMS']"
+      />
+      <ProjectItem
+        title="Julie Aida v2.0"
+        lead="Portfolio for kunstner og illustratør Julie Aida, bygget på Craft CMS."
+        image="/assets/images/thumbs/julieaida.png"
+        url="https://julieaida.com"
+        year="2018"
+        :tags="['Craft CMS']"
+      />
+      <ProjectItem
+        title="Julie Aida v1.0"
+        lead="Portfolio for kunstner og illustratør Julie Aida, bygget på Craft CMS."
+        image="/assets/images/thumbs/julieaida-v1.png"
+        url="https://julieaida.com"
+        year="2017"
+        :tags="['Craft CMS']"
+      />
+      <ProjectItem
         title="Kit Wan Studios"
         lead="Landingsside for den aller første kolleksjonen til motedesigner Kit Wan."
         image="/assets/images/thumbs/kitwan.png"
@@ -25,36 +48,6 @@
         year="2016"
       />
       <ProjectItem
-        title="Julie Aida v2.0"
-        lead="Portfolio for kunstner og illustratør Julie Aida, bygget på Craft CMS."
-        image="/assets/images/thumbs/julieaida.png"
-        url="https://julieaida.com"
-        year="2018"
-        :tags="['Craft CMS']"
-      />
-      <ProjectItem
-        title="Marcus & Martinus"
-        lead="Nettside for artist Marcus & Martinus, bygget på Vue/Nuxt og Craft CMS."
-        image="/assets/images/thumbs/marcusandmartinus.png"
-        year="2019"
-        :tags="['Vue', 'Nuxt', 'Craft CMS']"
-      />
-      <ProjectItem
-        title="Julie Aida v1.0"
-        lead="Portfolio for kunstner og illustratør Julie Aida, bygget på Craft CMS."
-        image="/assets/images/thumbs/julieaida-v1.png"
-        url="https://julieaida.com"
-        year="2017"
-        :tags="['Craft CMS']"
-      />
-      <ProjectItem
-        title="Designavgang 2015"
-        lead="Nettside for avgangsutstillingen til KHiOs designavdeling, våren 2015."
-        image="/assets/images/thumbs/designavgang.png"
-        year="2015"
-        :tags="['JQuery', 'Stacey CMS']"
-      />
-      <ProjectItem
         title="Matilda Karlström"
         lead="Portfolio for klesdesigner Matilda Karlström, bygget på Craft CMS."
         image="/assets/images/thumbs/matilda.png"
@@ -62,6 +55,13 @@
         link="matildakarlstrom.com"
         year="2016"
         :tags="['JQuery', 'Craft CMS']"
+      />
+      <ProjectItem
+        title="Designavgang 2015"
+        lead="Nettside for avgangsutstillingen til KHiOs designavdeling, våren 2015."
+        image="/assets/images/thumbs/designavgang.png"
+        year="2015"
+        :tags="['JQuery', 'Stacey CMS']"
       />
       <ProjectItem
         title="Live Space"
@@ -76,7 +76,7 @@
         image="/assets/images/thumbs/iselin.png"
         url="http://iselinkleiva.com/"
         link="iselinkleiva.com"
-        year="2016"
+        year="2015"
         :tags="['JQuery', 'Wordpress']"
       />
       <ProjectItem
