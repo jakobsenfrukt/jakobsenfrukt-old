@@ -1,12 +1,30 @@
 <template>
   <section class="project-grid">
     <ProjectItem
+      title="Villbrygg"
+      image="/assets/images/thumbs/designavgang.png"
+      year="2021"
+      :tags="['Vue', 'Gridsome', 'Sanity']"
+      ongoing
+    />
+    <ProjectItem
+      title="Gyldendal"
+      lead="Design og illustrasjoner til Gyldendals digitale læremiddel Smart Øving."
+      image="/assets/images/thumbs/gyldendal.png"
+      year="2020"
+      :tags="['React', 'Framer', 'Illustrator']"
+      ongoing
+    />
+    <ProjectItem
       title="Ørseng Interiørarkitektur"
       lead="Nettside for Ørseng Interiørarkitektur."
       image="/assets/images/thumbs/designavgang.png"
       url="https://orseng.no"
       link="orseng.no"
       year="2021"
+      :tags="['Vue', 'Gridsome', 'Sanity']"
+      background="pink"
+      color="red"
     />
     <ProjectItem
       title="All Ears"
@@ -15,6 +33,7 @@
       url="https://all-ears.no"
       link="all-ears.no"
       year="2021"
+      :tags="['Vue', 'Gridsome', 'Sanity']"
     />
     <ProjectItem
       title="Studio Lakayan"
@@ -23,6 +42,7 @@
       url="https://lakayan.no"
       link="lakayan.no"
       year="2021"
+      :tags="['Vue', 'Gridsome', 'Sanity']"
     />
     <ProjectItem
       title="Bransjen"
@@ -32,6 +52,7 @@
       link="bransjen.no"
       slug="bransjen"
       year="2021"
+      :tags="['Vue', 'Gridsome', 'Sanity']"
     />
     <ProjectItem
       title="Renate Thor"
@@ -40,21 +61,17 @@
       url="https://renatethor.com"
       link="renatethor.com"
       year="2021"
+      :tags="['Vue', 'Nuxt', 'Sanity']"
     />
     <ProjectItem
-      title="Thea Urdal"
+      title="Urdal"
       lead="Portfolio for designer og journalist Thea Urdal, bygget på Vue/Nuxt og Sanity."
       image="/assets/images/thumbs/urdal.png"
       url="https://theaurdal.com"
       link="theaurdal.com"
       slug="urdal"
       year="2020"
-    />
-    <ProjectItem
-      title="Gyldendal"
-      lead="Design og illustrasjoner til Gyldendals digitale læremiddel Smart Øving."
-      image="/assets/images/thumbs/gyldendal.png"
-      year="2020"
+      :tags="['Vue', 'Nuxt', 'Sanity']"
     />
     <ProjectItem
       title="Bergesenstiftelsen"
@@ -63,6 +80,7 @@
       url="https://bergesenstiftelsen.no"
       link="bergesenstiftelsen.no"
       year="2020"
+      :tags="['Vue', 'Nuxt', 'Craft CMS']"
     />
     <ProjectItem
       title="IMKHiO"
@@ -71,6 +89,7 @@
       url="https://imkhio.no"
       link="imkhio.no"
       year="2020"
+      :tags="['Craft CMS']"
     />
     <ProjectItem
       title="Balansemerket"
@@ -79,6 +98,7 @@
       url="https://balansemerket.no"
       link="balansemerket.no"
       year="2019"
+      :tags="['Vue', 'Nuxt', 'Craft CMS']"
     />
     <ProjectItem
       title="Chateau Neuf"
@@ -87,6 +107,7 @@
       url="https://neuf.no"
       link="neuf.no"
       year="2019"
+      :tags="['React', 'Gatsby', 'Wordpress']"
     />
     <ProjectItem
       title="Aller Concept Store"
@@ -95,6 +116,7 @@
       url="https://allerconceptstore.no"
       link="allerconceptstore.no"
       year="2019"
+      :tags="['Vue', 'Craft CMS']"
     />
     <ProjectItem
       title="Dorna Lakayan"
@@ -103,6 +125,7 @@
       url="https://dorna.no"
       link="dorna.no"
       year="2019"
+      :tags="['Vue', 'Nuxt', 'Craft CMS']"
     />
     <ProjectItem
       title="Ruter Bærekraft"
@@ -111,22 +134,6 @@
       url="https://barekraft.ruter.no/"
       link="barekraft.ruter.no"
       year="2018"
-    />
-    <ProjectItem
-      title="Kit Wan Studios"
-      lead="Landingsside for den aller første kolleksjonen til motedesigner Kit Wan."
-      image="/assets/images/thumbs/kitwan.png"
-      url="https://kitwanstudios.com"
-      link="kitwanstudios.com"
-      year="2016"
-    />
-    <ProjectItem
-      title="Ida Christensen"
-      lead="Portfolio for grafisk designer Ida Christensen, bygget i ren HTML og CSS."
-      image="/assets/images/thumbs/ida.png"
-      url="https://idachristensen.no"
-      link="idachristensen.no"
-      year="2016"
     />
   </section>
 </template>

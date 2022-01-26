@@ -12,29 +12,75 @@
   &-info {
     font-size: var(--font-size-s);
     margin: 4rem auto 6rem;
-    width: 50%;
+    width: 60%;
     min-width: 240px;
     position: relative;
     z-index: 200;
 
     @media (min-width: 666px) {
       display: grid;
-      grid-template-columns: 2fr 1fr 3fr;
+      grid-template-columns: 2fr 1fr;
       column-gap: var(--spacing-gap);
     }
   }
 
   &-title {
-    font-size: var(--font-size-s);
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: var(--letter-spacing);
-    line-height: inherit;
+    font-size: var(--font-size-l);
+    font-weight: 800;
+    margin: 0 0 0.6rem;
+  }
+  &-year {
+    font-weight: 300;
+    color: var(--color-text-opacity);
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 2rem;
+      margin: 0 0.4rem 0 0;
+      background: var(--color-text-opacity);
+      vertical-align: middle;
+    }
   }
 
   &-lead {
-    margin: 0;
-    line-height: inherit;
+    margin: 0 0 1rem;
+  }
+
+  &-tags {
+    .tag-list {
+      margin: 0;
+      padding: 0;
+    }
+    .tag {
+      display: inline-block;
+      color: var(--color-text);
+      background: var(--color-background);
+      border: 1px solid var(--color-text-opacity);
+      border-radius: 2rem;
+      text-decoration: none;
+      margin-right: 0.42em;
+      padding: 0.2em 0.66em;
+      font-size: var(--font-size-xs);
+      opacity: 0.6;
+    }
+  }
+
+  &-link {
+    a {
+      display: inline-block;
+      color: var(--color-background);
+      background: var(--color-link);
+      border-radius: 2rem;
+      text-decoration: none;
+      margin-right: 0.66rem;
+      padding: 0.2rem 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: var(--letter-spacing);
+      &:hover {
+        color: var(--color-background);
+      }
+    }
   }
 
   &-gallery {
@@ -68,6 +114,10 @@
       margin: 0 auto 4rem;
       border-radius: var(--border-radius);
       box-shadow: var(--box-shadow);
+
+      &.no-shadow {
+        box-shadow: none;
+      }
     }
   }
 
@@ -107,7 +157,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3rem;
+  grid-gap: var(--spacing-siteborder);
 
   @media (min-width: 2000px) {
     grid-template-columns: repeat(5, 1fr);

@@ -1,35 +1,75 @@
 <template>
   <section class="showcase">
-    <g-image alt="Example image" src="/assets/images/thumbs/urdal.png" />
-    <p class="giant">
+    <div class="item urdal">
+      <g-image
+        alt="Example image"
+        src="/assets/images/thumbs/urdal.png"
+        class="urdal-image"
+      />
+      <img
+        src="/assets/images/fun/urdal-diplom.svg"
+        alt="Gul sirkel med teksten 'Diplom i Visuelt 2021'"
+        class="urdal-diplom"
+      />
+    </div>
+    <div class="item bergesenstiftelsen">
+      <g-image
+        alt="Example image"
+        src="/assets/images/thumbs/bergesenstiftelsen.png"
+        class="bergesenstiftelsen-image"
+      />
+    </div>
+    <Chatbubble text="Jeg liker internett" class="item" />
+    <p class="giant item">
       Kul web design
     </p>
   </section>
 </template>
 
 <script>
-import A4 from "@/components/fun/a4";
+import Chatbubble from "@/components/fun/chatbubble";
 import Test from "@/components/Test";
 
 export default {
   components: {
-    A4,
+    Chatbubble,
     Test,
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll(event) {
+      var scrollTop = window.scrollY;
+      var oddImgPos = scrollTop / 6 + "px";
+      var evenImgPos = scrollTop / 3 + "px";
+
+      var oddItems = document.querySelectorAll(".item:nth-child(odd)");
+      oddItems.forEach(function(item) {
+        item.style.transform = "translateY(" + oddImgPos + ")";
+      });
+      var evenItems = document.querySelectorAll(".item:nth-child(even)");
+      evenItems.forEach(function(item) {
+        item.style.transform = "translateY(" + evenImgPos + ")";
+      });
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .showcase {
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 
   @media (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -51,6 +91,27 @@ p {
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+  }
+}
+
+.urdal {
+  position: relative;
+  &-image {
+    width: 100%;
+  }
+  &-diplom {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 6rem;
+    height: 6rem;
+    transform: rotate(40deg);
+    z-index: -1;
+  }
+  &:hover {
+    .urdal-diplom {
+      animation: rotateUrdal 4s linear infinite;
+    }
   }
 }
 </style>

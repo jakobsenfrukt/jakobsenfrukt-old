@@ -72,12 +72,12 @@ export default {
       color: inherit;
       background: var(--color-hover);
     }
-    &.active--exact {
+    /*&.active--exact {
       &:hover {
         background: var(--color-background);
         cursor: default;
       }
-    }
+    }*/
 
     &.logo {
       width: 1.42rem;
