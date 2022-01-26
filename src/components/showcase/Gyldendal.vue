@@ -122,7 +122,7 @@ export default {
     animation: drawStroke 4s ease-out 0.24s forwards;
   }
   .good {
-    animation: drawStroke 2s ease-out 0.24s forwards;
+    animation: drawStroke 1.8s ease-out 0.24s forwards;
   }
   .medium {
     animation: drawStroke 2s ease-out 0.24s forwards;
