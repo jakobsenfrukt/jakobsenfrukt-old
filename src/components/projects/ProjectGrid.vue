@@ -10,7 +10,7 @@
     <ProjectItem
       title="Ørseng Interiørarkitektur"
       lead="Nettside for Ørseng Interiørarkitektur."
-      image="/assets/images/thumbs/designavgang.png"
+      image="/assets/images/projects/orseng/thumb.png"
       url="https://orseng.no"
       link="orseng.no"
       year="2021"
@@ -21,7 +21,7 @@
     <ProjectItem
       title="All Ears"
       lead="Nettside for musikkfestivalen All Ears."
-      image="/assets/images/thumbs/designavgang.png"
+      image="/assets/images/projects/all-ears/thumb.png"
       url="https://all-ears.no"
       link="all-ears.no"
       year="2021"

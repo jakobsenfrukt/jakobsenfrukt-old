@@ -1,6 +1,5 @@
 <template>
   <div class="layout">
-    <!--<Stars />-->
     <Header />
 
     <transition name="fade" appear>
@@ -24,12 +23,10 @@ query {
 </static-query>
 
 <script>
-import Stars from "@/components/Stars";
 import Header from "@/components/Header";
 
 export default {
   components: {
-    Stars,
     Header,
   },
 };
