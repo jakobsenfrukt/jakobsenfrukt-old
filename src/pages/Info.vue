@@ -40,10 +40,11 @@
         <a href="https://elisejakob.no" target="_blank">Elise</a>, men
         samarbeider med en rekke andre flinke folk i
         <a href="https://bransjen.no" target="_blank">Bransjen</a>,
-        <a href="https://minsk.no" target="_blank">Minsk</a>,
+        <a href="https://blaamyra.no" target="_blank">Blåmyra</a>,
         <a href="https://nettveveriet.no" target="_blank"
           >Braathens Nettveveri</a
-        >, etc.
+        >, etc. (Samarbeider også gjerne med de som ikke har navn som begynner
+        på B.)
       </p>
     </section>
     <section>
@@ -51,19 +52,19 @@
       <p>
         Poteten Elise vokste opp i Gartnerveien i Sarpsborg, men flyttet til
         Oslo i 2011 for å ta en master i grafisk design og illustrasjon på
-        <a href="http://khio.no/" target="_blank">KHiO</a>.
+        <a href="http://khio.no/" target="_blank">Kunsthøgskolen i Oslo</a>.
       </p>
       <p>
-        Hun har tidligere vært ansatt i digitalbyrået
+        Hun har tidligere vært ansatt i design- og teknologibyrået
         <a href="https://netlife.com" target="_blank">Netlife</a>, der hun
-        jobbet med kunder som Telenor, Kreftforeningen og UiO. Høsten 2018
-        bestemte hun seg for å satse fullt og helt på egen praksis, og JF&amp;G
-        tok form.
+        jobbet med design for kunder som Telenor, Kreftforeningen og UiO. Høsten
+        2018 bestemte hun seg for å satse fullt og helt på egen praksis, og
+        JF&amp;G tok form.
       </p>
       <p>
         Elise har også undervist i webdesign på
-        <a href="http://khio.no/" target="_blank">KHiO</a> i flere år, sittet i
-        juryen i
+        <a href="http://khio.no/" target="_blank">KHiO</a> gjennom flere år,
+        sittet i juryen i
         <a href="https://www.gulltaggen.no/" target="_blank">Gulltaggen</a>, og
         vunnet pris i
         <a
@@ -84,6 +85,51 @@
         >. Elise har skrevet denne teksten selv i tredjeperson, og
         {{ elise[Math.floor(Math.random() * elise.length)] }}.
       </p>
+    </section>
+    <section class="press">
+      <ul aria-label="Artikler" class="articles">
+        <li class="article">
+          <div class="article-image">
+            <g-image
+              alt="Foto av Elise foran arbeidsstasjonen sin"
+              src="/assets/images/info/elise-digi.jpg"
+            />
+          </div>
+          <div class="article-text">
+            <h2>Utviklerprofilen i Digi</h2>
+            <p>16. mai 2020</p>
+            <blockquote>
+              – Det virker som om flere og flere velger å bli selvstendige
+              konsulenter
+            </blockquote>
+          </div>
+          <a
+            href="https://www.digi.no/artikler/intervju-det-virker-som-om-flere-og-flere-velger-a-bli-selvstendige-konsulenter/492265?key=ZVjvlYyO"
+            target="_blank"
+            class="article-link"
+            >Digi</a
+          >
+        </li>
+        <li class="article">
+          <div class="article-image">
+            <g-image
+              alt="Foto av Elise foran arbeidsstasjonen sin"
+              src="/assets/images/info/elise-kode24.jpg"
+            />
+          </div>
+          <div class="article-text">
+            <h2>Ukas koder i Kode 24</h2>
+            <p>16. januar 2020</p>
+            <blockquote>- Jeg har blitt veldig glad i Vue</blockquote>
+          </div>
+          <a
+            href="https://www.kode24.no/ukas-koder/jeg-har-blitt-veldig-glad-i-vue/72025574"
+            target="_blank"
+            class="article-link"
+            >Kode24</a
+          >
+        </li>
+      </ul>
     </section>
     <!--<section class="list-columns">
       <ul class="list clients">
@@ -125,8 +171,10 @@
           >ITC Clearface Bold</a
         >
         og
-        <a href="https://fonts.google.com/specimen/Roboto+Mono" target="_blank"
-          >Roboto Mono Regular</a
+        <a href="https://fonts.adobe.com/fonts/acumin" target="_blank"
+          ><span class="acumin"
+            >Acumin Pro Wide Regular + <strong>Black</strong></span
+          ></a
         >. Nettsiden er kontinuerlig under utvikling, for på internett trenger
         ingenting å sies helt ferdig. På gjensyn!
       </p>
@@ -204,6 +252,73 @@ section {
         content: ", ";
       }
     }
+  }
+}
+.articles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  .article {
+    width: 19rem;
+    background: var(--color-background);
+    box-shadow: 0 0 1rem var(--color-shadow);
+    border-radius: 1rem;
+    display: flex;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      //transform: translateY(-6px);
+      //border: 3px solid var(--color-link);
+      box-shadow: 0 0 1rem var(--color-shadow), 0 0 0 2px var(--color-link);
+    }
+    &-image {
+      width: 36%;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      overflow: hidden;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-text {
+      width: 64%;
+      padding: 1rem;
+      h2 {
+        font-size: var(--font-size-s);
+        margin: 0;
+        color: var(--color-link);
+      }
+      p {
+        font-family: var(--font-sans);
+        font-size: var(--font-size-xs);
+        opacity: 0.6;
+      }
+      blockquote {
+        font-size: var(--font-size-xs);
+        font-style: italic;
+      }
+    }
+    &-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      overflow: hidden;
+      text-indent: -9999px;
+      z-index: 0;
+    }
+  }
+}
+.acumin {
+  font-family: var(--font-sans);
+  strong {
+    font-weight: 800;
   }
 }
 @media (min-width: 666px) {

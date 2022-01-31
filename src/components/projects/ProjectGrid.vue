@@ -1,20 +1,12 @@
 <template>
   <section class="project-grid">
-    <ProjectItem
+    <!--<ProjectItem
       title="Villbrygg"
       image="/assets/images/thumbs/designavgang.png"
       year="2021"
       :tags="['Vue', 'Gridsome', 'Sanity']"
       ongoing
-    />
-    <ProjectItem
-      title="Gyldendal"
-      lead="Design og illustrasjoner til Gyldendals digitale læremiddel Smart Øving."
-      image="/assets/images/thumbs/gyldendal.png"
-      year="2020"
-      :tags="['React', 'Framer', 'Illustrator']"
-      ongoing
-    />
+    />-->
     <ProjectItem
       title="Ørseng Interiørarkitektur"
       lead="Nettside for Ørseng Interiørarkitektur."
@@ -34,6 +26,14 @@
       link="all-ears.no"
       year="2021"
       :tags="['Vue', 'Gridsome', 'Sanity']"
+    />
+    <ProjectItem
+      title="Gyldendal"
+      lead="Design og illustrasjoner til Gyldendals digitale læremiddel Smart Øving."
+      image="/assets/images/thumbs/gyldendal.png"
+      year="2020"
+      :tags="['React', 'Framer', 'Illustrator']"
+      ongoing
     />
     <ProjectItem
       title="Studio Lakayan"
