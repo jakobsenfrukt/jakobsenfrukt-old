@@ -26,11 +26,14 @@
     <div class="item gyldendal">
       <Gyldendal />
     </div>
+    <ProjectCursor />
   </section>
 </template>
 
 <script>
 import Gyldendal from "@/components/showcase/Gyldendal";
+
+import ProjectCursor from "@/components/projects/ProjectCursor";
 
 import Chatbubble from "@/components/fun/chatbubble";
 import Test from "@/components/Test";
@@ -40,6 +43,7 @@ export default {
     Gyldendal,
     Chatbubble,
     Test,
+    ProjectCursor,
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -99,7 +103,7 @@ p {
     );
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 
