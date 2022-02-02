@@ -33,15 +33,18 @@
         </g>
       </g>
     </svg>
+    <!--<ProjectCursor class="cursor" />-->
   </div>
 </template>
 
 <script>
 import IntersectionObserver from "~/components/tools/IntersectionObserver";
+//import ProjectCursor from "~/components/projects/ProjectCursor";
 
 export default {
   components: {
     IntersectionObserver,
+    //ProjectCursor,
   },
   data() {
     return {
@@ -57,6 +60,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/*.gyldendal {
+  .cursor {
+    opacity: 0;
+  }
+  &:hover {
+    .cursor {
+      opacity: 1;
+    }
+  }
+}*/
 .high-bg,
 .empty,
 .good-bg,
