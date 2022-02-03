@@ -26,11 +26,15 @@
     <div class="item gyldendal">
       <Gyldendal />
     </div>
+    <div class="item orseng">
+      <Orseng />
+    </div>
   </section>
 </template>
 
 <script>
 import Gyldendal from "@/components/showcase/Gyldendal";
+import Orseng from "@/components/showcase/Orseng";
 
 import Chatbubble from "@/components/fun/chatbubble";
 import Test from "@/components/Test";
@@ -38,6 +42,7 @@ import Test from "@/components/Test";
 export default {
   components: {
     Gyldendal,
+    Orseng,
     Chatbubble,
     Test,
   },
@@ -120,6 +125,14 @@ p {
   &:hover {
     .urdal-diplom {
       animation: rotateUrdal 4s linear infinite;
+    }
+  }
+}
+
+@media (max-width: 666px) {
+  p {
+    &.giant {
+      font-size: 4.6rem;
     }
   }
 }

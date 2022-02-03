@@ -17,7 +17,7 @@
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path class="high-bg" d="M175.8,84.41a80.29,80.29,0,1,1-21,0" />
-          <path class="empty" d="M175.74,104.75a60.21,60.21,0,1,1-20.92,0" />
+          <path class="high-bg" d="M175.74,104.75a60.21,60.21,0,1,1-20.92,0" />
           <path class="good-bg" d="M154,64.63a100.59,100.59,0,1,0,21.79,0" />
           <path
             class="medium-bg"
@@ -27,9 +27,16 @@
           <path class="empty" d="M154.16,4.6a160.32,160.32,0,1,0,22.24,0" />
           <path class="high" d="M175.8,84.41a80.31,80.31,0,1,1-59.89,16.13" />
           <path class="high" d="M175.74,104.75a60.21,60.21,0,1,1-20.92,0" />
-          <path class="good" d="M71.4,127.9A100.6,100.6,0,1,0,175.82,64.6" />
-          <path class="medium" d="M179.9,284.41a120.71,120.71,0,0,0-3.73-240" />
-          <path class="low" d="M283.69,89.93A140.2,140.2,0,0,0,176.4,24.82" />
+          <path
+            class="good"
+            d="M175.8,64.6c8.9,1,17.6,3.1,26,6.4c51.7,20.3,77.2,78.7,56.9,130.4s-78.7,77.2-130.4,56.9
+			C76.6,238,51.1,179.6,71.4,127.9"
+          />
+          <path
+            class="medium"
+            d="M176.2,44.4c56.5,5.2,101.8,49.1,108.7,105.4c8.2,66.2-38.8,126.4-105,134.6"
+          />
+          <path class="low" d="M176.4,24.8c44,3.6,83.8,27.7,107.3,65.1" />
         </g>
       </g>
     </svg>
@@ -122,26 +129,26 @@ export default {
   stroke-dashoffset: 1000;
 }
 .good {
-  stroke-dashoffset: -520;
+  stroke-dashoffset: 1000;
 }
 .medium {
-  stroke-dashoffset: -360;
+  stroke-dashoffset: 1000;
 }
 .low {
-  stroke-dashoffset: -140;
+  stroke-dashoffset: 1000;
 }
 .inview {
   .high {
-    animation: drawStroke 4s ease-out 0.24s forwards;
+    animation: drawStroke 4s ease-out forwards;
   }
   .good {
-    animation: drawStroke 1.8s ease-out 0.24s forwards;
+    animation: drawStroke 4s ease-out forwards;
   }
   .medium {
-    animation: drawStroke 2s ease-out 0.24s forwards;
+    animation: drawStroke 6s ease-out forwards;
   }
   .low {
-    animation: drawStroke 1.8s ease-out 0.24s forwards;
+    animation: drawStroke 12s ease-out forwards;
   }
 }
 .observer {
