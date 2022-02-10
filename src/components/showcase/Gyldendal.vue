@@ -77,6 +77,13 @@ export default {
     }
   }
 }*/
+.gyldendal {
+  width: 100%;
+  max-width: 24rem;
+}
+svg {
+  width: 100%;
+}
 .high-bg,
 .empty,
 .good-bg,
