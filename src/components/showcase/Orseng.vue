@@ -83,6 +83,7 @@ export default {
     fill: currentColor;
   }
   .stroke {
+    fill: none;
     stroke: currentColor;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;

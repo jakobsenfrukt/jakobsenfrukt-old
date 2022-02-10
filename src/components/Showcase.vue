@@ -1,6 +1,7 @@
 <template>
   <section class="showcase">
-    <div class="item urdal">
+    <div></div>
+    <div class="scroll-item scroll-slow urdal">
       <g-image
         alt="Example image"
         src="/assets/images/thumbs/urdal.png"
@@ -12,21 +13,21 @@
         class="urdal-diplom"
       />
     </div>
-    <div class="item bergesenstiftelsen">
+    <Chatbubble text="Jeg liker internett" class="scroll-item scroll-slow" />
+    <p class="giant">
+      Kul web design
+    </p>
+    <div class="scroll-item scroll-fast gyldendal">
+      <Gyldendal />
+    </div>
+    <div class="scroll-item scroll-slow bergesenstiftelsen">
       <g-image
         alt="Example image"
         src="/assets/images/thumbs/bergesenstiftelsen.png"
         class="bergesenstiftelsen-image"
       />
     </div>
-    <Chatbubble text="Jeg liker internett" class="item" />
-    <p class="giant">
-      Kul web design
-    </p>
-    <div class="item gyldendal">
-      <Gyldendal />
-    </div>
-    <div class="item orseng">
+    <div class="scroll-item scroll-fast orseng">
       <Orseng />
     </div>
   </section>
@@ -55,17 +56,20 @@ export default {
   methods: {
     handleScroll(event) {
       var scrollTop = window.scrollY;
-      var fastPos = scrollTop / 6 + "px";
-      var mediumPos = scrollTop / 4 + "px";
-      var slowPos = scrollTop / 3 + "px";
-      var slowestPos = scrollTop / 2 + "px";
+      var fastPos = scrollTop / 6.6 + "px";
+      var mediumPos = scrollTop / 4.2 + "px";
+      var slowPos = scrollTop / 3.6 + "px";
 
-      var oddItems = document.querySelectorAll(".item:nth-child(odd)");
-      oddItems.forEach(function(item) {
+      var fastItems = document.querySelectorAll(".scroll-fast");
+      fastItems.forEach(function(item) {
         item.style.transform = "translateY(" + fastPos + ")";
       });
-      var evenItems = document.querySelectorAll(".item:nth-child(even)");
-      evenItems.forEach(function(item) {
+      var mediumItems = document.querySelectorAll(".scroll-medium");
+      mediumItems.forEach(function(item) {
+        item.style.transform = "translateY(" + mediumPos + ")";
+      });
+      var slowItems = document.querySelectorAll(".scroll-slow");
+      slowItems.forEach(function(item) {
         item.style.transform = "translateY(" + slowPos + ")";
       });
     },
@@ -78,12 +82,14 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
   padding-bottom: 24rem;
 
   @media (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1440px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -91,6 +97,7 @@ export default {
 p {
   margin: 0 auto;
   &.giant {
+    grid-column: span 2;
     text-align: center;
     font-family: var(--font-serif);
     font-size: 8rem;

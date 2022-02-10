@@ -24,6 +24,14 @@
         :tags="['Craft CMS']"
       />
       <ProjectItem
+        title="Ruter Bærekraft"
+        lead="Online versjon av Ruters bærekrafthåndbok."
+        image="/assets/images/thumbs/ruter-barekraft.png"
+        url="https://barekraft.ruter.no/"
+        link="barekraft.ruter.no"
+        year="2018"
+      />
+      <ProjectItem
         title="Julie Aida v1.0"
         lead="Portfolio for kunstner og illustratør Julie Aida, bygget på Craft CMS."
         image="/assets/images/thumbs/julieaida-v1.png"

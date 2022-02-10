@@ -2,10 +2,18 @@
   <section class="project-grid">
     <!--<ProjectItem
       title="Villbrygg"
+      lead="Nettside for Villbrygg."
       image="/assets/images/thumbs/designavgang.png"
-      year="2021"
+      year="2022"
       :tags="['Vue', 'Gridsome', 'Sanity']"
       ongoing
+    />-->
+    <!--<ProjectItem
+      title="Typografi Illustrert"
+      lead="Nettside for utstilling på Grafill."
+      image="/assets/images/thumbs/typografi-illustrert.png"
+      year="2022"
+      :tags="['Vue', 'Gridsome', 'Sanity']"
     />-->
     <ProjectItem
       title="Ørseng Interiørarkitektur"
@@ -118,7 +126,7 @@
       year="2019"
       :tags="['Vue', 'Craft CMS']"
     />
-    <ProjectItem
+    <!--<ProjectItem
       title="Dorna Lakayan"
       lead="Portfolio for designer Dorna Lakayan, bygget på Vue/Nuxt og Craft CMS."
       image="/assets/images/thumbs/dorna.png"
@@ -126,15 +134,7 @@
       link="dorna.no"
       year="2019"
       :tags="['Vue', 'Nuxt', 'Craft CMS']"
-    />
-    <ProjectItem
-      title="Ruter Bærekraft"
-      lead="Online versjon av Ruters bærekrafthåndbok."
-      image="/assets/images/thumbs/ruter-barekraft.png"
-      url="https://barekraft.ruter.no/"
-      link="barekraft.ruter.no"
-      year="2018"
-    />
+    />-->
   </section>
 </template>
 

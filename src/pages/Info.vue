@@ -37,14 +37,9 @@
       </p>
       <p>
         JF&amp;G er et enkvinnes designstudio som ble startet og drives av
-        <a href="https://elisejakob.no" target="_blank">Elise</a>, men
-        samarbeider med en rekke andre flinke folk i
-        <a href="https://bransjen.no" target="_blank">Bransjen</a>,
-        <a href="https://blaamyra.no" target="_blank">Blåmyra</a>,
-        <a href="https://nettveveriet.no" target="_blank"
-          >Braathens Nettveveri</a
-        >, etc. (Samarbeider også gjerne med de som ikke har navn som begynner
-        på B.)
+        <a href="https://elisejakob.no" target="_blank">Elise</a>, men har et
+        stort nettverk og henter samarbeidspartnere fra andre deler av bransjen
+        til prosjekter når det trengs.
       </p>
     </section>
     <section>
