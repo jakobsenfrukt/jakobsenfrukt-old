@@ -254,8 +254,9 @@ section {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
   .article {
     width: 19rem;
     background: var(--color-background);
@@ -274,7 +275,10 @@ section {
       border-top-left-radius: 1rem;
       border-bottom-left-radius: 1rem;
       overflow: hidden;
+      position: relative;
       img {
+        position: absolute;
+        width: 100%;
         height: 100%;
         object-fit: cover;
       }
@@ -322,6 +326,10 @@ section {
     + p {
       text-indent: 3.24rem;
     }
+  }
+  .articles {
+    flex-wrap: nowrap;
+    gap: 2rem;
   }
 }
 </style>
