@@ -2,19 +2,19 @@
   <Layout>
     <Stars />
     <Intro />
-    <Showcase />
+    <Teaser />
   </Layout>
 </template>
 
 <script>
 import Intro from "~/components/Intro";
-import Showcase from "~/components/Showcase";
+import Teaser from "~/components/Teaser";
 import Stars from "@/components/Stars";
 
 export default {
   components: {
     Intro,
-    Showcase,
+    Teaser,
     Stars,
   },
   metaInfo: {

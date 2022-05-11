@@ -3,7 +3,6 @@
     <nav class="nav">
       <g-link class="nav-link logo" to="/"><Leaf /></g-link>
       <g-link class="nav-link" to="/">Hjem</g-link>
-      <g-link class="nav-link" to="/prosjekter/">Prosjekter</g-link>
       <g-link class="nav-link" to="/info/">Info</g-link>
     </nav>
     <nav class="contact">
