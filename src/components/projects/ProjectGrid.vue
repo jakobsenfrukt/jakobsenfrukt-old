@@ -3,22 +3,22 @@
     <!--<ProjectItem
       title="Villbrygg"
       lead="Nettside for Villbrygg."
-      image="/assets/images/thumbs/designavgang.png"
+      image="/assets/images/projects/test/thumb.png"
       year="2022"
       :tags="['Vue', 'Gridsome', 'Sanity']"
       ongoing
     />-->
-    <!--<ProjectItem
-      title="Typografi Illustrert"
+    <ProjectItem
+      title="Typografiske begreper illustrert"
       lead="Nettside for utstilling på Grafill."
-      image="/assets/images/thumbs/typografi-illustrert.png"
+      image="/assets/images/projects/test/thumb.png"
       year="2022"
       :tags="['Vue', 'Gridsome', 'Sanity']"
-    />-->
+    />
     <ProjectItem
       title="Ørseng Interiørarkitektur"
       lead="Nettside for Ørseng Interiørarkitektur."
-      image="/assets/images/projects/orseng/thumb.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://orseng.no"
       link="orseng.no"
       year="2021"
@@ -29,7 +29,7 @@
     <ProjectItem
       title="All Ears"
       lead="Nettside for musikkfestivalen All Ears."
-      image="/assets/images/projects/all-ears/thumb.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://all-ears.no"
       link="all-ears.no"
       year="2021"
@@ -38,7 +38,7 @@
     <ProjectItem
       title="Gyldendal"
       lead="Design og illustrasjoner til Gyldendals digitale læremiddel Smart Øving."
-      image="/assets/images/thumbs/gyldendal.png"
+      image="/assets/images/projects/test/thumb.png"
       year="2020"
       :tags="['React', 'Framer', 'Illustrator']"
       ongoing
@@ -46,7 +46,7 @@
     <ProjectItem
       title="Studio Lakayan"
       lead="Landingsside for nyetablert interiørarkitekt Studio Lakayan, bygget på Gridsome og Sanity."
-      image="/assets/images/thumbs/studio-lakayan.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://lakayan.no"
       link="lakayan.no"
       year="2021"
@@ -55,7 +55,7 @@
     <ProjectItem
       title="Bransjen"
       lead="Portfolio for designbyrået Bransjen, bygget på Gridsome og Sanity."
-      image="/assets/images/thumbs/bransjen.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://bransjen.no"
       link="bransjen.no"
       slug="bransjen"
@@ -65,7 +65,7 @@
     <ProjectItem
       title="Renate Thor"
       lead="Portfolio for illustratør Renate Thor, bygget på Vue/Nuxt og Sanity."
-      image="/assets/images/thumbs/renate-thor.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://renatethor.com"
       link="renatethor.com"
       year="2020"
@@ -74,7 +74,7 @@
     <ProjectItem
       title="Urdal"
       lead="Portfolio for designer og journalist Thea Urdal, bygget på Vue/Nuxt og Sanity."
-      image="/assets/images/thumbs/urdal.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://theaurdal.com"
       link="theaurdal.com"
       slug="urdal"
@@ -84,7 +84,7 @@
     <ProjectItem
       title="Bergesenstiftelsen"
       lead="Nettside for Bergesenstiftelsen med søknadsveiledning og filtrerbar oversikt over stiftelsens tildelinger, bygget på Vue/Nuxt og Craft CMS."
-      image="/assets/images/thumbs/bergesenstiftelsen.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://bergesenstiftelsen.no"
       link="bergesenstiftelsen.no"
       year="2020"
@@ -93,7 +93,7 @@
     <ProjectItem
       title="IMKHiO"
       lead="Nettside for KHiOs avdeling for interiørarkitektur og møbeldesign med studentprosjekter og nyheter om hva som skjer på avdelingen, bygget på Craft CMS."
-      image="/assets/images/thumbs/imkhio.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://imkhio.no"
       link="imkhio.no"
       year="2020"
@@ -102,7 +102,7 @@
     <ProjectItem
       title="Balansemerket"
       lead="Ressursside med tiltak for et trygt kulturliv, bygget på Vue/Nuxt og Craft CMS."
-      image="/assets/images/thumbs/balansemerket.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://balansemerket.no"
       link="balansemerket.no"
       year="2019"
@@ -111,7 +111,7 @@
     <ProjectItem
       title="Chateau Neuf"
       lead="Nettside for Det Norske Studentersamfund, med arrangementskalender, utleie og info for frivillige."
-      image="/assets/images/thumbs/neuf.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://neuf.no"
       link="neuf.no"
       year="2019"
@@ -120,7 +120,7 @@
     <ProjectItem
       title="Aller Concept Store"
       lead="Nettside for Aller Concept Store, bygget på Vue og Craft CMS. Laget i samarbeid med HyperRedInk."
-      image="/assets/images/thumbs/aller-concept-store.png"
+      image="/assets/images/projects/test/thumb.png"
       url="https://allerconceptstore.no"
       link="allerconceptstore.no"
       year="2019"

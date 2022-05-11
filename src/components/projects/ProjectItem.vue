@@ -59,7 +59,6 @@ export default {
   padding: calc(var(--spacing-siteborder) / 2);
 
   &-text {
-    padding: calc(var(--spacing-siteborder) / 2);
   }
 
   &-title {
@@ -81,6 +80,8 @@ export default {
 
     img {
       width: 100%;
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 0.4rem var(--color-shadow);
     }
   }
 

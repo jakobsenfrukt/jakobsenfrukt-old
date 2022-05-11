@@ -260,7 +260,7 @@ section {
   .article {
     width: 19rem;
     background: var(--color-background);
-    box-shadow: 0 0 1rem var(--color-shadow);
+    box-shadow: 0 0 0.4rem var(--color-shadow);
     border-radius: 1rem;
     display: flex;
     position: relative;
