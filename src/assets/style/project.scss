@@ -112,7 +112,7 @@
     margin: 0 auto;
     img {
       display: block;
-      margin: 0 auto 4rem;
+      margin: 0 auto var(--spacing-gap);
       border-radius: var(--border-radius);
       box-shadow: var(--box-shadow);
 
@@ -160,16 +160,16 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: var(--spacing-siteborder);
 
-  @media (min-width: 2000px) {
+  @media (min-width: 2400px) {
     grid-template-columns: repeat(5, 1fr);
   }
-  @media (max-width: 1600px) {
+  @media (max-width: 1900px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 720px) {
+  @media (max-width: 800px) {
     grid-template-columns: 1fr;
   }
 }

@@ -1,22 +1,21 @@
 <template>
   <Layout>
     <ProjectGrid />
-    <ProjectArchive />
+    <!--<ProjectArchive />-->
   </Layout>
 </template>
 
-
 <script>
-import ProjectGrid from '~/components/projects/ProjectGrid'
-import ProjectArchive from '~/components/projects/ProjectArchive'
+import ProjectGrid from "~/components/projects/ProjectGrid";
+import ProjectArchive from "~/components/projects/ProjectArchive";
 
 export default {
   components: {
     ProjectGrid,
-    ProjectArchive
+    ProjectArchive,
   },
   metaInfo: {
-    title: 'Prosjekter'
-  }
-}
+    title: "Prosjekter",
+  },
+};
 </script>

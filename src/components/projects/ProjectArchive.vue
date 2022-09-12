@@ -9,6 +9,24 @@
     </h2>
     <div class="project-grid">
       <ProjectItem
+        title="Aller Concept Store"
+        lead="Nettside for Aller Concept Store, bygget på Vue og Craft CMS. Laget i samarbeid med HyperRedInk."
+        image="/assets/images/projects/test/thumb.png"
+        url="https://allerconceptstore.no"
+        link="allerconceptstore.no"
+        year="2019"
+        :tags="['Vue', 'Craft CMS']"
+      />
+      <!--<ProjectItem
+        title="Dorna Lakayan"
+        lead="Portfolio for designer Dorna Lakayan, bygget på Vue/Nuxt og Craft CMS."
+        image="/assets/images/thumbs/dorna.png"
+        url="https://dorna.no"
+        link="dorna.no"
+        year="2019"
+        :tags="['Vue', 'Nuxt', 'Craft CMS']"
+      />-->
+      <ProjectItem
         title="Marcus & Martinus"
         lead="Nettside for artist Marcus & Martinus, bygget på Vue/Nuxt og Craft CMS."
         image="/assets/images/thumbs/marcusandmartinus.png"

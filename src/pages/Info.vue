@@ -94,7 +94,7 @@
             <h2>Utviklerprofilen i Digi</h2>
             <p>16. mai 2020</p>
             <blockquote>
-              – Det virker som om flere og flere velger å bli selvstendige
+              &ndash; Det virker som om flere og flere velger å bli selvstendige
               konsulenter
             </blockquote>
           </div>
@@ -115,7 +115,7 @@
           <div class="article-text">
             <h2>Ukas koder i Kode 24</h2>
             <p>16. januar 2020</p>
-            <blockquote>- Jeg har blitt veldig glad i Vue</blockquote>
+            <blockquote>&ndash; Jeg har blitt veldig glad i Vue</blockquote>
           </div>
           <a
             href="https://www.kode24.no/ukas-koder/jeg-har-blitt-veldig-glad-i-vue/72025574"
@@ -203,7 +203,7 @@ p {
   font-size: 1rem;
 
   + p {
-    text-indent: 1.8rem;
+    margin-top: 1.24rem;
   }
 }
 section {
@@ -323,9 +323,6 @@ section {
 @media (min-width: 666px) {
   p {
     font-size: 1.24rem;
-    + p {
-      text-indent: 3.24rem;
-    }
   }
   .articles {
     flex-wrap: nowrap;
