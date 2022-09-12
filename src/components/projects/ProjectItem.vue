@@ -81,7 +81,7 @@ export default {
     img {
       width: 100%;
       border-radius: var(--border-radius);
-      box-shadow: 0 0 0.4rem var(--color-shadow);
+      box-shadow: 0 0 0 1px var(--color-shadow);
     }
   }
 

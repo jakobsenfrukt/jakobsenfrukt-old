@@ -21,7 +21,7 @@ body {
   --color-text-opacity: rgba(0, 0, 0, 0.6);
   --color-link: var(--color-red);
   --color-hover: var(--color-green);
-  --color-shadow: rgba(0, 0, 0, 0.24);
+  --color-shadow: rgba(0, 0, 0, 0.12);
 
   --spacing-siteborder: 0.8rem;
   --spacing-sitepadding: 3.6rem;
@@ -47,7 +47,7 @@ body[data-theme="dark"] {
   --color-text-opacity: rgba(255, 255, 255, 0.6);
   --color-link: var(--color-green);
   --color-hover: var(--color-red);
-  --color-shadow: rgba(255, 255, 255, 0.24);
+  --color-shadow: rgba(255, 255, 255, 0.12);
 }
 
 @media screen and (min-width: 666px) {
@@ -55,14 +55,12 @@ body[data-theme="dark"] {
     --spacing-siteborder: 1.6rem;
     --spacing-sitepadding: 6rem;
 
-    --border-radius: 4px;
     --box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
   }
 }
 
 @media screen and (min-width: 1200px) {
   body {
-    --border-radius: 6px;
     --box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.12);
   }
 }
