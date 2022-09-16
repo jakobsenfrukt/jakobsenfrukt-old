@@ -7,7 +7,17 @@
     <div class="text">
       <strong>Jakobsen Frukt &amp; Grønt</strong>
       <span>Elise Jakobsen</span>
+      <div class="play-bar">
+        <div class="nav prev"><div class="icon"></div></div>
+        <div class="bar"></div>
+        <div class="nav next"><div class="icon"></div></div>
+      </div>
     </div>
+    <a
+      href="https://open.spotify.com/playlist/4CBnVWhRQciXLNskOuQgPV?si=4073bdfd11fa49ff"
+      target="_blank"
+      >Åpne spillelista</a
+    >
   </div>
 </template>
 
@@ -24,7 +34,7 @@
   align-items: center;
 
   .image {
-    width: 4rem;
+    width: 4.8rem;
     height: 4rem;
     background: hotpink;
     border-top-left-radius: calc(var(--border-radius) * 4);
@@ -41,6 +51,8 @@
       left: 0;
       right: 0;
       bottom: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
@@ -64,11 +76,66 @@
       left: 50%;
     }
   }
+  .play-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 0.6rem;
+    .bar {
+      width: 100%;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.6);
+      margin: 0 3px;
+    }
+    .nav {
+      width: 1em;
+      height: 0.7em;
+
+      .icon {
+        border-bottom: 0.6em solid white;
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+      }
+
+      &.next {
+        border-right: 2px solid #fff;
+        .icon {
+          transform: rotate(90deg);
+        }
+      }
+      &.prev {
+        border-left: 2px solid #fff;
+        .icon {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
   .text {
+    width: 100%;
     padding: 0.3rem 0.6rem;
   }
   strong {
     display: block;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    z-index: 0;
+  }
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    //transform: translateY(-6px);
+    //border: 3px solid var(--color-link);
+    box-shadow: 0 0 1rem var(--color-shadow), 0 0 0 2px var(--color-green);
   }
 }
 </style>
