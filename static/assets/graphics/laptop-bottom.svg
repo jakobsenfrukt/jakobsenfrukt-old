@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="282px" height="8px" viewBox="0 0 282 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#666666" offset="0%"></stop>
+            <stop stop-color="#666666" offset="37.1811325%"></stop>
+            <stop stop-color="#333333" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#666666" offset="0%"></stop>
+            <stop stop-color="#EEEEEE" offset="2.01793901%"></stop>
+            <stop stop-color="#EEEEEE" offset="50.7986739%"></stop>
+            <stop stop-color="#EEEEEE" offset="97.9485012%"></stop>
+            <stop stop-color="#666666" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#999999" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="51.2630978%"></stop>
+            <stop stop-color="#999999" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Grafikk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-9.000000, 0.000000)">
+            <path d="M10.0990195,0 L289.90098,0 C290.453265,-1.94168438e-13 290.90098,0.44771525 290.90098,1 C290.90098,1.47668102 290.564521,1.88709584 290.097097,1.98058068 L260.097097,7.98058068 C260.032523,7.99349531 259.966832,8 259.90098,8 L40.0990195,8 C40.0331675,8 39.9674766,7.99349531 39.9029034,7.98058068 L9.90290338,1.98058068 C9.36134363,1.87226873 9.01012689,1.34544362 9.11843884,0.803883865 C9.21192368,0.336459668 9.62233849,6.08276922e-15 10.0990195,0 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+            <rect id="Rectangle" fill="url(#linearGradient-2)" transform="translate(150.000000, 1.000000) scale(1, -1) translate(-150.000000, -1.000000) " x="10" y="0" width="280" height="2"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-3)" transform="translate(150.500000, 1.000000) scale(1, -1) translate(-150.500000, -1.000000) " x="128" y="0" width="45" height="2"></rect>
+        </g>
+    </g>
+</svg>

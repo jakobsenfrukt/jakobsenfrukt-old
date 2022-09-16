@@ -1,31 +1,22 @@
 <template>
   <section class="showcase">
-    <div></div>
-    <div class="scroll-item scroll-slow urdal">
-      <g-image
-        alt="Example image"
-        src="/assets/images/thumbs/urdal.png"
-        class="urdal-image"
-      />
-      <img
-        src="/assets/images/fun/urdal-diplom.svg"
-        alt="Gul sirkel med teksten 'Diplom i Visuelt 2021'"
-        class="urdal-diplom"
-      />
-    </div>
-    <Chatbubble text="Jeg liker internett" class="scroll-item scroll-slow" />
-    <p class="giant">
-      Kul web design
-    </p>
-    <div class="scroll-item scroll-fast gyldendal">
-      <Gyldendal />
-    </div>
+    <Laptop image="/assets/images/projects/urdal/urdal-scroll.png" />
     <div class="scroll-item scroll-slow bergesenstiftelsen">
       <g-image
         alt="Example image"
         src="/assets/images/thumbs/bergesenstiftelsen.png"
         class="bergesenstiftelsen-image"
       />
+    </div>
+    <Mobile image="/assets/images/projects/urdal/urdal-scroll-mobile.png" />
+    <Urdal class="scroll-item scroll-slow" />
+
+    <Chatbubble text="Jeg liker internett" class="scroll-item scroll-slow" />
+    <p class="giant">
+      Kul web design
+    </p>
+    <div class="scroll-item scroll-fast gyldendal">
+      <Gyldendal />
     </div>
     <div class="scroll-item scroll-fast orseng">
       <Orseng />
@@ -34,16 +25,25 @@
 </template>
 
 <script>
+import Desktop from "@/components/fun/Desktop";
+import Laptop from "@/components/fun/Laptop";
+import Mobile from "@/components/fun/Mobile";
+
 import Gyldendal from "@/components/showcase/Gyldendal";
 import Orseng from "@/components/showcase/Orseng";
+import Urdal from "@/components/showcase/Urdal";
 
 import Chatbubble from "@/components/fun/chatbubble";
 import Test from "@/components/Test";
 
 export default {
   components: {
+    Desktop,
+    Laptop,
+    Mobile,
     Gyldendal,
     Orseng,
+    Urdal,
     Chatbubble,
     Test,
   },
@@ -112,27 +112,6 @@ p {
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-  }
-}
-
-.urdal {
-  position: relative;
-  &-image {
-    width: 100%;
-  }
-  &-diplom {
-    position: absolute;
-    top: -1rem;
-    right: -1rem;
-    width: 6rem;
-    height: 6rem;
-    transform: rotate(40deg);
-    z-index: -1;
-  }
-  &:hover {
-    .urdal-diplom {
-      animation: rotateUrdal 4s linear infinite;
-    }
   }
 }
 

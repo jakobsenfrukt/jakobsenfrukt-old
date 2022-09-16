@@ -68,7 +68,7 @@
     />-->
     <ProjectItem
       title="Bransjen"
-      lead="Nettside for designbyrået Bransjen."
+      lead="Nettside for designstudioet Bransjen."
       image="/assets/images/thumbs-test/bransjen.jpg"
       url="https://bransjen.no"
       link="bransjen.no"
