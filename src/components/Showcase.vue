@@ -1,17 +1,25 @@
 <template>
   <section class="showcase">
-    <Laptop image="/assets/images/projects/urdal/urdal-scroll.png" />
-    <div class="scroll-item scroll-slow bergesenstiftelsen">
-      <g-image
-        alt="Example image"
-        src="/assets/images/thumbs/bergesenstiftelsen.png"
-        class="bergesenstiftelsen-image"
-      />
-    </div>
+    <Laptop
+      class="scroll-item scroll-fast"
+      image="/assets/images/projects/bergesenstiftelsen/tildelinger.png"
+    />
+
     <Mobile image="/assets/images/projects/urdal/urdal-scroll-mobile.png" />
+
     <Urdal class="scroll-item scroll-slow" />
 
     <Chatbubble text="Jeg liker internett" class="scroll-item scroll-slow" />
+
+    <Spotify />
+
+    <img
+      src="/assets/images/fun/urdal-diplom.svg"
+      alt="Gul sirkel med teksten 'Diplom i Visuelt 2021'"
+      class="urdal-diplom"
+      :style="{ transform: 'rotate(' + rotation + 'deg)' }"
+    />
+
     <p class="giant">
       Kul web design
     </p>
@@ -29,6 +37,8 @@ import Desktop from "@/components/fun/Desktop";
 import Laptop from "@/components/fun/Laptop";
 import Mobile from "@/components/fun/Mobile";
 
+import Spotify from "@/components/fun/Spotify";
+
 import Gyldendal from "@/components/showcase/Gyldendal";
 import Orseng from "@/components/showcase/Orseng";
 import Urdal from "@/components/showcase/Urdal";
@@ -41,11 +51,17 @@ export default {
     Desktop,
     Laptop,
     Mobile,
+    Spotify,
     Gyldendal,
     Orseng,
     Urdal,
     Chatbubble,
     Test,
+  },
+  data() {
+    return {
+      rotation: 0,
+    };
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -56,6 +72,8 @@ export default {
   methods: {
     handleScroll(event) {
       var scrollTop = window.scrollY;
+      this.rotation = scrollTop / 2;
+
       var fastPos = scrollTop / 6.6 + "px";
       var mediumPos = scrollTop / 4.2 + "px";
       var slowPos = scrollTop / 3.6 + "px";

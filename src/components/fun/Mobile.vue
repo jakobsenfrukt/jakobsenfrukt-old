@@ -26,7 +26,7 @@ export default {
   &-screen {
     width: 100%;
     height: 12rem;
-    background: linear-gradient(60deg, #222, #333);
+    background: linear-gradient(60deg, #111, #222);
     padding: 0.2rem;
     border-radius: 0.6rem;
     position: relative;

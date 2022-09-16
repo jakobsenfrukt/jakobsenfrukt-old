@@ -78,26 +78,25 @@ export default {
 
 <style lang="scss" scoped>
 .laptop {
-  width: 24rem;
+  width: 22rem;
   position: relative;
   &-screen {
     width: 80%;
     height: 12rem;
-    background: linear-gradient(60deg, #222, #333);
+    background: linear-gradient(60deg, #111, #222);
+    box-shadow: 0 0 0 0.06rem #999;
     margin: 1rem auto 0;
-    padding: 0.6rem;
+    padding: 0.6rem 0.6rem 1rem;
     border-radius: 0.6rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   &-image-scroll {
     position: absolute;
     top: 0.6rem;
     left: 0.6rem;
     right: 0.6rem;
-    bottom: 0.6rem;
+    bottom: 1rem;
     overflow: hidden;
     //overflow-y: scroll;
     border-radius: 0.1rem;
@@ -110,8 +109,9 @@ export default {
   }
   &-bottom {
     width: 100%;
-    margin: 0 auto;
+    margin: -0.3rem auto;
     position: absolute;
+    z-index: 2;
   }
 
   &:hover {
